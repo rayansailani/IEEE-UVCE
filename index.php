@@ -184,13 +184,6 @@
         </div> 
     </div>    
     
-    <!---->
-  <!--<div class="container">
-    <div class="row m-2">
-        <div class="col"><img src="fest1.jpg" class="img-fluid" style="width:100%"></div>
-        <div class="col"><img src="fest2.jpg" class="img-fluid" style="width:100%"></div>
-    </div>
-  </div>-->
   
   <!--Awards-->
    <div class="container">
@@ -198,6 +191,93 @@
         <div class="col"><img src="awards.jpg" class="img-fluid" style="width:100%"></div>
     </div>
   </div> 
+    
+    
+    
+    
+    
+    <!--faculty-->
+    
+    <!-- Section: Testimonials v.1 -->
+<section class="text-center my-5 p-1">
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!--Grid column-->
+    <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+      <!--Card-->
+      <div class="card testimonial-card">
+        <!--Background color-->
+        <div class="card-up info-color"></div>
+        <!--Avatar-->
+        <div class="avatar mx-auto white">
+          <img src="ieeeuvce.png" class="rounded-circle img-fluid">
+        </div>
+        <div class="card-body">
+          <!--Name-->
+          <h4 class="font-weight-bold mb-4">John Doe</h4>
+          <hr>
+          <!--Quotation-->
+        </div>
+      </div>
+      <!--Card-->
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-4 col-md-6 mb-md-0 mb-4">
+      <!--Card-->
+      <div class="card testimonial-card">
+        <!--Background color-->
+        <div class="card-up blue-gradient">
+        </div>
+        <!--Avatar-->
+        <div class="avatar mx-auto white">
+          <img src="ieeeuvce.png" class="rounded-circle img-fluid">
+        </div>
+        <div class="card-body">
+          <!--Name-->
+          <h4 class="font-weight-bold mb-4">Anna Aston</h4>
+          <hr>
+        </div>
+      </div>
+      <!--Card-->
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-4 col-md-6">
+      <!--Card-->
+      <div class="card testimonial-card">
+        <!--Background color-->
+        <div class="card-up indigo"></div>
+        <!--Avatar-->
+        <div class="avatar mx-auto white">
+          <img src="ieeeuvce.png" class="rounded-circle img-fluid">
+        </div>
+        <div class="card-body">
+          <!--Name-->
+          <h4 class="font-weight-bold mb-4">Maria Kate</h4>
+          <hr>
+        </div>
+      </div>
+      <!--Card-->
+    </div>
+    <!--Grid column-->
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+<!-- Section: Testimonials v.1 -->
+    
+    
+    
+    
+    
+    
+    
     
     
 </body>
