@@ -154,7 +154,7 @@
 
     
 <?$c=1; for($j=1;$j<=2;$j++){ ?>
-    <div class="container">
+    <div class="container fade">
     <div class="card-deck m-2">
     <? for($i=1;$i<=4;$i++){ ?> 
    <div class="card m-4">
