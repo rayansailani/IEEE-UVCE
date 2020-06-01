@@ -131,7 +131,7 @@
     <div class="card">
      <div class="card-header">
     <div class="text-center">
-        <h1 class="fade">Main Events</h1>
+        <h1 class="fade">Main Events</h1><hr>
         <div class="row">
             <div class="col">Impetus</div>
             <div class="col">Codefury</div>
