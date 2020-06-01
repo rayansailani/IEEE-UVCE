@@ -161,7 +161,7 @@
      <figure class="sigcontainer">
        <img src="ieeeuvce.png" class="figure-img img-fluid rounded" style="width:100%" alt="image">
          <div class="overlay">
-            <figcaption class="text text-center"><h5></h5></figcaption>
+            <figcaption class="text text-center"><h5>SIG</h5></figcaption>
          </div>
      </figure>
    </div> 
