@@ -149,15 +149,15 @@
 <br>
    
 <!--SIG-->
-    <h1 class="mt-4 mb-4 text-center">SIG's</h1>
+    <h1 class="mt-4 mb-4 text-center fade">SIG's</h1>
     
 
     
 <?$c=1; for($j=1;$j<=2;$j++){ ?>
-    <div class="container fade">
+    <div class="container">
     <div class="card-deck m-2">
     <? for($i=1;$i<=4;$i++){ ?> 
-   <div class="card m-4">
+   <div class="card m-4 fade">
      <figure class="figure">
        <img src="ieeeuvce.png" class="figure-img img-fluid rounded" style="width:100%" alt="image">
        <figcaption class="figure-caption text-center"><a href='#' class="stretched-link"><h5><!--caption--></h5></a></figcaption>
