@@ -159,7 +159,7 @@
     <? for($i=1;$i<=4;$i++){ ?> 
    <div class="card m-4">
      <figure class="figure">
-       <img src="ieeeuvce.png" class="figure-img img-fluid rounded" alt="image">
+       <img src="ieeeuvce.png" class="figure-img img-fluid rounded" style="width:100%" alt="image">
        <figcaption class="figure-caption text-center"><a href='#' class="stretched-link"><h5><!--caption--></h5></a></figcaption>
      </figure>
    </div> 
