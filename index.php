@@ -158,7 +158,7 @@
     <? for($i=1;$i<=4;$i++){ ?> 
    <div class="card m-4">
      <div class="sigcontainer m-2">
-  <img src="ieeeuvce.png" class="figure-img img-fluid rounded mx-auto d-block" style="width:100%;height:50%;" alt="sig">
+  <img src="ieeeuvce.png" class="figure-img img-fluid rounded mx-auto d-block" style="width:100%;height:100%;" alt="sig">
   <div class="overlay">
     <div class="text">Hello World</div>
   </div>
