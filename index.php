@@ -48,44 +48,39 @@
         <div class="navbar-nav">
             <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Awards</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+           <a class="dropdown-item" href="#">Impetus</a>
+           <a class="dropdown-item" href="#">Codefury</a>
+           <a class="dropdown-item" href="#">Kagada</a>
         </div>
       </li>
-    </ul>
-            <!--<a href="#" class="nav-item nav-link active">Home</a>
-            <a href="#about" class="nav-item nav-link">About</a>
-            <a href="#" class="nav-item nav-link">Awards</a>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Fests
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Impetus</a>
-                <a class="dropdown-item" href="#">Codefury</a>
-                <a class="dropdown-item" href="#">Kagada</a>
-             </div>
-            </li>
-            <a href="#" class="nav-item nav-link">SIG</a>
-            <a href="#" class="nav-item nav-link">Team</a>
-            <a href="#" class="nav-item nav-link">Gallery</a>
-        </div>
-        <div class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">SIG</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Team</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Gallery</a>
+      </li>
+      <div class="navbar-nav ml-auto">
             <a href="register/register.php" class="nav-item nav-link">Register</a>
             <a href="login/login.php" class="nav-item nav-link">Login</a>-->
-        </div>
+      </div>
+    </ul>
+        </div>     
     </div>
 </nav>  
     
