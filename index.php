@@ -41,7 +41,7 @@
     
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
-    <img src="ieeeuvce.png" width="40" height="40" alt="ieeeuvce">
+        <img src="ieeeuvce.png" width="40" height="40" alt="ieeeuvce">
     </a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
