@@ -167,8 +167,8 @@
             <div class="card m-4 fade">
           <figure class="sigcontainer">
                     <img src="fest1.jpg" class="figure-img img-fluid rounded" style="width:100%" alt="image">
-                <div class="overlay">
-                     <figcaption class="text text-center"><h5>SIG</h5></figcaption>
+                <div class="overlay text-center">
+                     <h5>fest1</h5>
                 </div>
           </figure>
    </div> 
@@ -176,8 +176,8 @@
             <div class="card m-4 fade">
           <figure class="sigcontainer">
                     <img src="fest2.jpg" class="figure-img img-fluid rounded" style="width:100%" alt="image">
-                <div class="overlay">
-                     <figcaption class="text text-center"><h5>SIG</h5></figcaption>
+                <div class="overlay text-center">
+                     <h5>fest2</h5>
                 </div>
           </figure>
    </div> 
