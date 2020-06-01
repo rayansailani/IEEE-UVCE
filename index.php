@@ -120,7 +120,7 @@
     
    
 <div id="about" class="container">
-    <div class="text-center">
+    <div class="text-center fade">
     <h1 class="animate__animated animate__fadeIn animate__delay-1s">IEEE UVCE</h1>
         <p class="animate__animated animate__fadeIn animate__delay-2s">IEEE Student Branch of UVCE endeavors to enhance the learning experience of the student community on the UVCE campus. The Student Branch intends on providing different social, cultural and technical events for the students throughout the year. We encourage the students to take full advantage of the benefits of IEEE membership, including scholarships, competitions, and conference grants. The Student Branch also emphasizes the students to work with peers in other institutes, academicians, professionals, engineers, and scientists through the on campus IEEE Student Branch and the Local IEEE Section, thereby encouraging students to be a part of the global IEEE community.</p>
     </div>
@@ -130,8 +130,8 @@
 <div id="#" class="container">
     <div class="card">
      <div class="card-header">
-    <div class="text-center">
-        <h1 class="animate__animated animate__fadeIn animate__delay-1s">Main Events</h1>
+    <div class="text-center fade">
+        <h1>Main Events</h1>
         <div class="row">
             <div class="col">Impetus</div>
             <div class="col">Codefury</div>
@@ -150,7 +150,28 @@
      $('.navbar-nav>li>a').on('click', function(){
         $('.navbar-collapse').collapse('hide'); 
      });
+     
+     $(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
   </script>
+    
+    
+    
+    
     <!-- Footer -->
 <footer class="page-footer font-small special-color-dark pt-4">
 
