@@ -149,23 +149,6 @@
 <br>
    
     
-<div class="container">
-    <div class="row">
-        <? for($i=0;$i<4;$i++) { ?>
-           <div class="flip-card">
-            <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <img src="ieeeuvce.png" alt="SIG" style="width:100%;height:100%">
-            </div>
-            <div class="flip-card-back">
-                <h1>Content</h1>
-            </div>
-           </div>
-        </div>
-        <? } ?>
-    </div>
-</div>
-    
     
   
 </body>
