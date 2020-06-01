@@ -134,15 +134,6 @@
 <div id="#" class="container">
     <h1 class="fade text-center mt-4 mb-4">Main Events</h1>
     <div class="card">
-     <div class="card-header">
-    <div class="text-center">
-        <div class="row">
-            <div class="col">Impetus</div>
-            <div class="col">Codefury</div>
-            <div class="col">Kagada</div>
-        </div>
-    </div>
-  </div>
   <img src="test1.jpg" class="card-img-top" alt="fest">
 </div>
 </div>    
