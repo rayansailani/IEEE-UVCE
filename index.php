@@ -78,13 +78,13 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="mainieeeuvce.jpg" alt="First slide" style="object-fit: cover;width: 100%;height: 600px;">
+      <img class="d-block w-100" src="mainieeeuvce.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="mainieeeuvce.jpg" alt="Second slide" style="object-fit: cover;width: 100%;height: 600px;">
+      <img class="d-block w-100" src="mainieeeuvce.jpg" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="mainieeeuvce.jpg" alt="Third slide" style="object-fit: cover;width: 100%;height: 600px;">
+      <img class="d-block w-100" src="mainieeeuvce.jpg" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
