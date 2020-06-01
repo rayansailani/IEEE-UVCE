@@ -191,7 +191,7 @@
         <div class="col"><img src="awards.jpg" class="img-fluid" style="width:100%"></div>
     </div>
   </div> 
-    
+   <br> 
     
     
     
@@ -199,7 +199,7 @@
     <!--faculty-->
     
     <!-- Section: Testimonials v.1 -->
-<section class="text-center my-5 p-1">
+<section class="text-center m-4 p-2">
 
   <!-- Grid row -->
   <div class="row">
@@ -217,8 +217,6 @@
         <div class="card-body">
           <!--Name-->
           <h4 class="font-weight-bold mb-4">John Doe</h4>
-          <hr>
-          <!--Quotation-->
         </div>
       </div>
       <!--Card-->
@@ -239,7 +237,6 @@
         <div class="card-body">
           <!--Name-->
           <h4 class="font-weight-bold mb-4">Anna Aston</h4>
-          <hr>
         </div>
       </div>
       <!--Card-->
@@ -259,7 +256,6 @@
         <div class="card-body">
           <!--Name-->
           <h4 class="font-weight-bold mb-4">Maria Kate</h4>
-          <hr>
         </div>
       </div>
       <!--Card-->
