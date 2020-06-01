@@ -128,10 +128,10 @@
  <br>   
     
 <div id="#" class="container">
+    <h1 class="fade">Main Events</h1>
     <div class="card">
      <div class="card-header">
     <div class="text-center">
-        <h1 class="fade">Main Events</h1><hr>
         <div class="row">
             <div class="col">Impetus</div>
             <div class="col">Codefury</div>
@@ -143,6 +143,23 @@
 </div>
 </div>    
 
+<div class="container">
+    <div class="row">
+        <? for($i=0;$i<4;$i++) { ?>
+           <div class="flip-card">
+            <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="ieeeuvce.png" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Content</h1>
+            </div>
+           </div>
+        </div>
+        <? } ?>
+    </div>
+</div>
+    
     
   
 </body>
