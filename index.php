@@ -156,7 +156,7 @@
     <div class="container">
     <div class="card-deck m-2">
     <? for($i=1;$i<=4;$i++){ ?> 
-   <div class="m-4">
+   <div class="m-2">
      <div class="sigcontainer m-2">
   <img src="ieeeuvce.png" class="figure-img img-fluid rounded mx-auto d-block" style="width:100%;height:100%;" alt="sig">
   <div class="overlay">
