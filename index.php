@@ -154,7 +154,7 @@
 <div class="row">
 <? for($i=0;$i<4;$i++) { ?>  
   <div class="col">  
-<div class="container m-2">
+<div class="sigcontainer m-2">
   <img src="ieeeuvce.png" alt="Avatar" class="image" style="width:50%;height:20rem">
   <div class="overlay">
     <div class="text">Hello World</div>
@@ -192,7 +192,7 @@
  
     
  <style>
-.container {
+.sigcontainer {
   position: relative;
   width: 50%;
 }
@@ -216,7 +216,7 @@
   background-color: #008CBA;
 }
 
-.container:hover .overlay {
+.sigcontainer:hover .overlay {
   opacity: 1;
 }
 
