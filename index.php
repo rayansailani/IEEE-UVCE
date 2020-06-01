@@ -158,9 +158,11 @@
     <div class="card-deck m-2">
     <? for($i=1;$i<=4;$i++){ ?> 
    <div class="card m-4 fade">
-     <figure class="figure">
+     <figure class="sigcontainer">
        <img src="ieeeuvce.png" class="figure-img img-fluid rounded" style="width:100%" alt="image">
-       <figcaption class="figure-caption text-center"><a href='#' class="stretched-link"><h5><!--caption--></h5></a></figcaption>
+         <div class="overlay">
+            <figcaption class="text text-center"><h5></h5></figcaption>
+         </div>
      </figure>
    </div> 
   <? $c++;} ?>
