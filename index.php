@@ -161,12 +161,36 @@
     
     
  <!--Fests-->
-  <div class="container">
+    <div class="container">
+        <div class="card-deck m-2">
+            
+            <div class="card m-4 fade">
+          <figure class="sigcontainer">
+                    <img src="fest1.jpg" class="figure-img img-fluid rounded" style="width:100%" alt="image">
+                <div class="overlay">
+                     <figcaption class="text text-center"><h5>SIG</h5></figcaption>
+                </div>
+          </figure>
+   </div> 
+            
+            <div class="card m-4 fade">
+          <figure class="sigcontainer">
+                    <img src="fest2.jpg" class="figure-img img-fluid rounded" style="width:100%" alt="image">
+                <div class="overlay">
+                     <figcaption class="text text-center"><h5>SIG</h5></figcaption>
+                </div>
+          </figure>
+   </div> 
+        </div> 
+    </div>    
+    
+    <!---->
+  <!--<div class="container">
     <div class="row m-2">
         <div class="col"><img src="fest1.jpg" class="img-fluid" style="width:100%"></div>
         <div class="col"><img src="fest2.jpg" class="img-fluid" style="width:100%"></div>
     </div>
-  </div>
+  </div>-->
   
   
 </body>
