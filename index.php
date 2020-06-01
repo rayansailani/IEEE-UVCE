@@ -130,8 +130,8 @@
 <div id="#" class="container">
     <div class="card">
      <div class="card-header">
-    <div class="text-center fade">
-        <h1>Main Events</h1>
+    <div class="text-center">
+        <h1 class="fade">Main Events</h1>
         <div class="row">
             <div class="col">Impetus</div>
             <div class="col">Codefury</div>
@@ -139,7 +139,7 @@
         </div>
     </div>
   </div>
-  <img src="..." class="card-img-top" alt="...">
+  <img src="test1.jpg" class="card-img-top" alt="fest">
 </div>
 </div>    
 
