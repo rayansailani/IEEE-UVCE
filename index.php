@@ -148,21 +148,27 @@
 </div>    
 <br>
    
-
+<!--SIG-->
     <h1 class="mt-4 mb-4 text-center">SIG's</h1>
     
-<div class="row">
-<? for($i=0;$i<4;$i++) { ?>  
-  <div class="col">  
-<div class="sigcontainer m-2">
+    
+ <?$c=1; for($j=1;$j<=2;$j++){ ?>
+    <div class="container" id="category">
+    <div class="card-deck m-2">
+    <? for($i=1;$i<=4;$i++){ ?> 
+   <div class="card m-4">
+     <div class="sigcontainer m-2">
   <img src="ieeeuvce.png" alt="Avatar" class="image" style="width:50%;height:20rem">
   <div class="overlay">
     <div class="text">Hello World</div>
   </div>
 </div>  
-    </div>
+   </div> 
+  <? $c++;} ?>
+      </div> 
+     </div>
     <? } ?>
-    </div>   
+    
     
   
 </body>
