@@ -76,11 +76,13 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Gallery</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
     </ul>
-    <div class="navbar-nav ml-auto">
-       <a href="#" class="nav-item nav-link">Register</a>
-       <a href="#" class="nav-item nav-link">Login</a>
-    </div>
         </div>     
     </div>
 </nav>  
