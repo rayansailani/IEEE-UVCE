@@ -44,7 +44,7 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav">
             <a href="#" class="nav-item nav-link active">Home</a>
-            <a href="#" class="nav-item nav-link">About</a>
+            <a href="#about" class="nav-item nav-link">About</a>
             <a href="#" class="nav-item nav-link">Awards</a>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -96,11 +96,14 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+<br>  
     
+    
+    <div id="about"></div>
     
 <div class="container">
-    <h1 class="display-4">IEEE UVCE</h1>
     <div class="text-center">
+    <h1 class="display-4">IEEE UVCE</h1>
         IEEE Student Branch of UVCE endeavors to enhance the learning experience of the student community on the UVCE campus. The Student Branch intends on providing different social, cultural and technical events for the students throughout the year. We encourage the students to take full advantage of the benefits of IEEE membership, including scholarships, competitions, and conference grants. The Student Branch also emphasizes the students to work with peers in other institutes, academicians, professionals, engineers, and scientists through the on campus IEEE Student Branch and the Local IEEE Section, thereby encouraging students to be a part of the global IEEE community.
     </div>
     </div>
