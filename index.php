@@ -120,7 +120,7 @@
 </div>
 <br>
     
-   
+   <!--About-->
 <div id="about" class="container">
     <div class="text-center">
     <h1 class="animate__animated animate__fadeIn animate__delay-1s fade mt-4 mb-4">IEEE UVCE</h1>
@@ -129,6 +129,8 @@
 </div>
  <br>   
     
+    
+    <!--events-->
 <div id="#" class="container">
     <h1 class="fade text-center mt-4 mb-4">Main Events</h1>
     <div class="card">
@@ -144,14 +146,16 @@
   <img src="test1.jpg" class="card-img-top" alt="fest">
 </div>
 </div>    
-
+<br>
+   
+    
 <div class="container">
     <div class="row">
         <? for($i=0;$i<4;$i++) { ?>
            <div class="flip-card">
             <div class="flip-card-inner">
             <div class="flip-card-front">
-                <img src="ieeeuvce.png" alt="Avatar" style="width:300px;height:300px;">
+                <img src="ieeeuvce.png" alt="SIG" style="width:100%;height:100%">
             </div>
             <div class="flip-card-back">
                 <h1>Content</h1>
