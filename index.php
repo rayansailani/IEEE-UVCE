@@ -149,14 +149,20 @@
 <br>
    
 
-<div class="container">
-    <h1 class="mt-4 mb-4">SIG's</h1>
-  <img src="ieeeuvce.png" alt="Avatar" class="image">
+    <h1 class="mt-4 mb-4 text-center">SIG's</h1>
+    
+<div class="row">
+<? for($i=0;$i<4;$i++) { ?>  
+  <div class="col">  
+<div class="container m-2">
+  <img src="ieeeuvce.png" alt="Avatar" class="image" style="width:50%;height:20rem">
   <div class="overlay">
     <div class="text">Hello World</div>
   </div>
-</div>    
-    
+</div>  
+    </div>
+    <? } ?>
+    </div>   
     
   
 </body>
