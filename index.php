@@ -114,7 +114,11 @@
     
   
 </body>
- 
+ <script>
+     $('.navbar-nav>li>a').on('click', function(){
+        $('.navbar-collapse').collapse('hide'); 
+     });
+  </script>
     <!-- Footer -->
 <footer class="page-footer font-small special-color-dark pt-4">
 
