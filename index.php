@@ -192,7 +192,14 @@
     </div>
   </div>-->
   
-  
+  <!--Awards-->
+   <div class="container">
+    <div class="row m-2">
+        <div class="col"><img src="awards.jpg" class="img-fluid" style="width:100%"></div>
+    </div>
+  </div> 
+    
+    
 </body>
  <script>
      $('.navbar-nav>li>a').on('click', function(){
