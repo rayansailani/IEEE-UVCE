@@ -59,7 +59,7 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          Events
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
            <a class="dropdown-item" href="#">Impetus</a>
@@ -128,6 +128,8 @@
  <br>   
     
 <div id="#" class="container">
+    <div class="card">
+     <div class="card-header">
     <div class="text-center">
         <h1 class="animate__animated animate__fadeIn animate__delay-1s">Main Events</h1>
         <div class="row">
@@ -136,6 +138,9 @@
             <div class="col">Kagada</div>
         </div>
     </div>
+  </div>
+  <img src="..." class="card-img-top" alt="...">
+</div>
 </div>    
 
     
