@@ -151,23 +151,31 @@
 <!--SIG-->
     <h1 class="mt-4 mb-4 text-center">SIG's</h1>
     
+
     
- <?$c=1; for($j=1;$j<=2;$j++){ ?>
+<?$c=1; for($j=1;$j<=2;$j++){ ?>
     <div class="container">
     <div class="card-deck m-2">
     <? for($i=1;$i<=4;$i++){ ?> 
-   <div class="m-2 text-center">
-     <div class="sigcontainer m-2">
-  <img src="ieeeuvce.png" class="figure-img img-fluid rounded mx-auto d-block" style="width:100%;height:100%;" alt="sig">
-  <div class="overlay">
-    <div class="text">Hello World</div>
-  </div>
-</div>  
+   <div class="card m-4">
+     <figure class="figure">
+       <img src="ieeeuvce.png" class="figure-img img-fluid rounded" alt="image">
+       <figcaption class="figure-caption text-center"><a href='#' class="stretched-link"><h5><!--caption--></h5></a></figcaption>
+     </figure>
    </div> 
   <? $c++;} ?>
       </div> 
      </div>
-    <? } ?>
+    <? } ?>    
+    
+    
+    
+     <!--<div class="sigcontainer m-2">
+  <img src="ieeeuvce.png" class="figure-img img-fluid rounded mx-auto d-block" style="width:100%;height:100%;" alt="sig">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>-->  
     
     
   
