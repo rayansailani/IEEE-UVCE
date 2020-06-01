@@ -163,10 +163,12 @@
     
     
  <!--Fests-->
+  <div class="container">
     <div class="row m-2">
-        <div class="col"><img src="fest1.jpg" class="img-fluid" style="width:100%"/></div>
-        <div class="col"><img src="fest2.jpg" class="img-fluid" style="width:100%"/></div>
+        <div class="col"><img src="fest1.jpg" class="img-fluid" style="width:100%"></div>
+        <div class="col"><img src="fest2.jpg" class="img-fluid" style="width:100%"></div>
     </div>
+  </div>
   
   
 </body>
