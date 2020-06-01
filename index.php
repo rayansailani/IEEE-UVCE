@@ -75,10 +75,14 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Gallery</a>
       </li>
-      <div class="navbar-nav ml-auto">
-            <a href="register/register.php" class="nav-item nav-link">Register</a>
-            <a href="login/login.php" class="nav-item nav-link">Login</a>-->
-      </div>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Login</a>
+      </li>
     </ul>
         </div>     
     </div>
