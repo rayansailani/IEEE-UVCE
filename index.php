@@ -171,15 +171,11 @@
     <? } ?>    
     
     
-    
-     <!--<div class="sigcontainer m-2">
-  <img src="ieeeuvce.png" class="figure-img img-fluid rounded mx-auto d-block" style="width:100%;height:100%;" alt="sig">
-  <div class="overlay">
-    <div class="text">Hello World</div>
-  </div>
-</div>-->  
-    
-    
+ <!--Fests-->
+    <div class="container text-center">
+        <img src="fest1.jpg" class="rounded mx-auto d-block" alt="..."><br>
+        <img src="fest2.jpg" class="rounded mx-auto d-block" alt="...">
+    </div>
   
 </body>
  <script>
