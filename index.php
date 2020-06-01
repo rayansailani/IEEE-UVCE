@@ -172,8 +172,23 @@
     
     
  <!--Fests-->
+    <?for($j=1;$j<=2;$j++){ ?>
+    <div class="container">
+    <div class="card-deck m-2">
+   <div class="card m-4 fade">
+     <figure class="sigcontainer">
+         <img src="fest<?=$j?>.jpg" class="rounded mx-auto d-block" alt="...">
+         <div class="overlay">
+            <figcaption class="text text-center"><h5>SIG</h5></figcaption>
+         </div>
+     </figure>
+   </div> 
+      </div> 
+     </div>
+    <? } ?>  
+    
     <div class="container text-center">
-        <img src="fest1.jpg" class="rounded mx-auto d-block" alt="..."><br>
+       <br>
         <img src="fest2.jpg" class="rounded mx-auto d-block" alt="...">
     </div>
   
