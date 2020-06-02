@@ -72,17 +72,17 @@
 	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<div class="container">
+				<div class="row">
 					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid">
 				</div>
 			</div>
 			<div class="carousel-item active">
-				<div class="container">
+				<div class="row">
 					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid">
 				</div>
 			</div>
 			<div class="carousel-item active">
-				<div class="container">
+				<div class="row">
 					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid">
 				</div>
 			</div>
