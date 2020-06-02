@@ -121,7 +121,7 @@
 <br>
     
    <!--About-->
-<div id="about" class="m-4 p-4">
+<div id="about" class="m-5 p-5">
     <div class="text-center">
     <h1 class="animate__animated animate__fadeIn animate__delay-1s fade mt-4 mb-4">IEEE UVCE</h1>
         <p class="animate__animated animate__fadeIn animate__delay-2s">IEEE Student Branch of UVCE endeavors to enhance the learning experience of the student community on the UVCE campus. The Student Branch intends on providing different social, cultural and technical events for the students throughout the year. We encourage the students to take full advantage of the benefits of IEEE membership, including scholarships, competitions, and conference grants. The Student Branch also emphasizes the students to work with peers in other institutes, academicians, professionals, engineers, and scientists through the on campus IEEE Student Branch and the Local IEEE Section, thereby encouraging students to be a part of the global IEEE community.</p>
@@ -130,7 +130,7 @@
     
     
     <!--events-->
-<div id="#" class="m-4 p-4">
+<div id="#" class="m-5 p-5">
     <div class="card">
   <img src="test1.jpg" class="card-img-top" alt="fest">
 </div>
@@ -143,7 +143,7 @@
 
     
 <?$c=1; for($j=1;$j<=2;$j++){ ?>
-    <div class="m-4 p-4">
+    <div class="m-5 p-5">
     <div class="card-deck m-2">
     <? for($i=1;$i<=4;$i++){ ?> 
    <div class="card m-4 fade">
@@ -161,7 +161,7 @@
     
     
  <!--Fests-->
-    <div class="m-4 p-4">
+    <div class="m-5 p-5">
         <div class="card-deck m-2">
             
             <div class="card m-4 fade">
@@ -186,7 +186,7 @@
     
   
   <!--Awards-->
-   <div class="m-4 p-4">
+   <div class="m-5 p-5">
     <div class="row m-2">
         <div class="col"><img src="awards.jpg" class="img-fluid" style="width:100%"></div>
     </div>
@@ -197,7 +197,32 @@
     
     
     <!--faculty-->
-    
+    <div class="m-5 p-5">
+        <div class="row">
+            <div class="col">
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="ieeeuvce.png" class="card-img-top figure-img img-fluid rounded" alt="..." style="width:100%">
+                    <div class="card-body">
+                        <h1>Main</h1>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <? for($i=0;$i<2;$i++) { ?>
+        <div class="row">
+        <? for($i=0;$i<4;$i++) { ?>
+            <div class="col">
+                <div class="card text-center" style="width: 18rem;">
+                    <img src="ieeeuvce.png" class="card-img-top figure-img img-fluid rounded" alt="..." style="width:100%">
+                    <div class="card-body">
+                        <h1></h1>    
+                    </div>
+                </div>
+            </div>
+        <? } ?>
+        </div>
+        <? } ?>
+    </div>
    
     
     
