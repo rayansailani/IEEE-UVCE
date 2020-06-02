@@ -143,7 +143,7 @@
 
     
 <?$c=1; for($j=1;$j<=2;$j++){ ?>
-    <div class="m-5 p-5">
+    <div class="m-2 p-2">
     <div class="card-deck m-2">
     <? for($i=1;$i<=4;$i++){ ?> 
    <div class="card m-4 fade">
@@ -161,10 +161,10 @@
     
     
  <!--Fests-->
-    <div class="m-5 p-5">
+    <div class="m-5 p-5 fade">
         <div class="card-deck m-2">
             
-            <div class="card m-4 fade">
+            <div class="card m-4">
           <figure class="sigcontainer">
                     <img src="fest1.jpg" class="figure-img img-fluid rounded" style="width:100%" alt="image">
                 <div class="overlay text-center">
@@ -173,7 +173,7 @@
           </figure>
    </div> 
             
-            <div class="card m-4 fade">
+            <div class="card m-4">
           <figure class="sigcontainer">
                     <img src="fest2.jpg" class="figure-img img-fluid rounded" style="width:100%" alt="image">
                 <div class="overlay text-center">
@@ -197,7 +197,7 @@
     
     
     <!--faculty-->
-    <div class="m-5 p-5">
+    <div class="m-4">
         <div class="row">
             <div class="col">
                 <div class="card text-center" style="width: 18rem;">
