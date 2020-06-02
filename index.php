@@ -73,17 +73,17 @@
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<div class="container">
-					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid" style="height:36%">
+					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid">
 				</div>
 			</div>
 			<div class="carousel-item active">
 				<div class="container">
-					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid" style="height:36%">
+					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid">
 				</div>
 			</div>
 			<div class="carousel-item active">
 				<div class="container">
-					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid" style="height:36%">
+					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid">
 				</div>
 			</div>
 		</div>
