@@ -65,22 +65,25 @@
 			</div>
 		</div>
 	</nav>
+	
+	
+	
 	<!--carousel-->
 	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<div class="container">
-					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid">
+					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid" style="height:36%">
 				</div>
 			</div>
 			<div class="carousel-item active">
 				<div class="container">
-					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid">
+					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid" style="height:36%">
 				</div>
 			</div>
 			<div class="carousel-item active">
 				<div class="container">
-					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid">
+					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid" style="height:36%">
 				</div>
 			</div>
 		</div>
@@ -91,6 +94,10 @@
 			<span class="sr-only">Next</span>
 		</a>
 	</div>
+	
+	
+	
+	
 	<!--About-->
 	<div id="about" class="m-5">
 		<div class="text-center">
