@@ -92,69 +92,22 @@
 
     
 <!--carousel-->  
- <section class="carousel slide cid-qBIAxuQ1lW" data-interval="false" id="slider1-1s" data-rv-view="6183">
-	<div class="full-screen">
-		<div class="mbr-slider slide carousel" data-pause="true" data-keyboard="false" data-ride="false" data-interval="false">
-			<ol class="carousel-indicators">
-				<li data-app-prevent-settings="" data-target="#slider1-1s" data-slide-to="0"></li>
-				<li data-app-prevent-settings="" data-target="#slider1-1s" data-slide-to="1"></li>
-				<li data-app-prevent-settings="" data-target="#slider1-1s" class=" active" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner" role="listbox">
-				<div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets2/images/mitchel-lensink-224719-2000x1333.jpg);">
-					<div class="container container-slide">
-						<div class="image_wrapper">
-							<div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(0, 0, 0);"></div>
-							<img src="mainieeeuvce.jpg">
-							<div class="carousel-caption justify-content-center">
-								<div class="col-10 align-center">
-									<h2 class="mbr-fonts-style display-5">Sed felis magna, semper sed ligula eu, tristique pretium quam.</h2>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item slider-fullscreen-image" data-bg-video-slide="false" style="background-image: url(assets2/images/jeremy-perkins-307186-2000x1333.jpg);">
-					<div class="container container-slide">
-						<div class="image_wrapper">
-							<div class="mbr-overlay" style="background-color: rgb(35, 35, 35);"></div>
-							<img src="mainieeeuvce.jpg">
-							<div class="carousel-caption justify-content-center">
-								<div class="col-10 align-left"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item slider-fullscreen-image active" data-bg-video-slide="false" style="background-image: url(assets2/images/mitchel-lensink-205264-2000x1333.jpg);">
-					<div class="container container-slide">
-						<div class="image_wrapper">
-							<div class="mbr-overlay"></div>
-							<img src="mainieeeuvce.jpg">
-							<div class="carousel-caption justify-content-center">
-								<div class="col-10 align-right"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div><a data-app-prevent-settings="" class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#slider1-1s"><span aria-hidden="true" class="mbri-left mbr-iconfont"></span><span class="sr-only">Previous</span></a><a data-app-prevent-settings="" class="carousel-control carousel-control-next" role="button" data-slide="next" href="#slider1-1s"><span aria-hidden="true" class="mbri-right mbr-iconfont"></span><span class="sr-only">Next</span></a>
-		</div>
-	</div>
-</section> 
+ 
     
-<!-- <ol class="carousel-indicators">
+<ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="img-fluid" src="mainieeeuvce.jpg" alt="First slide" style="width:100%">
+      <img class="d-block w-100" src="mainieeeuvce.jpg" alt="First slide" style="width:100%">
     </div>
     <div class="carousel-item">
-      <img class="img-fluid" src="mainieeeuvce.jpg" alt="Second slide" style="width:100%">
+      <img class="d-block w-100" src="mainieeeuvce.jpg" alt="Second slide" style="width:100%">
     </div>
     <div class="carousel-item">
-      <img class="img-fluid" src="mainieeeuvce.jpg" alt="Third slide" style="width:100%">
+      <img class="d-block w-100" src="mainieeeuvce.jpg" alt="Third slide" style="width:100%">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -166,7 +119,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<br>-->
+<br>
     
    <!--About-->
 <div id="about" class="m-5">
