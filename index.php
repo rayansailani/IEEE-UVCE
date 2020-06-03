@@ -192,15 +192,16 @@
 
 </div>
 <br>
-	<div style="cursor: pointer;">
 	<div class="accordion" id="accordionExample">
   <div class="card">
     <div class="card-header" id="headingOne">
+	    <a style="cursor: pointer;">
       <h2 class="mb-0">
         <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           Gallery
         </button>
-      </h2>
+      </h2    
+	    </a>
     </div>
 
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -210,7 +211,6 @@
     </div>
   </div>
 	</div>
-</div>
 	
 	
 	
