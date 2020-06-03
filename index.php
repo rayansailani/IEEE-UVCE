@@ -73,17 +73,23 @@
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<div class="row">
-					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid">
+					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid" style="object-fit: cover;
+width: 100%;
+height: 600px;">
 				</div>
 			</div>
 			<div class="carousel-item active">
 				<div class="row">
-					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid">
+					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid" style="object-fit: cover;
+width: 100%;
+height: 600px;">
 				</div>
 			</div>
 			<div class="carousel-item active">
 				<div class="row">
-					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid">
+					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid" style="object-fit: cover;
+width: 100%;
+height: 600px;">
 				</div>
 			</div>
 		</div>
