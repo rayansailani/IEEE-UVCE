@@ -1,4 +1,7 @@
-<?php session_start(); include 'libraries/cakes.php'; ?>
+<?php 
+	session_start();
+	include 'libraries/cakes.php'; 
+?>
 <!--HTML boiler plate-->
 <!DOCTYPE html>
 <html lang="en">
@@ -139,7 +142,8 @@
 	<!--Fests-->
 	
 	
-	
+	<div class="fade">
+	<br>
 	<!--Awards-->
 	<div class="m-5">
 		<div class="row m-2">
@@ -147,6 +151,7 @@
 				<img src="awards.jpg" class="img-fluid" style="width:100%">
 			</div>
 		</div>
+	</div>
 	</div>
 	<br>
 	<!--faculty-->
