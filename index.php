@@ -30,7 +30,7 @@
 	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
 </head>
 
-<body style="background-color:#85DCB;">
+<body style="background-color:#E3E2DF;">
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 		<a class="navbar-brand" href="#">
 			<img src="ieeeuvce.png" width="40" height="40" alt="ieeeuvce">
@@ -187,7 +187,7 @@
 	
 	
 <!-- Footer -->
-<footer class="page-footer font-small black">
+<footer class="page-footer font-small" style="background-color:#fff;">
 
   <!-- Footer Links -->
   <div class="container">
@@ -200,8 +200,13 @@
 
       <!-- Grid column -->
       <div class="col-md-8 col-12 mt-5">
-        <p style="line-height: 1.7rem">IEEE UVCE</p>
+        <p style="line-height: 1.7rem"><a class="m-2" href="mailto:mahith.98@gmail.com " target="_blank"><i class="fa fa-envelope"> </i> Mahith Shetty</a></p>
+	      <br><a>Phone : +91 9845207684</a><br>
+	      <a class="p-2" href="https://goo.gl/maps/P43RC7Qphrq" target="_blank">				
+                        <i class="fa fa-map-marker"></i> UVCE, K.R Circle, B.R Ambedkar Veedhi, Bengaluru	                        
+                    </a>
       </div>
+				                   
       <!-- Grid column -->
 
     </div>
