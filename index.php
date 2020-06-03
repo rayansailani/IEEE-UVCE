@@ -380,6 +380,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	<!-- Footer Elements -->
 	<div class="text-center">
 		<div class="template-demo">
+			<a href="https://goo.gl/maps/P43RC7Qphrq" target="_blank">
+                        <i class="fa fa-map-marker"></i> UVCE, K.R Circle, B.R Ambedkar Veedhi, Bengaluru
+                    </a>
+			<br>
 	<i class="fa fa-facebook m-2"></i>
 	<i class="fa fa-youtube m-2"></i>
 	<i class="fa fa-twitter m-2"></i>
