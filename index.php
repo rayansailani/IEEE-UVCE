@@ -39,7 +39,6 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 			<div class="navbar-nav">
-				<ul class="navbar-nav mr-auto">
 					<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
 					<a class="nav-link" href="#about">About</a>
 					<a class="nav-link" href="#">Awards</a>
@@ -48,7 +47,6 @@
 					<a class="nav-link" href="#">Gallery</a>
 					<a class="nav-link" href="#">Register</a>
 					<a class="nav-link" href="#">Login</a>
-				</ul>
 			</div>
 		</div>
 	</nav>
