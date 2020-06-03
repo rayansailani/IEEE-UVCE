@@ -358,6 +358,27 @@ span.onclick = function() {
 }
 </script>
 <style>
+	.col-md-3{
+  display: inline-block;
+  margin-left:-6px;
+}
+.col-md-3 img{
+  width:100%;
+  height:auto;
+}
+body .carousel-indicators li{
+  background-color:black;
+}
+body .carousel-control-prev-icon,
+body .carousel-control-next-icon{
+  background-color:black;
+}
+body .no-padding{
+  padding-left: 0;
+  padding-right: 0;
+}
+	</style>
+<style>
 body {font-family: Arial, Helvetica, sans-serif;}
 
 #myImg {
