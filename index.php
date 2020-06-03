@@ -62,13 +62,13 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="carousel1.jpg" alt="First slide" class="d-block img-fluid caro">
+      <img src="assets/carousel1.jpg" alt="First slide" class="d-block img-fluid caro">
     </div>
     <div class="carousel-item">
-      <img src="carousel2.jpg" alt="First slide" class="d-block img-fluid caro">
+      <img src="assets/carousel2.jpg" alt="First slide" class="d-block img-fluid caro">
     </div>
     <div class="carousel-item">
-      <img src="carousel1.jpg" alt="First slide" class="d-block img-fluid caro">
+      <img src="assets/carousel1.jpg" alt="First slide" class="d-block img-fluid caro">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -101,7 +101,7 @@
 	<!--student branch-->
 	<div id="#" class="m-5">
 		<div class="card">
-			<img src="mainposter.jpg" class="card-img-top" alt="fest">
+			<img src="assets/mainposter.jpg" class="card-img-top" alt="fest">
 		</div>
 	</div>
 	<br>
@@ -117,7 +117,7 @@
 					<? for($i=1;$i<=4;$i++){ ?>
 					<div class="card m-4">
 						<div class="sigcontainer">
-							<img src="logo.png" class="img-fluid" style="width:100%" alt="image">
+							<img src="assets/logo.png" class="img-fluid" style="width:100%" alt="image">
 							<div class="overlay">
 								<!--<figcaption class="text text-center">-->
 									<h5>SIG</h5>
@@ -141,7 +141,7 @@
 	<div class="m-5">
 		<div class="row m-2">
 			<div class="col">
-				<img src="awards.jpg" class="img-fluid" style="width:100%">
+				<img src="assets/awards.jpg" class="img-fluid" style="width:100%">
 			</div>
 		</div>
 	</div>
@@ -160,7 +160,7 @@
 	<? for($i=0;$i<8;$i++) { ?>
     <div class="col-lg-3 col-md-4 col-6">
       	<a href="#gallery" class="d-block mb-4 h-100">
-            <img id="myImg<?=$i?>" class="img-fluid img-thumbnail" src="carousel1.jpg" alt="">
+            <img id="myImg<?=$i?>" class="img-fluid img-thumbnail" src="assets/carousel1.jpg" alt="">
           </a>
     </div>
 	  
