@@ -166,7 +166,7 @@
 	
 	
 	<!--Gallery-->
-	<div class="container">
+	<div class="container" id="gallery">
 
   <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Gallery</h1>
 
@@ -176,7 +176,7 @@
 	  
 	<? for($i=0;$i<8;$i++) { ?>
     <div class="col-lg-3 col-md-4 col-6">
-      <a <!--href="#"--> id="mymodal" class="d-block mb-4 h-100">
+      	<a href="#gallery" id="mymodal" class="d-block mb-4 h-100">
             <img id="myimg" class="img-fluid img-thumbnail" src="ieeeuvce.png" alt="">
           </a>
     </div>
