@@ -120,41 +120,26 @@
 				<div class="card-deck m-2">
 					<? for($i=1;$i<=4;$i++){ ?>
 					<div class="card m-4 fade">
-						<figure class="sigcontainer">
-							<img src="ieeeuvce.png" class="figure-img img-fluid rounded" style="width:100%" alt="image">
+						<div class="sigcontainer">
+							<img src="ieeeuvce.png" class="img-fluid" style="width:100%" alt="image">
 							<div class="overlay">
 								<!--<figcaption class="text text-center">-->
 									<h5>SIG</h5>
 								<!--</figcaption>-->
 							</div>
-						</figure>
+						</div>
 					</div>
 					<? $c++;} ?>
 				</div>
 			</div>
 			<? } ?>
 	</div>
+	
+	
 	<!--Fests-->
-	<div class="m-5 fade">
-		<div class="card-deck m-2">
-			<div class="card m-4">
-				<figure class="sigcontainer">
-					<img src="fest1.jpg" class="figure-img img-fluid rounded" style="width:100%" alt="image">
-					<div class="overlay text-center">
-						<h5>fest1</h5>
-					</div>
-				</figure>
-			</div>
-			<div class="card m-4">
-				<figure class="sigcontainer">
-					<img src="fest2.jpg" class="figure-img img-fluid rounded" style="width:100%" alt="image">
-					<div class="overlay text-center">
-						<h5>fest2</h5>
-					</div>
-				</figure>
-			</div>
-		</div>
-	</div>
+	
+	
+	
 	<!--Awards-->
 	<div class="m-5">
 		<div class="row m-2">
