@@ -177,7 +177,7 @@
 	<? for($i=0;$i<8;$i++) { ?>
     <div class="col-lg-3 col-md-4 col-6">
       	<a href="#gallery" class="d-block mb-4 h-100">
-            <img id="myImg<?=$i?>" class="img-fluid img-thumbnail" src="ieeeuvce.png" alt="">
+            <img id="myImg<?=$i?>" class="img-fluid img-thumbnail" src="mainieeeuvce.jpg" alt="">
           </a>
     </div>
 	  
@@ -336,6 +336,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
     width: 100%;
   }
 }
+	@media (min-width:961px)  { .modal-content { object-fit: cover;width: 100%;height: 400px; } /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+	@media (min-width:1025px) { .modal-content { object-fit: cover;width: 100%;height: 400px; } /* big landscape tablets, laptops, and desktops */ }
+	@media (min-width:1281px) { .modal-content { object-fit: cover;width: 100%;height: 400px; } /* hi-res laptops and desktops */ }
 </style>
 <style>
 	.sigcontainer {
