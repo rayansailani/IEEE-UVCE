@@ -30,7 +30,7 @@
 	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
 </head>
 
-<body>
+<body style="background-color:#EEE2DC;">
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 		<a class="navbar-brand" href="#">
 			<img src="ieeeuvce.png" width="40" height="40" alt="ieeeuvce">
@@ -184,6 +184,12 @@
 	
 	
 </body>
+	
+<footer style="background-color:#fff;">
+	<h4>footer</h4>
+</footer>
+	
+	
 <script>
 	$('.navbar-nav>a').on('click', function(){
 	        $('.navbar-collapse').collapse('hide'); 
@@ -375,30 +381,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	@media (min-width:1281px) { .caro { object-fit: cover;width: 100%;height: 600px; } /* hi-res laptops and desktops */ }
 	
 </style>
-<!-- Footer -->
-<footer class="page-footer font-small special-color-dark pt-4">
-	<!-- Footer Elements -->
-	<div class="text-center" style="background-color:#F5F5F5;">
-		<div class="template-demo">
-			<a class="m-2" href="mailto:mahith.98@gmail.com " target="_blank">
-                            <i class="fa fa-envelope"> </i> Mahith Shetty
-                        </a>
-                        <br>
-                        <a>Phone : +91 9845207684</a><br>
-			<a class="p-2" href="https://goo.gl/maps/P43RC7Qphrq" target="_blank">
-                        <i class="fa fa-map-marker"></i> UVCE, K.R Circle, B.R Ambedkar Veedhi, Bengaluru
-                    </a>
-			<br>
-	<i class="fa fa-facebook m-2"></i>
-	<i class="fa fa-youtube m-2"></i>
-	<i class="fa fa-twitter m-2"></i>
-	<i class="fa fa-linkedin m-2"></i>
-	<i class="fa fa-instagram m-2"></i><br><br>
-			<div class="footer-copyright text-center py-3">© <a href="#">ieeeuvce</a>
-</div>
-	</div>
-	<!-- Copyright -->
-</footer>
-<!-- Footer -->
+
 
 </html>
