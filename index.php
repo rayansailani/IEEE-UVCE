@@ -30,7 +30,7 @@
 	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
 </head>
 
-<body style="background-color:#E3E2DF;">
+<body style="background-color:#fff">
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 		<a class="navbar-brand" href="#">
 			<img src="ieeeuvce.png" width="40" height="40" alt="ieeeuvce">
@@ -187,7 +187,7 @@
 	
 	
 <!-- Footer -->
-<footer class="page-footer font-small" style="background-color:#fff;">
+<footer class="page-footer font-small" style="background-color:#E3E2DF;">
 
   <!-- Footer Links -->
   <div class="container">
