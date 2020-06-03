@@ -378,9 +378,14 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <!-- Footer -->
 <footer class="page-footer font-small special-color-dark pt-4">
 	<!-- Footer Elements -->
-	<div class="text-center">
+	<div class="text-center" style="background-color:#F5F5F5;">
 		<div class="template-demo">
-			<a href="https://goo.gl/maps/P43RC7Qphrq" target="_blank">
+			<a href="mailto:mahith.98@gmail.com " target="_blank">
+                            <i class="fa fa-envelope"> </i> Mahith Shetty
+                        </a>
+                        <br>
+                        <a>Phone : +91 9845207684</a><br>
+			<a class="p-2" href="https://goo.gl/maps/P43RC7Qphrq" target="_blank">
                         <i class="fa fa-map-marker"></i> UVCE, K.R Circle, B.R Ambedkar Veedhi, Bengaluru
                     </a>
 			<br>
