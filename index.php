@@ -175,11 +175,17 @@
   <div class="row text-center text-lg-left">
 	  
 	<? for($i=0;$i<8;$i++) { ?>
-    <div class="col-lg-3 col-md-4 col-6" id="mymodal">
+    <div class="col-lg-3 col-md-4 col-6">
       	<a href="#gallery" class="d-block mb-4 h-100">
-            <img id="myimg<?=$i;?>" class="img-fluid img-thumbnail" src="ieeeuvce.png" alt="">
+            <img id="myImg" class="img-fluid img-thumbnail" src="ieeeuvce.png" alt="">
           </a>
     </div>
+	  
+	  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img<?=$i?>">
+  <div id="caption"></div>
+</div>
  <? } ?>
 	  
   </div>
@@ -218,25 +224,26 @@
 	});
 </script>
 <script>
-	var modal = document.getElementById("mymodal");
+// Get the modal
+var modal = document.getElementById("myModal");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myimg");
-var modalImg = document.getElementById("myimg");
-//var captionText = document.getElementById("caption");
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img0");
+var captionText = document.getElementById("caption");
 img.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
-  //captionText.innerHTML = this.alt;
+  captionText.innerHTML = this.alt;
 }
-	
-	// Get the <span> element that closes the modal
-/*var span = document.getElementsByClassName("close")[0];
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function() { 
   modal.style.display = "none";
-}*/
+}
 </script>
 <style>
 	.sigcontainer {
