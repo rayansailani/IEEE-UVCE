@@ -164,10 +164,11 @@
 	</div>
 	<br>
 	
+	
 	<!--Gallery-->
 	<div class="container">
 
-  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">allery</h1>
+  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Gallery</h1>
 
   <hr class="mt-2 mb-5">
 
@@ -175,8 +176,8 @@
 	  
 	<? for($i=0;$i<8;$i++) { ?>
     <div class="col-lg-3 col-md-4 col-6">
-      <a href="#" class="d-block mb-4 h-100">
-            <img class="img-fluid img-thumbnail" src="ieeeuvce.png" alt="">
+      <a <!--href="#"--> id="mymodal" class="d-block mb-4 h-100">
+            <img id="myimg" class="img-fluid img-thumbnail" src="ieeeuvce.png" alt="">
           </a>
     </div>
  <? } ?>
@@ -215,6 +216,27 @@
 	    });
 	  }).scroll(); //invoke scroll-handler on page-load
 	});
+</script>
+<script>
+	var modal = document.getElementById("mymodal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myimg");
+var modalImg = document.getElementById("myimg");
+//var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  //captionText.innerHTML = this.alt;
+}
+	
+	// Get the <span> element that closes the modal
+/*var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}*/
 </script>
 <style>
 	.sigcontainer {
