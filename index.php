@@ -33,7 +33,7 @@
 <body style="background-color:#fff">
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 		<a class="navbar-brand" href="#">
-			<img src="ieeeuvce.png" width="40" height="40" alt="ieeeuvce">
+			<img src="logo.png" width="40" height="40" alt="ieeeuvce">
 		</a>
 		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"> <span class="navbar-toggler-icon"></span>
 		</button>
@@ -62,13 +62,13 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid caro">
+      <img src="carousel1.jpg" alt="First slide" class="d-block img-fluid caro">
     </div>
     <div class="carousel-item">
-      <img src="caro2.jpg" alt="First slide" class="d-block img-fluid caro">
+      <img src="carousel2.jpg" alt="First slide" class="d-block img-fluid caro">
     </div>
     <div class="carousel-item">
-      <img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid caro">
+      <img src="carousel1.jpg" alt="First slide" class="d-block img-fluid caro">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -101,7 +101,7 @@
 	<!--student branch-->
 	<div id="#" class="m-5">
 		<div class="card">
-			<img src="test1.jpg" class="card-img-top" alt="fest">
+			<img src="mainposter.jpg" class="card-img-top" alt="fest">
 		</div>
 	</div>
 	<br>
@@ -117,7 +117,7 @@
 					<? for($i=1;$i<=4;$i++){ ?>
 					<div class="card m-4">
 						<div class="sigcontainer">
-							<img src="ieeeuvce.png" class="img-fluid" style="width:100%" alt="image">
+							<img src="logo.png" class="img-fluid" style="width:100%" alt="image">
 							<div class="overlay">
 								<!--<figcaption class="text text-center">-->
 									<h5>SIG</h5>
@@ -160,7 +160,7 @@
 	<? for($i=0;$i<8;$i++) { ?>
     <div class="col-lg-3 col-md-4 col-6">
       	<a href="#gallery" class="d-block mb-4 h-100">
-            <img id="myImg<?=$i?>" class="img-fluid img-thumbnail" src="mainieeeuvce.jpg" alt="">
+            <img id="myImg<?=$i?>" class="img-fluid img-thumbnail" src="carousel1.jpg" alt="">
           </a>
     </div>
 	  
