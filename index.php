@@ -378,13 +378,13 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <!-- Footer -->
 <footer class="page-footer font-small special-color-dark pt-4">
 	<!-- Footer Elements -->
-	<div class="row text-center">
+	<div class="text-center">
 		<div class="template-demo">
-			<i class="fa fa-facebook"></i>
-	<i class="fa fa-youtube"></i>
-	<i class="fa fa-twitter"></i>
-	<i class="fa fa-linkedin"></i>
-	<i class="fa fa-instagram"></i>
+	<i class="fa fa-facebook m-2"></i>
+	<i class="fa fa-youtube m-2"></i>
+	<i class="fa fa-twitter m-2"></i>
+	<i class="fa fa-linkedin m-2"></i>
+	<i class="fa fa-instagram m-2"></i>
 </div>
 	</div>
 	<!-- Footer Elements -->
