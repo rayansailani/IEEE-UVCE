@@ -81,7 +81,7 @@
 			</div>
 			<div class="carousel-item active">
 				<div class="row">
-					<img src="mainieeeuvce.jpg" alt="First slide" class="d-block img-fluid caro">
+					<img src="caro2.jpg" alt="First slide" class="d-block img-fluid caro">
 				</div>
 			</div>
 			<div class="carousel-item active">
