@@ -33,7 +33,7 @@
 <body style="background-color:#fff">
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 		<a class="navbar-brand" href="#">
-			<img src="logo.png" width="40" height="40" alt="ieeeuvce">
+			<img src="assets/logo.png" width="40" height="40" alt="ieeeuvce">
 		</a>
 		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"> <span class="navbar-toggler-icon"></span>
 		</button>
