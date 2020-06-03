@@ -131,79 +131,7 @@
 			<? } ?>
 	</div>
 	
-	<!--Team-->
-	<div id="demo" class="carousel slide" data-ride="carousel">
-
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
-  
-  <!-- The slideshow -->
-  <div class="container carousel-inner no-padding">
-    <div class="carousel-item active">
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <img src="assets/carousel2.jpg">
-      </div>    
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <img src="assets/carousel2.jpg">
-      </div>   
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <img src="assets/carousel2.jpg">
-      </div>   
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <img src="assets/carousel2.jpg">
-      </div> 
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <img src="assets/carousel2.jpg">
-      </div>  
-    </div>
-    <div class="carousel-item">
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <img src="assets/carousel1.jpg">
-      </div>    
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <img src="assets/carousel1.jpg">
-      </div>   
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <img src="assets/carousel1.jpg">
-      </div>   
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <img src="assets/carousel1.jpg">
-      </div>
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <img src="assets/carousel1.jpg">
-      </div> 
-    </div>
-    <div class="carousel-item">
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <img src="assets/logo.png">
-      </div>    
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <img src="assets/logo.png">
-      </div>   
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <img src="assets/logo.png">
-      </div>   
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <img src="assets/logo.png">
-      </div>
-      <div class="col-xs-3 col-sm-3 col-md-3">
-        <img src="assets/logo.png">
-      </div> 
-    </div>
-  </div>
-  
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </a>
-</div>
+	
 	
 	
 	
@@ -357,27 +285,7 @@ span.onclick = function() {
 }
 }
 </script>
-<style>
-	.col-md-3{
-  display: inline-block;
-  margin-left:-6px;
-}
-.col-md-3 img{
-  width:100%;
-  height:auto;
-}
-body .carousel-indicators li{
-  background-color:black;
-}
-body .carousel-control-prev-icon,
-body .carousel-control-next-icon{
-  background-color:black;
-}
-body .no-padding{
-  padding-left: 0;
-  padding-right: 0;
-}
-	</style>
+
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 
