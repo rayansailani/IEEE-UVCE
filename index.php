@@ -40,22 +40,14 @@
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 			<div class="navbar-nav">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active"> <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-					</li>
-					<a href="#about"><li class="nav-item"> <a class="nav-link" href="#about">About</a>
-						</li></a>
-					<li class="nav-item"> <a class="nav-link" href="#">Awards</a>
-					</li>
-					<li class="nav-item"> <a class="nav-link" href="#">SIG</a>
-					</li>
-					<li class="nav-item"> <a class="nav-link" href="#">Team</a>
-					</li>
-					<li class="nav-item"> <a class="nav-link" href="#">Gallery</a>
-					</li>
-					<li class="nav-item"> <a class="nav-link" href="#">Register</a>
-					</li>
-					<li class="nav-item"> <a class="nav-link" href="#">Login</a>
-					</li>
+					<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="#about">About</a>
+					<a class="nav-link" href="#">Awards</a>
+					<a class="nav-link" href="#">SIG</a>
+					<a class="nav-link" href="#">Team</a>
+					<a class="nav-link" href="#">Gallery</a>
+					<a class="nav-link" href="#">Register</a>
+					<a class="nav-link" href="#">Login</a>
 				</ul>
 			</div>
 		</div>
@@ -195,7 +187,7 @@
 	
 </body>
 <script>
-	$('.navbar-nav>li>a').on('click', function(){
+	$('.navbar-nav>a').on('click', function(){
 	        $('.navbar-collapse').collapse('hide'); 
 	     });
 	     
