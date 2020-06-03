@@ -378,7 +378,15 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <!-- Footer -->
 <footer class="page-footer font-small special-color-dark pt-4">
 	<!-- Footer Elements -->
-	<div class="container"></div>
+	<div class="row text-center">
+		<div class="template-demo">
+			<i class="fa fa-facebook"></i>
+	<i class="fa fa-youtube"></i>
+	<i class="fa fa-twitter"></i>
+	<i class="fa fa-linkedin"></i>
+	<i class="fa fa-instagram"></i>
+</div>
+	</div>
 	<!-- Footer Elements -->
 	<!-- Copyright -->
 	<div class="footer-copyright text-center py-3">© <a href="#">ieeeuvce</a>
