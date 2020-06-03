@@ -379,8 +379,8 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <footer class="page-footer font-small special-color-dark pt-4">
 	<!-- Footer Elements -->
 	<div class="text-center" style="background-color:#F5F5F5;">
-		<div class="template-demo m-2">
-			<a href="mailto:mahith.98@gmail.com " target="_blank">
+		<div class="template-demo">
+			<a class="m-2" href="mailto:mahith.98@gmail.com " target="_blank">
                             <i class="fa fa-envelope"> </i> Mahith Shetty
                         </a>
                         <br>
@@ -396,10 +396,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	<i class="fa fa-instagram m-2"></i><br><br>
 			<div class="footer-copyright text-center py-3">© <a href="#">ieeeuvce</a>
 </div>
-	</div>
-	<!-- Footer Elements -->
-	<!-- Copyright -->
-	
 	</div>
 	<!-- Copyright -->
 </footer>
