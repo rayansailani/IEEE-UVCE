@@ -42,17 +42,9 @@
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active"> <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
 					</li>
-					<li class="nav-item"> <a class="nav-link" href="#about">About</a>
-					</li>
+					<a href="#about"><li class="nav-item"> <a class="nav-link" href="#about">About</a>
+						</li></a>
 					<li class="nav-item"> <a class="nav-link" href="#">Awards</a>
-					</li>
-					<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Events
-        </a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">Impetus</a>
-							<a class="dropdown-item" href="#">Codefury</a>
-							<a class="dropdown-item" href="#">Kagada</a>
-						</div>
 					</li>
 					<li class="nav-item"> <a class="nav-link" href="#">SIG</a>
 					</li>
@@ -192,25 +184,7 @@
 
 </div>
 <br>
-	<div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-	    <a style="cursor: pointer;">
-      <h2 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Gallery
-        </button>
-      </h2    
-	    </a>
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        Skateboard mask
-      </div>
-    </div>
-  </div>
-	</div>
+	
 	
 	
 	
