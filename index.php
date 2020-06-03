@@ -175,9 +175,9 @@
   <div class="row text-center text-lg-left">
 	  
 	<? for($i=0;$i<8;$i++) { ?>
-    <div class="col-lg-3 col-md-4 col-6">
-      	<a href="#gallery" id="mymodal" class="d-block mb-4 h-100">
-            <img id="myimg" class="img-fluid img-thumbnail" src="ieeeuvce.png" alt="">
+    <div class="col-lg-3 col-md-4 col-6" id="mymodal">
+      	<a href="#gallery" class="d-block mb-4 h-100">
+            <img id="myimg<?=$i;?>" class="img-fluid img-thumbnail" src="ieeeuvce.png" alt="">
           </a>
     </div>
  <? } ?>
