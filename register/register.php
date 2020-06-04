@@ -38,7 +38,7 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 			<div class="navbar-nav">
-					<a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="../index.php">Home<span class="sr-only">(current)</span></a>
 					<!--<a class="nav-link" href="#about">About</a>
 					<a class="nav-link" href="#awards">Awards</a>
 					<a class="nav-link" href="#sigs">SIG</a>
