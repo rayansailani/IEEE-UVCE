@@ -9,7 +9,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" type="image/x-icon" sizes="192x192" href="assets/logo.png">
+	<link rel="shortcut icon" type="image/x-icon" sizes="192x192" href="../assets/logo.png">
 	<title>IEEE-UVCE Team</title>
 	<link rel="stylesheet" href="style.css">
 	<!--bootstrap link-->
@@ -39,11 +39,20 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 			<div class="navbar-nav">
-					<a class="nav-link" href="index.php">Home<span class="sr-only">(current)</span></a>
-					<a class="nav-link" href="#">Team</a>
-					<a class="nav-link" href="register/register.php">Register</a>
-					<a class="nav-link" href="#">Login</a>
+					<a class="nav-link" href="../index.php">Home<span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="gallery.php">Gallery</a>
 			</div>
+			<div class="navbar-nav ml-auto">
+            <?php if(isset($_SESSION['user_name'])) {
+                    echo '<a href="#" class="nav-item nav-link active"><i class="fa fa-user-o">  '.$_SESSION['user_name'].'</i></a>';
+                    echo '<a href="../login/logout.php" class="nav-item nav-link">Logout</a>';
+                }
+                else{
+                    echo '<a href="../register/register.php" class="nav-item nav-link">Register</a>
+                            <a href="../login/login.php" class="nav-item nav-link">Login</a>';
+                }
+            ?>
+        </div>
 		</div>
 	</nav>
 	
@@ -56,7 +65,7 @@
 					<? for($i=1;$i<=4;$i++){ ?>
 					<div class="fade"></div>
 					<div class="card m-4 fade">
-						<img src="assets/logo.png" class="img-fluid" style="width:100%" alt="image">
+						<img src="../assets/logo.png" class="img-fluid" style="width:100%" alt="image">
 						<div class="card-body">
     							<p class="card-text">Member</p>
   						</div>
