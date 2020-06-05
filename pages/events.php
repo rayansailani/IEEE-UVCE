@@ -63,16 +63,16 @@
 	<div class="mt-4 mb-4">
 	<div class="row text-center">
 		<div class="col">Upcoming or Current Events</div>
-	</div><hr>
+	</div>
 	<div class="row text-center">
 		
 		<table class="table table-bordered">
     <thead>
         <tr>
-            <th>Row</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
+            <th>Title</th>
+            <th>Presenters</th>
+            <th>contact</th>
+            <th>info</th>
         </tr>
     </thead>
     <tbody>
@@ -80,19 +80,19 @@
             <td>1</td>
             <td>Clark</td>
             <td>Kent</td>
-            <td>clarkkent@mail.com</td>
+            <td class="text-center"><button type="button" class="btn btn-success">Register</button></td>
         </tr>
         <tr>
             <td>2</td>
             <td>John</td>
             <td>Carter</td>
-            <td>johncarter@mail.com</td>
+            <td class="text-center"><button type="button" class="btn btn-success">Register</button></td>
         </tr>
         <tr>
             <td>3</td>
             <td>Peter</td>
             <td>Parker</td>
-            <td>peterparker@mail.com</td>
+            <td class="text-center"><button type="button" class="btn btn-success">Register</button></td>
         </tr>            
     </tbody>
 </table>
@@ -101,16 +101,16 @@
 		<br><br>
 	<div class="row text-center">
 		<div class="col">Events History</div>
-	</div><hr>
+	</div>
 	<div class="row text-center">
 		
 		<table class="table table-bordered">
     <thead>
         <tr>
-            <th>Row</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
+            <th>Title</th>
+            <th>Presenters</th>
+            <th>contact</th>
+            <th>info</th>
         </tr>
     </thead>
     <tbody>
@@ -118,20 +118,20 @@
             <td>1</td>
             <td>Clark</td>
             <td>Kent</td>
-            <td>clarkkent@mail.com</td>
+            <td class="text-center"><button type="button" class="btn btn-success">Register</button></td>
         </tr>
         <tr>
             <td>2</td>
             <td>John</td>
             <td>Carter</td>
-            <td>johncarter@mail.com</td>
+            <td class="text-center"><button type="button" class="btn btn-success">Register</button></td>
         </tr>
         <tr>
             <td>3</td>
             <td>Peter</td>
             <td>Parker</td>
-            <td>peterparker@mail.com</td>
-        </tr>            
+            <td class="text-center"><button type="button" class="btn btn-success">Register</button></td>
+        </tr>             
     </tbody>
 </table>
 		
