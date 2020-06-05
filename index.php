@@ -42,8 +42,8 @@
 			<div class="navbar-nav">
 					<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
 					<a class="nav-link" href="#about">About</a>
-					<a class="nav-link" href="#awards">Awards</a>
 					<a class="nav-link" href="#sigs">SIG</a>
+					<a class="nav-link" href="#awards">Awards</a>
 					<a class="nav-link" href="pages/events.php">Events</a>
 					<a class="nav-link" href="pages/team.php">Team</a>
 					<a class="nav-link" href="pages/gallery.php">Gallery</a>
