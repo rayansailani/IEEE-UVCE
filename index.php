@@ -108,11 +108,11 @@
 	
 	
 	<!--SIG-->
-	<div class="fade" id="sigs"></div>
 	<h1 class="mt-4 mb-4 text-center fade">SIG's</h1>
-	<div class="m-5">
+	<div class="fade" id="sigs"></div>
+	<div class="m-2">
 		<?$c=1; for($j=1;$j<=2;$j++){ ?>
-			<div class="m-2 fade">
+			<div class="m-2">
 				<div class="card-deck m-2">
 					<? for($i=1;$i<=4;$i++){ ?>
 					<div class="card m-4">
@@ -139,7 +139,7 @@
 	<div class="fade" id="awards"></div>
 	<br>
 	<!--Awards-->
-	<div class="m-5">
+	<div class="m-2">
 		<div class="row m-2">
 			<div class="col">
 				<img src="assets/awards.jpg" class="img-fluid" style="width:100%">
