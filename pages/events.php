@@ -80,22 +80,34 @@
             <td>1</td>
             <td>Clark</td>
             <td>Kent</td>
-	    <td class="text-center"><a href="#" class="btn btn-success btn-sm" role="button">Register</a></td><br>
-	    <td class="text-center"><a href="#" class="btn btn-success btn-sm" role="button">view</a></td>	
+		<td class="text-center">
+			<div class="btn-group">
+				<a href="#" class="btn btn-success btn-sm" role="button">Register</a>
+				<a href="#" class="btn btn-success btn-sm" role="button">view</a>
+			</div>
+	    </td>	
         </tr>
         <tr>
             <td>2</td>
             <td>John</td>
             <td>Carter</td>
-            <td class="text-center"><a href="#" class="btn btn-success btn-sm" role="button">Register</a></td><br>
-	    <td class="text-center"><a href="#" class="btn btn-success btn-sm" role="button">view</a></td>
+            <td class="text-center">
+			<div class="btn-group">
+				<a href="#" class="btn btn-success btn-sm" role="button">Register</a>
+				<a href="#" class="btn btn-success btn-sm" role="button">view</a>
+			</div>
+	    </td>
         </tr>
         <tr>
             <td>3</td>
             <td>Peter</td>
             <td>Parker</td>
-            <td class="text-center"><a href="#" class="btn btn-success btn-sm" role="button">Register</a></td><br>
-	    <td class="text-center"><a href="#" class="btn btn-success btn-sm" role="button">view</a></td>
+            <td class="text-center">
+			<div class="btn-group">
+				<a href="#" class="btn btn-success btn-sm" role="button">Register</a>
+				<a href="#" class="btn btn-success btn-sm" role="button">view</a>
+			</div>
+	    </td>
         </tr>            
     </tbody>
 </table>
