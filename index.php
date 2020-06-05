@@ -45,6 +45,8 @@
 					<a class="nav-link" href="#sigs">SIG</a>
 					<a class="nav-link" href="team.php">Team</a>
 					<a class="nav-link" href="#gallery">Gallery</a>
+			
+			</div>
 		<div class="navbar-nav ml-auto">
             <?php if(isset($_SESSION['user_name'])) {
                     echo '<a href="#" class="nav-item nav-link active"><i class="fa fa-user-o">  '.$_SESSION['user_name'].'</i></a>';
@@ -56,7 +58,6 @@
                 }
             ?>
         </div>
-			</div>
 		</div>
 	</nav>
 	
