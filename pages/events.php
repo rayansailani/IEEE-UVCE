@@ -80,19 +80,22 @@
             <td>1</td>
             <td>Clark</td>
             <td>Kent</td>
-            <td class="text-center"><button href="#" type="button" class="btn btn-success btn-sm">Register</button></td>
+	    <td class="text-center"><a href="#" class="btn btn-success btn-sm" role="button">Register</a></td><br>
+	    <td class="text-center"><a href="#" class="btn btn-success btn-sm" role="button">view</a></td>	
         </tr>
         <tr>
             <td>2</td>
             <td>John</td>
             <td>Carter</td>
-            <td class="text-center"><button href="#" type="button" class="btn btn-success btn-sm">Register</button></td>
+            <td class="text-center"><a href="#" class="btn btn-success btn-sm" role="button">Register</a></td><br>
+	    <td class="text-center"><a href="#" class="btn btn-success btn-sm" role="button">view</a></td>
         </tr>
         <tr>
             <td>3</td>
             <td>Peter</td>
             <td>Parker</td>
-            <td class="text-center"><button href="#" type="button" class="btn btn-success btn-sm">Register</button></td>
+            <td class="text-center"><a href="#" class="btn btn-success btn-sm" role="button">Register</a></td><br>
+	    <td class="text-center"><a href="#" class="btn btn-success btn-sm" role="button">view</a></td>
         </tr>            
     </tbody>
 </table>
@@ -118,19 +121,19 @@
             <td>1</td>
             <td>Clark</td>
             <td>Kent</td>
-            <td class="text-center"><button type="button" class="btn btn-success btn-sm">view</button></td>
+            <td class="text-center"><a href="#" class="btn btn-success btn-sm" role="button">view</a></td>
         </tr>
         <tr>
             <td>2</td>
             <td>John</td>
             <td>Carter</td>
-            <td class="text-center"><button type="button" class="btn btn-success btn-sm">view</button></td>
+            <td class="text-center"><a href="#" class="btn btn-success btn-sm" role="button">view</a></td>
         </tr>
         <tr>
             <td>3</td>
             <td>Peter</td>
             <td>Parker</td>
-            <td class="text-center"><button type="button" class="btn btn-success btn-sm">view</button></td>
+            <td class="text-center"><a href="#" class="btn btn-success btn-sm" role="button">view</a></td>
         </tr>             
     </tbody>
 </table>
