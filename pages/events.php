@@ -82,7 +82,7 @@
             <td>Clark</td>
             <td>Kent</td>
 	    <td class="text-center">
-		<a href="#" class="btn btn-success btn-sm mb-2" role="button">Register</a>
+		<a href="event_register.php" class="btn btn-success btn-sm mb-2" role="button">Register</a>
 		<a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a>
             </td>	
         </tr>
@@ -91,7 +91,7 @@
             <td>John</td>
             <td>Carter</td>
             <td class="text-center">
-		<a href="#" class="btn btn-success btn-sm mb-2" role="button">Register</a>
+		<a href="event_register.php" class="btn btn-success btn-sm mb-2" role="button">Register</a>
 		<a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a>
 	    </td>
         </tr>
@@ -100,7 +100,7 @@
             <td>Peter</td>
             <td>Parker</td>
             <td class="text-center">
-		<a href="#" class="btn btn-success btn-sm mb-2" role="button">Register</a>
+		<a href="event_register.php" class="btn btn-success btn-sm mb-2" role="button">Register</a>
 		<a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a>
             </td>
         </tr>            
