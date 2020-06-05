@@ -263,7 +263,7 @@ span.onclick = function() {
 }
 }
 </script>
-
+-->
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 
@@ -407,7 +407,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	@media (min-width:1025px) { .caro { object-fit: cover;width: 100%;height: 600px; } /* big landscape tablets, laptops, and desktops */ }
 	@media (min-width:1281px) { .caro { object-fit: cover;width: 100%;height: 600px; } /* hi-res laptops and desktops */ }
 	
-</style>-->
+</style>
 
 
 </html>
