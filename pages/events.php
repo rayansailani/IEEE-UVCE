@@ -119,7 +119,6 @@
         <tr>
             <th>Title</th>
             <th>Presenters</th>
-	    <th>Date and Time</th>
             <th>info</th>
         </tr>
     </thead>
