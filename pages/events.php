@@ -72,6 +72,7 @@
         <tr>
             <th>Title</th>
             <th>Presenters</th>
+	    <th>Date and Time</th>
             <th>info</th>
         </tr>
     </thead>
@@ -79,6 +80,7 @@
         <tr>
             <td>1</td>
             <td>Clark</td>
+	    <td>1/12/20 | 2:45pm</td>
 	    <td class="text-center">
 		<a href="event_register.php" class="btn btn-success btn-sm mb-2" role="button">Register</a>
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
@@ -87,6 +89,7 @@
         <tr>
             <td>2</td>
             <td>John</td>
+	    <td>1/12/20 | 2:45pm</td>
             <td class="text-center">
 		<a href="event_register.php" class="btn btn-success btn-sm mb-2" role="button">Register</a>
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
@@ -95,6 +98,7 @@
         <tr>
             <td>3</td>
             <td>Peter</td>
+	    <td>1/12/20 | 2:45pm</td>
             <td class="text-center">
 		<a href="event_register.php" class="btn btn-success btn-sm mb-2" role="button">Register</a>
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
@@ -115,6 +119,7 @@
         <tr>
             <th>Title</th>
             <th>Presenters</th>
+	    <th>Date and Time</th>
             <th>info</th>
         </tr>
     </thead>
