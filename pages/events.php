@@ -60,7 +60,7 @@
 	
 
 
-	<div class="m-2">
+	<div class="mt-4 mb-4">
 	<div class="row text-center">
 		<div class="col">Upcoming or Current Events</div>
 	</div><hr>
@@ -70,7 +70,7 @@
 		<div class="col">Contact</div>
 		<div class="col">Info</div>
 	</div>
-		<br><br><br><br>
+		<br><br>
 	<div class="row text-center">
 		<div class="col">Events History</div>
 	</div><hr>
