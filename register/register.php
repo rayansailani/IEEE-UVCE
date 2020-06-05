@@ -45,7 +45,7 @@
 					<a class="nav-link" href="#">Team</a>
 					<a class="nav-link" href="#gallery">Gallery</a>-->
 					<a class="nav-link" href="#">Register</a>
-					<a class="nav-link" href="login/login.php">Login</a>
+					<a class="nav-link" href="../login/login.php">Login</a>
 			</div>
 		</div>
 	</nav>
