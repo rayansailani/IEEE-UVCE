@@ -43,8 +43,8 @@
 					<a class="nav-link" href="#about">About</a>
 					<a class="nav-link" href="#awards">Awards</a>
 					<a class="nav-link" href="#sigs">SIG</a>
-					<a class="nav-link" href="team.php">Team</a>
-					<a class="nav-link" href="#gallery">Gallery</a>
+					<a class="nav-link" href="pages/team.php">Team</a>
+					<a class="nav-link" href="pages/gallery.php">Gallery</a>
 			
 			</div>
 		<div class="navbar-nav ml-auto">
@@ -158,39 +158,6 @@
 	</div>
 	<br>
 	
-	
-	<!--Gallery-->
-	<div class="container" id="gallery">
-
-  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Gallery</h1>
-
-  <hr class="mt-2 mb-5">
-
-  <div class="row text-center text-lg-left">
-	  
-	<? for($i=0;$i<8;$i++) { ?>
-    <div class="col-lg-3 col-md-4 col-6">
-      	<a href="#gallery" class="d-block mb-4 h-100">
-            <img id="myImg<?=$i?>" class="img-fluid img-thumbnail" src="assets/carousel1.jpg" alt="">
-          </a>
-    </div>
-	  
-	  <div id="myModal<?=$i?>" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img<?=$i?>">
-  <div id="caption<?=$i?>"></div>
-</div>
- <? } ?>
-	  
-  </div>
-
-</div>
-<br>
-	
-	
-	
-	
-	<!--faculty-->
 	
 	
 	
