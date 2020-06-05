@@ -58,25 +58,27 @@
 		</div>
 	</nav>
 	
-	
+
 
 	<div class="m-4">
 	<div class="row text-center">
 		<div class="col">Upcoming or Current Events</div>
-	</div><br>
+	</div><br><hr>
 	<div class="row text-center">
 		<div class="col">Name</div>
 		<div class="col">Presenters</div>
 		<div class="col">Contact</div>
+		<div class="col">Info</div>
 	</div>
 		<br><br><br><br>
 	<div class="row text-center">
 		<div class="col">Events History</div>
-	</div><br>
+	</div><br><hr>
 	<div class="row text-center">
 		<div class="col">Name</div>
 		<div class="col">Presenters</div>
 		<div class="col">Contact</div>
+		<div class="col">Info</div>
 	</div>
 	</div>
 	
