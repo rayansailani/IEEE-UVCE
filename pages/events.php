@@ -41,8 +41,9 @@
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 			<div class="navbar-nav">
 					<a class="nav-link" href="../index.php">Home<span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="#">Events</a>
 					<a class="nav-link" href="gallery.php">Gallery</a>
-          <a class="nav-link" href="team.php">Team</a>
+          				<a class="nav-link" href="team.php">Team</a>
 			</div>
 			<div class="navbar-nav ml-auto">
             <?php if(isset($_SESSION['user_name'])) {
