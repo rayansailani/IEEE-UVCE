@@ -41,7 +41,7 @@
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 			<div class="navbar-nav">
 					<a class="nav-link" href="../index.php">Home<span class="sr-only">(current)</span></a>
-					<a class="nav-link" href="#">Events</a>
+					<a class="nav-link active" href="#">Events</a>
 					<a class="nav-link" href="gallery.php">Gallery</a>
           				<a class="nav-link" href="team.php">Team</a>
 			</div>
@@ -82,8 +82,8 @@
             <td>Clark</td>
             <td>Kent</td>
 	    <td class="text-center">
-			<a href="#" class="btn btn-success btn-sm" role="button">Register</a>
-			<a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a>
+		<a href="#" class="btn btn-success btn-sm mb-2" role="button">Register</a>
+		<a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a>
             </td>	
         </tr>
         <tr>
@@ -91,7 +91,7 @@
             <td>John</td>
             <td>Carter</td>
             <td class="text-center">
-		<a href="#" class="btn btn-success btn-sm" role="button">Register</a>
+		<a href="#" class="btn btn-success btn-sm mb-2" role="button">Register</a>
 		<a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a>
 	    </td>
         </tr>
@@ -100,7 +100,7 @@
             <td>Peter</td>
             <td>Parker</td>
             <td class="text-center">
-		<a href="#" class="btn btn-success btn-sm" role="button">Register</a>
+		<a href="#" class="btn btn-success btn-sm mb-2" role="button">Register</a>
 		<a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a>
             </td>
         </tr>            
