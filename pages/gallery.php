@@ -9,7 +9,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" type="image/x-icon" sizes="192x192" href="assets/logo.png">
+	<link rel="shortcut icon" type="image/x-icon" sizes="192x192" href="../assets/logo.png">
 	<title>IEEE-UVCE</title>
 	<link rel="stylesheet" href="style.css">
 	<!--bootstrap link-->
@@ -33,7 +33,7 @@
 <body style="background-color:#fff">
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 		<a class="navbar-brand" href="index.php">
-			<img src="assets/logo.png" width="40" height="40" alt="ieeeuvce">
+			<img src="../assets/logo.png" width="40" height="40" alt="ieeeuvce">
 		</a>
 		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse"> <span class="navbar-toggler-icon"></span>
 		</button>
