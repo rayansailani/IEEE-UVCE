@@ -55,6 +55,7 @@
 			<div class="m-2">
 				<div class="card-deck">
 					<? for($i=1;$i<=4;$i++){ ?>
+					<div class="fade"></div>
 					<div class="card m-4 fade">
 						<img src="assets/logo.png" class="img-fluid" style="width:100%" alt="image">
 						<div class="card-body">
