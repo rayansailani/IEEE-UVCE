@@ -11,8 +11,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" sizes="192x192" href="assets/logo.png">
 	<title>IEEE-UVCE</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="features.js"></script>
+	<link rel="stylesheet" href="refine/style.css">
+	<script src="refine/features.js"></script>
 	<!--bootstrap link-->
 	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
@@ -216,7 +216,7 @@
 	
 	
 	
-<!--<script>
+<script>
 	$('.navbar-nav>a').on('click', function(){
 	        $('.navbar-collapse').collapse('hide'); 
 	     });
@@ -406,7 +406,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	@media (min-width:1025px) { .caro { object-fit: cover;width: 100%;height: 600px; } /* big landscape tablets, laptops, and desktops */ }
 	@media (min-width:1281px) { .caro { object-fit: cover;width: 100%;height: 600px; } /* hi-res laptops and desktops */ }
 	
-</style>-->
+</style>
 
 
 </html>
