@@ -69,6 +69,15 @@
 		<div class="col">Presenters</div>
 		<div class="col">Contact</div>
 	</div>
+		<br><br>
+	<div class="row text-center">
+		<div class="col">Events History</div>
+	</div><br>
+	<div class="row text-center">
+		<div class="col">Name</div>
+		<div class="col">Presenters</div>
+		<div class="col">Contact</div>
+	</div>
 	</div>
 	
 	
