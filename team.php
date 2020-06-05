@@ -56,6 +56,7 @@
 				<div class="card-deck">
 					<? for($i=1;$i<=4;$i++){ ?>
 					<div class="card m-4">
+						<img src="assets/logo.png" class="img-fluid" style="width:100%" alt="image">
 						<div class="card-body">
     							<p class="card-text">Member</p>
   						</div>
