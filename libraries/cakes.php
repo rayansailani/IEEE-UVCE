@@ -17,4 +17,22 @@ function getCon()
 
 }
 
+function rowExists($table,$search_param,$search_value)
+    {
+
+        $con = getCon();
+
+        $sql = "select * from $table where $search_param='$search_value';";
+
+        $res = $con->query($sql);
+        
+        if($res===False)
+        die($con->error);
+        else if($res->num_rows>0)
+            return True;
+        else
+            return False;
+
+    }
+
 ?>
