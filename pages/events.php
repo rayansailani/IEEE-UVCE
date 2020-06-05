@@ -65,20 +65,76 @@
 		<div class="col">Upcoming or Current Events</div>
 	</div><hr>
 	<div class="row text-center">
-		<div class="col">Name</div>
-		<div class="col">Presenters</div>
-		<div class="col">Contact</div>
-		<div class="col">Info</div>
+		
+		<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Clark</td>
+            <td>Kent</td>
+            <td>clarkkent@mail.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John</td>
+            <td>Carter</td>
+            <td>johncarter@mail.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Peter</td>
+            <td>Parker</td>
+            <td>peterparker@mail.com</td>
+        </tr>            
+    </tbody>
+</table>
+		
 	</div>
 		<br><br>
 	<div class="row text-center">
 		<div class="col">Events History</div>
 	</div><hr>
 	<div class="row text-center">
-		<div class="col">Name</div>
-		<div class="col">Presenters</div>
-		<div class="col">Contact</div>
-		<div class="col">Info</div>
+		
+		<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Clark</td>
+            <td>Kent</td>
+            <td>clarkkent@mail.com</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>John</td>
+            <td>Carter</td>
+            <td>johncarter@mail.com</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Peter</td>
+            <td>Parker</td>
+            <td>peterparker@mail.com</td>
+        </tr>            
+    </tbody>
+</table>
+		
 	</div>
 	</div>
 	
