@@ -52,6 +52,49 @@
 	
   
 
+	
+	 <div class="jumbotron">
+     <div class="text-center">
+        <p class="display-4">Register</p>       
+     </div>
+  </div>
+  
+ <?php
+        $userexists=$_GET['userexists'];
+        $emailexists=$_GET['emailexists'];
+        $error=$_GET['error'];
+    
+  ?> 
+    
+    <div class="container">
+       <div class="text-center">
+           <?php
+            if($userexists)
+                echo "<h5>User already exists</h5>";
+            else if($emailexists)
+                echo "<h5>Email is already registered</h5>";
+            else if($error)
+                echo "<h5>Something happened. try again</h5>";
+           ?>
+        </div>
+     </div>
+	
+ <!--Register form-->   
+  <form method="POST" action="register_details.php" class="jumbotron m-4">
+     <div class="form-group">
+        <label for="inputuser">Username</label>
+        <input type="text" class="form-control" id="inputuser_name" placeholder="username" name="user_name" required>
+    </div>
+    <div class="form-group">
+        <label for="inputEmail">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password" required>
+    </div>
+    <button type="submit" name="register_user" class="btn btn-dark">Register</button>
+</form>
   
   
   
