@@ -47,7 +47,36 @@
 	
   
 
-  
+  <div class="jumbotron">
+     <div class="text-center">
+        <p class="display-4">Login</p>       
+     </div>
+  </div>
+  <?php
+    
+    $wrongpassword=$_GET['wrongpassword'];
+    
+    ?>
+ <div class="container">
+       <div class="text-center">
+           <?php
+            if($wrongpassword)
+                echo "<h5>You have entered wrong password</h5>";?>
+        </div>
+     </div>
+    
+    
+  <form class="jumbotron m-4" method="POST" action="login_details.php">
+     <div class="form-group">
+        <label for="inputEmail">Username</label>
+        <input type="text" class="form-control" id="inputuser_name" placeholder="username" name="user_name" required>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword">Password</label>
+        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password" required>
+    </div>
+    <button type="submit" name="login_user" class="btn btn-dark">Sign in</button>
+</form>
   
   
   
