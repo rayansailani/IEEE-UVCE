@@ -43,10 +43,10 @@
 					<a class="nav-link" href="#about">About</a>
 					<a class="nav-link" href="#awards">Awards</a>
 					<a class="nav-link" href="#sigs">SIG</a>
-					<a class="nav-link" href="#">Team</a>
+					<a class="nav-link" href="team.php">Team</a>
 					<a class="nav-link" href="#gallery">Gallery</a>
 					<a class="nav-link" href="register/register.php">Register</a>
-					<a class="nav-link" href="#">Login</a>
+					<a class="nav-link" href="login/login.php">Login</a>
 			</div>
 		</div>
 	</nav>
