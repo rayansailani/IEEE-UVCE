@@ -69,7 +69,7 @@
 		<div class="col">Presenters</div>
 		<div class="col">Contact</div>
 	</div>
-		<br><br>
+		<br><br><br><br>
 	<div class="row text-center">
 		<div class="col">Events History</div>
 	</div><br>
