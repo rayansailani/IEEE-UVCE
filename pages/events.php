@@ -63,7 +63,7 @@
 	<div class="m-4">
 	<div class="row text-center">
 		<div class="col">Upcoming or Current Events</div>
-	</div><br><hr>
+	</div><hr>
 	<div class="row text-center">
 		<div class="col">Name</div>
 		<div class="col">Presenters</div>
@@ -73,7 +73,7 @@
 		<br><br><br><br>
 	<div class="row text-center">
 		<div class="col">Events History</div>
-	</div><br><hr>
+	</div><hr>
 	<div class="row text-center">
 		<div class="col">Name</div>
 		<div class="col">Presenters</div>
