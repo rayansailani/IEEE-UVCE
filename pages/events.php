@@ -78,27 +78,27 @@
     </thead>
     <tbody>
         <tr>
-            <td>1</td>
+            <td>Graphic Designing 2</td>
             <td>Clark</td>
-	    <td>1/12/20 | 2:45pm</td>
+	    <td>1/12/20 - 2:45pm</td>
 	    <td class="text-center">
 		<a href="event_register.php" class="btn btn-success btn-sm mb-2" role="button">Register</a>
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
             </td>	
         </tr>
         <tr>
-            <td>2</td>
-            <td>John</td>
-	    <td>1/12/20 | 2:45pm</td>
+            <td>IOT 2</td>
+            <td>Clark</td>
+	    <td>1/12/20 - 2:45pm</td>
             <td class="text-center">
 		<a href="event_register.php" class="btn btn-success btn-sm mb-2" role="button">Register</a>
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
 	    </td>
         </tr>
         <tr>
-            <td>3</td>
-            <td>Peter</td>
-	    <td>1/12/20 | 2:45pm</td>
+            <td>python 2</td>
+            <td>Clark</td>
+	    <td>1/12/20 - 2:45pm</td>
             <td class="text-center">
 		<a href="event_register.php" class="btn btn-success btn-sm mb-2" role="button">Register</a>
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
@@ -124,17 +124,17 @@
     </thead>
     <tbody>
         <tr>
-            <td>1</td>
+            <td>Graphic Designing 1</td>
             <td>Clark</td>
             <td class="text-center"><a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a></td>
         </tr>
         <tr>
-            <td>2</td>
+            <td>IOT 1</td>
             <td>John</td>
             <td class="text-center"><a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a></td>
         </tr>
         <tr>
-            <td>3</td>
+            <td>Python 1</td>
             <td>Peter</td>
             <td class="text-center"><a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a></td>
         </tr>             
