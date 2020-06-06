@@ -60,38 +60,26 @@
 	
 	
 	
- <form method="POST" action="validate_event.php">
+ <form class="container m-4" method="POST" action="validate_event.php">
   <div class="form-row">
       <label for="validationServer01">Event title</label>
-      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Title" name="title" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
+      <input type="text" class="form-control" id="title" placeholder="Title" name="title" required>
    </div>
     <div class="form-row">
       <label for="validationServer02">Presenters</label>
-      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Presenters" name="presenters" required>
-      <div class="valid-feedback">
-        Looks good!
-      </div>
+      <input type="text" class="form-control" id="presenters" placeholder="Presenters" name="presenters" required>
   </div>
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationServer03">Date</label>
-      <input type="date" class="form-control is-invalid" id="validationServer03" placeholder="date" name="date" required>
-      <div class="invalid-feedback">
-        enter date
-      </div>
+      <input type="date" class="form-control" id="date" placeholder="date" name="date" required>
     </div>
     <div class="col-md-6 mb-3">
       <label for="validationServer03">Time</label>
-      <input type="time" class="form-control is-invalid" id="validationServer03" placeholder="time" name="time" required>
-      <div class="invalid-feedback">
-        enter time
-      </div>
+      <input type="time" class="form-control is-invalid" id="time" placeholder="time" name="time" required>
     </div>
   </div>
-  <button class="btn btn-primary" name="createevent" type="submit">create event</button>
+  <button class="btn btn-dark" name="createevent" type="submit">create event</button>
 </form>
   
   
