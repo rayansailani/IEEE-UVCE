@@ -15,6 +15,14 @@ if(isset($_POST['create_event'])){
 
   $filename = $title;
       
+  $sql= "INSERT INTO new_event(title,presenters,dateandtime,filename,description) values('$title','$presenters','$dateandtime','$filename','$description')";
+          // $sql="insert into new_event(title,presenters,dateandtime,filename,description) values('".mysqli_real_escape_string($con,$title)."','".mysqli_real_escape_string($con,$presenters)."','".mysqli_real_escape_string($con,$dateandtime)."','".mysqli_real_escape_string($con,$filename)."','".mysqli_real_escape_string($con,$description)."'";
+     if($con->query($sql)===True)   
+     {
+        echo "all data except file inserted";   
+         
+     }
+ 
   $target_dir="../assets/event_files/";
   $target_file = $target_dir . basename($_FILES["upload_file"]["name"]);
   $uploadOk = 1;
@@ -35,13 +43,7 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
 // something was wrong
 } else {
      
-     $sql= "INSERT INTO new_event(title,presenters,dateandtime,filename,description) values('$title','$presenters','$dateandtime','$filename','$description')";
-          // $sql="insert into new_event(title,presenters,dateandtime,filename,description) values('".mysqli_real_escape_string($con,$title)."','".mysqli_real_escape_string($con,$presenters)."','".mysqli_real_escape_string($con,$dateandtime)."','".mysqli_real_escape_string($con,$filename)."','".mysqli_real_escape_string($con,$description)."'";
-     if($con->query($sql)===True)   
-     {
-        echo "all data except file inserted";   
-         
-     }
+    
          
   if (move_uploaded_file($_FILES['upload_file']['tmp_name'],$target_dir.$filename)) 
   {
