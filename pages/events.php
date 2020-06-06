@@ -80,9 +80,9 @@
 		$dateandtime=$eve['dateandtime'];
 	}
 	
-	/*print_r($title);
-	print_r($presenters);
-	print_r($dateandtime);*/
+	print_r($title);echo'<br>';
+	print_r($presenters);echo'<br>';
+	print_r($dateandtime);echo'<br>';
 	
 	$e=count($title);
 	
