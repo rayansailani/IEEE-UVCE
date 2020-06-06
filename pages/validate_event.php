@@ -42,12 +42,11 @@ else if($name="move")
   $sql= "INSERT INTO old_event(title,presenters,dateandtime,filename,description) values('$title','$presenters','$dateandtime','$filename','$description')";
    if($con->query($sql)===True)   
      {
-  if(($con->query("delete from new_event where title='$title'"))===True);
+  if(($con->query("delete from new_event where title='$title'"))===True)
  {
     header("Location:profile.php");
     die();
- }
-    else
+ } else
     {
       echo "not deleted";
      echo '<a href="profile.php">Woosh</a>';
