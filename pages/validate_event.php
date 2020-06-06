@@ -19,9 +19,15 @@ if(isset($_POST['create_event'])){
           // $sql="insert into new_event(title,presenters,dateandtime,filename,description) values('".mysqli_real_escape_string($con,$title)."','".mysqli_real_escape_string($con,$presenters)."','".mysqli_real_escape_string($con,$dateandtime)."','".mysqli_real_escape_string($con,$filename)."','".mysqli_real_escape_string($con,$description)."'";
      if($con->query($sql)===True)   
      {
-        echo "all data except file inserted";   
+        header("Location:profile.php");
+      die();
          
      }
+ else
+ {
+   echo "somthing went wrong let me head back";
+  echo '<a href="profile.php">Woooosh</a>';
+ }
  
   $target_dir="../assets/event_files/";
   $target_file = $target_dir . basename($_FILES["upload_file"]["name"]);
