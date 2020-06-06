@@ -61,8 +61,18 @@
 	
 	
   
-  <div class="container m-5 text-center">
-    <a class="btn btn-dark btn-sm" href="create_event.php" role="button">Create a new event</a>
+  <div class="container">
+	  <div class="text-center">
+		  <?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="root"){
+                        echo '<a class="btn btn-dark btn-sm" href="create_event.php" role="button">Create a new event</a>';
+                    }
+                    else
+                    {
+                        header("Location:../index.php");
+                        die();
+                    }
+   	?>
+	  </div>
   </div>
   
   
