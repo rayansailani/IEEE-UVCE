@@ -30,6 +30,7 @@ else if($name="move")
 	$title=array();
 	$presenters=array();
 	$dateandtime=array();
+	$description=array();
 	
 	//new events
 	foreach($events as $eve)
@@ -38,11 +39,13 @@ else if($name="move")
 		$presenters[]=$eve['presenters'];
 	foreach($events as $eve)
 		$dateandtime[]=$eve['dateandtime'];
+	foreach($events as $eve)
+		$description[]=$eve['description'];
  
-  $sql= "INSERT INTO old_event(title,presenters,dateandtime,filename,description) values('$title','$presenters','$dateandtime','$filename','$description')";
+  $sql= "INSERT INTO old_event(title,presenters,dateandtime,filename,description) values('$title[0]','$presenters[0]','$dateandtime[0]','$title[0]','$description[0]')";
    if($con->query($sql)===True)   
      {
-  if(($con->query("delete from new_event where title='$title'"))===True)
+  if(($con->query("delete from new_event where title='$title[0]'"))===True)
  {
     header("Location:profile.php");
     die();
