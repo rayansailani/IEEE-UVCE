@@ -100,12 +100,12 @@
 	
 	
 	//old events
-	foreach($events as $eve)
-		$title2[]=$eve['title'];
-	foreach($events as $eve)
-		$presenters2[]=$eve['presenters'];
-	foreach($events as $eve)
-		$dateandtime2[]=$eve['dateandtime'];
+	foreach($events2 as $eve2)
+		$title2[]=$eve2['title'];
+	foreach($events2 as $eve2)
+		$presenters2[]=$eve2['presenters'];
+	foreach($events2 as $eve2)
+		$dateandtime2[]=$eve2['dateandtime'];
 	
 	
 	$e=count($title);
@@ -160,11 +160,11 @@
         </tr>
     </thead>
     <tbody>
-	<? for($i=0;$i<$e2;$i++) { ?>
+	<? for($j=0;$j<$e2;$j++) { ?>
         <tr class="mb-5">
-            <td><?=$title2[$i]?></td>
-            <td><?=$presenters2[$i]?></td>
-	    <td><?=$dateandtime2[$i]?></td>
+            <td><?=$title2[$j]?></td>
+            <td><?=$presenters2[$j]?></td>
+	    <td><?=$dateandtime2[$j]?></td>
 	    <td class="text-center">
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
             </td>
