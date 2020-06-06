@@ -78,7 +78,7 @@
     </div>
      <div class="col-md-6 mb-3">
       <label for="validationServer03">image</label>
-      <input type="file" class="form-control" id="file" placeholder="upload_file" name="file">
+      <input type="file" class="form-control" id="file" placeholder="upload_file" name="upload_file">
     </div>
     <!--<div class="col-md-6 mb-3">
       <label for="validationServer03">Time</label>
@@ -91,7 +91,7 @@
       <input type="text" class="form-control" id="description" placeholder="description" name="description" required>
     </div>
   </div>
-  <button class="btn btn-dark" name="createevent" type="submit">create event</button>
+  <button class="btn btn-dark" name="create_event" type="submit">create event</button>
 </form>';}
 	      else
                     {
