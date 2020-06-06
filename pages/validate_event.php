@@ -47,13 +47,12 @@ else if($name="move")
     header("Location:profile.php");
     die();
  }
-   }
     else
     {
       echo "not deleted";
      echo '<a href="profile.php">Woosh</a>';
     }
-   }
+}
  else
  {
    echo 'something went wrong not inserted';
