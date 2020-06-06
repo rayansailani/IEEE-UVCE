@@ -59,7 +59,9 @@
 	</nav>
 	
 	
-	<div class="container">
+	<div class="container"><?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="root"){
+               
+               echo '     
  <form method="POST" action="validate_event.php">
   <div class="form-row">
       <label for="validationServer01">Event title</label>
@@ -80,7 +82,13 @@
     </div>
   </div>
   <button class="btn btn-dark" name="createevent" type="submit">create event</button>
-</form>
+</form>';}
+	      else
+                    {
+                        header("Location:../index.php");
+                        die();
+                    }
+   	?>
 	</div>
   
 	
