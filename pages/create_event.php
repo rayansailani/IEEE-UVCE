@@ -78,7 +78,7 @@
     </div>
      <div class="col-md-6 mb-3">
       <label for="validationServer03">image</label>
-      <input type="file" class="form-control" id="file" placeholder="upload_file" name="upload_file" required>
+      <input type="file" class="form-control" id="file" placeholder="upload_file" name="upload_file">
     </div>
     <!--<div class="col-md-6 mb-3">
       <label for="validationServer03">Time</label>
