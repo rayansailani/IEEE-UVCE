@@ -101,11 +101,11 @@
 	
 	//old events
 	foreach($events as $eve)
-		$title[]=$eve['title'];
+		$title2[]=$eve['title'];
 	foreach($events as $eve)
-		$presenters[]=$eve['presenters'];
+		$presenters2[]=$eve['presenters'];
 	foreach($events as $eve)
-		$dateandtime[]=$eve['dateandtime'];
+		$dateandtime2[]=$eve['dateandtime'];
 	
 	
 	$e=count($title);
