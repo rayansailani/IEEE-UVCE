@@ -2,6 +2,14 @@
 
 include '../libraries/cakes.php';
 
+//delete
+$name=$_GET['name'];
+echo '$name';
+
+
+
+
+
 if(isset($_POST['create_event'])){
  
     
