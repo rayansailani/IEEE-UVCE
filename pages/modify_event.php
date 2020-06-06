@@ -59,7 +59,22 @@
 	</nav>
 	
 	
+<?php  
+	$con = getCon();
 	
+	$events=Array();
+	$res = $con->query("select * from new_event");
+	while($ele = $res->fetch_assoc())
+		$events[]=$ele;
+	
+	
+	$title = array();
+	foreach($events as $eve)
+		$title[]=$eve['title'];
+	
+	$c=count($title);
+	
+?>	
 	
 	
 	
@@ -67,8 +82,13 @@
 	  <div class="text-center">
 		  <?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="root") { ?>
                        
-		  	<h1>Hello</h1>	
-	
+		  	<? for($i=0;$i<$c;$i++) { ?>
+			    <div class="row">
+				    <div class="col"><?=$title[$i]?></div>
+				    <div class="col"><a class="btn btn-dark btn-sm" href="validate_event.php?name='delete'" role="button">delete</a></div>
+				    <div class="col"><a class="btn btn-dark btn-sm" href="validate_event.php?name='move'" role="button">move to history</a></div>
+		  		</div>
+		  	<? } ?>
 	
                     <? } else
                     {
