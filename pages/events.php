@@ -64,6 +64,7 @@
 	$con=getCon();
 	
 	$events=Array();
+	
 	$res=$con->query("select * from new_event");
 	while($ele = $res->fetch_assoc())
 		$events[]=$ele;
@@ -75,15 +76,15 @@
 	$dateandtime=array();
 	
 	foreach($events as $eve)
-		$title=$eve['title'];
+		$title[]=$eve['title'];
 	foreach($events as $eve)
-		$presenters=$eve['presenters'];
+		$presenters[]=$eve['presenters'];
 	foreach($events as $eve)
-		$dateandtime=$eve['dateandtime'];
+		$dateandtime[]=$eve['dateandtime'];
 	
-	print_r($title);echo'<br>';
+	/*print_r($title);echo'<br>';
 	print_r($presenters);echo'<br>';
-	print_r($dateandtime);echo'<br>';
+	print_r($dateandtime);echo'<br>';*/
 	
 	$e=count($title);
 	
