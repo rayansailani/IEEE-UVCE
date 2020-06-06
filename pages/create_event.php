@@ -73,19 +73,19 @@
   </div>
   <div class="form-row">
     <div class="col-md-6 mb-3">
-      <label for="validationServer03">Date</label>
-      <input type="date" class="form-control" id="date" placeholder="date" name="date" required>
+      <label for="validationServer03">Date and Time</label>
+      <input type="text" class="form-control" id="dateandtime" placeholder="format : dd/mm/yyyy - 00:00pm" name="dateandtime" required>
     </div>
-    <div class="col-md-6 mb-3">
-      <label for="validationServer03">Time</label>
-      <input type="time" class="form-control" id="time" placeholder="time" name="time" required>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="col-md-6 mb-3">
-      <label for="validationServer03">Date</label>
+     <div class="col-md-6 mb-3">
+      <label for="validationServer03">image</label>
       <input type="file" class="form-control" id="file" placeholder="upload_file" name="file">
     </div>
+    <!--<div class="col-md-6 mb-3">
+      <label for="validationServer03">Time</label>
+      <input type="time" class="form-control" id="time" placeholder="time" name="time" required>
+    </div>-->
+  </div>
+  <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationServer03">Description</label>
       <input type="text" class="form-control" id="description" placeholder="description" name="description" required>
