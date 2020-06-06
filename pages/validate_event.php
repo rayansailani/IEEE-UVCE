@@ -5,10 +5,13 @@ include '../libraries/cakes.php';
 if(isset($_POST['create_event'])){
  
     
-  $title=$_POST['title'];
-  $presenters=$_POST['presenters'];
-  $dateandtime=$_POST['dateandtime'];
-  $description=$_POST['description'];
+    
+  $con=getCon();
+ 
+  $title=$con->real_escape_string($_POST['title']);
+  $presenters=$con->real_escape_string($_POST['presenters']);
+  $dateandtime=$con->real_escape_string($_POST['dateandtime']);
+  $description=$con->real_escape_string($_POST['description']);
 
   $filename = $title;
       
@@ -16,8 +19,6 @@ if(isset($_POST['create_event'])){
   $uploadOk = 1;
   $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
   
-    
-  $con=getCon();
   
     
   // Allow certain file formats
@@ -32,7 +33,9 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
   echo "Sorry, your file was not uploaded.";
 // something was wrong
 } else {
-           $sql="insert into new_event(title,presenters,dateandtime,filename,description) values('".mysqli_real_escape_string($con,$title)."','".mysqli_real_escape_string($con,$presenters)."','".mysqli_real_escape_string($con,$dateandtime)."','".mysqli_real_escape_string($con,$filename)."','".mysqli_real_escape_string($con,$description)."'";
+     
+     $sql= "INSERT INTO new_event(title,presenters,dateandtime,filename,description) values('$title','$presenters','$dateandtime','$filename','$description')";
+          // $sql="insert into new_event(title,presenters,dateandtime,filename,description) values('".mysqli_real_escape_string($con,$title)."','".mysqli_real_escape_string($con,$presenters)."','".mysqli_real_escape_string($con,$dateandtime)."','".mysqli_real_escape_string($con,$filename)."','".mysqli_real_escape_string($con,$description)."'";
      if($con->$query($sql)===True)   
      {
         echo "all data except file inserted";   
