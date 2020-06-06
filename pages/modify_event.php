@@ -59,6 +59,26 @@
 	</nav>
 	
 	
+	
+	
+	
+	
+	<div class="container">
+	  <div class="text-center">
+		  <?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="root") { ?>
+                       
+		  	<h1>Hello</h1>	
+	
+	
+                    <? } ?>
+                    else
+                    {
+                        header("Location:../index.php");
+                        die();
+                    }
+   	?>
+	  </div>
+  </div>
   
 	
 	
