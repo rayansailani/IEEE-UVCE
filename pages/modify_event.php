@@ -85,8 +85,8 @@
 		  	<? for($i=0;$i<$c;$i++) { ?>
 			    <div class="row">
 				    <div class="col m-2"><?=$title[$i]?></div>
-				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=delete" role="button">delete</a></div>
-				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=move" role="button">move to history</a></div>
+				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=delete&&title=<?=$title[$i]?>" role="button">delete</a></div>
+				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=move&&title=<?=$title[$i]?>" role="button">move to history</a></div>
 		  		</div>
 		  	<? } ?>
                     <? } else
