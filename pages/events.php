@@ -106,17 +106,17 @@
         </tr>
     </thead>
     <tbody>
-        <tr class="mb-5">
 	<? for($i=0;$i<$e;$i++) { ?>
+        <tr class="mb-5">
             <td><?=$title[$i]?></td>
             <td><td><?=$presenters[$i]?></td>
 	    <td><td><?=$dateandtime[$i]?></td>
-	<? } ?>
 	    <td class="text-center">
 		<a href="event_register.php" class="btn btn-success btn-sm mb-2" role="button">Register</a>
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
-            </td>	
-        </tr>            
+            </td>
+        </tr>    
+	<? } ?>
     </tbody>
 </table>
 		
