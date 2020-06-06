@@ -8,6 +8,7 @@ $con=getCon();
 $name=$_GET['name'];
 $title=$_GET['title'];
 //echo $name;
+if(isset($_GET['name'])||isset($_GET['title'])){
 if($name=="delete")
 {
    if(($con->query("delete from new_event where title='$title'"))===True);
@@ -64,7 +65,7 @@ else if($name="move")
  
 }
 
-
+}
 
 
 if(isset($_POST['create_event'])){
