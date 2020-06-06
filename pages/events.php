@@ -77,7 +77,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
+        <tr class="mb-2">
             <td>Graphic Designing 2</td>
             <td>Clark</td>
 	    <td>1/12/20 - 2:45pm</td>
@@ -86,7 +86,7 @@
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
             </td>	
         </tr>
-        <tr>
+        <tr class="mb-2">
             <td>IOT 2</td>
             <td>Clark</td>
 	    <td>1/12/20 - 2:45pm</td>
@@ -95,7 +95,7 @@
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
 	    </td>
         </tr>
-        <tr>
+        <tr class="mb-2">
             <td>python 2</td>
             <td>Clark</td>
 	    <td>1/12/20 - 2:45pm</td>
@@ -389,6 +389,50 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	@media (min-width:1025px) { .caro { object-fit: cover;width: 100%;height: 600px; } /* big landscape tablets, laptops, and desktops */ }
 	@media (min-width:1281px) { .caro { object-fit: cover;width: 100%;height: 600px; } /* hi-res laptops and desktops */ }
 	
+	
+	
+	
+	
+	
+	@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	
+}
 </style>
 
 
