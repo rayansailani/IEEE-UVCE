@@ -106,9 +106,9 @@
     <tbody>
         <tr class="mb-5">
 	<? for($i=0;$i<$e;$i++) { ?>
-            echo '<td><?=$title[$i]?></td>
+            <td><?=$title[$i]?></td>
             <td><td><?=$presenters[$i]?></td>
-	    <td><td><?=$dateandtime[$i]?></td>';
+	    <td><td><?=$dateandtime[$i]?></td>
 	<? } ?>
 	    <td class="text-center">
 		<a href="event_register.php" class="btn btn-success btn-sm mb-2" role="button">Register</a>
