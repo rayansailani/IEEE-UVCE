@@ -59,7 +59,7 @@
 	</nav>
 	
 	
-	<div class="container m-2"><?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="root"){
+	<div class="container"><?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="root"){
                
                echo '     
  <form method="POST" action="validate_event.php" enctype="multipart/form-data">
