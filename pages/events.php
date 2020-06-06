@@ -84,7 +84,7 @@
 	print_r($presenters);
 	print_r($dateandtime);*/
 	
-	$e=count($events);
+	$e=count($title);
 	
 ?>
 
