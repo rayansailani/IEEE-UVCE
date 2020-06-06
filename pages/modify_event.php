@@ -89,7 +89,6 @@
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=move" role="button">move to history</a></div>
 		  		</div>
 		  	<? } ?>
-	
                     <? } else
                     {
                         header("Location:../index.php");
