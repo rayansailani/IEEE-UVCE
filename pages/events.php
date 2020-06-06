@@ -115,7 +115,7 @@
 
 	<div class=" container mt-4 mb-4">
 	<div class="row text-center">
-		<div class="col">Upcoming or Current Events</div>
+		<div class="col"><h1>Upcoming or Current Events</h1></div>
 	</div>
 	<div class="row text-center">
 		
@@ -146,7 +146,7 @@
 	</div>
 		<br><br>
 	<div class="row text-center">
-		<div class="col">Events History</div>
+		<div class="col"><h1>Events History</h1></div>
 	</div>
 	<div class="row text-center">
 		
@@ -160,7 +160,7 @@
         </tr>
     </thead>
     <tbody>
-	<? for($j=0;$j<$e2;$j++) { ?>
+	<? for($j=$e2-1;$j>=0;$j--) { ?>
         <tr class="mb-5">
             <td><?=$title2[$j]?></td>
             <td><?=$presenters2[$j]?></td>
