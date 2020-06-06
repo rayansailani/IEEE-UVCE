@@ -61,7 +61,7 @@
 	
 	
   
-  <div class="container text-center">
+  <div class="container m-5 text-center">
     <a class="btn btn-dark btn-sm" href="create_event.php" role="button">Create a new event</a>
   </div>
   
