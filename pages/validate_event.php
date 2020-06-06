@@ -13,13 +13,10 @@ if($name=="delete")
    if(($con->query("delete from new_event where title='$title'"))===True);
  {
     header("Location:profile.php");
-   die();
+   	die();
  }
- else
- {
    echo 'something went wrong';
    echo '<a href="profile.php">Woosh</a>';
- }
 }
 else if($name="move")
 {
