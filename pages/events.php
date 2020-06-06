@@ -1,7 +1,7 @@
  
 <?php 
 	session_start();
-	include 'libraries/cakes.php'; 
+	include '../libraries/cakes.php'; 
 ?>
 <!--HTML boiler plate-->
 <!DOCTYPE html>
@@ -59,7 +59,28 @@
 		</div>
 	</nav>
 	
-
+<?php
+	
+	$con=getCon();
+	
+	$events=array();
+	$res=$con->query("select * from new_event");
+	while($ele = $res->fetch_assoc())
+		$events[]=$ele;
+	
+	
+	$title=array();
+	$presenters=array();
+	$dateandtime=array();
+	
+	foreach($events as $eve)
+	{
+		$title=$eve['title'];
+		$presenters=$eve['presenters'];
+		$dateandtime=$eve['dateandtime'];
+	}
+	
+?>
 
 	<div class=" container mt-4 mb-4">
 	<div class="row text-center">
@@ -78,31 +99,15 @@
     </thead>
     <tbody>
         <tr class="mb-5">
-            <td>Graphic Designing 2</td>
-            <td>Clark</td>
-	    <td>1/12/20 - 2:45pm</td>
+	<? for($i=0;$i<e;$i++) { ?>
+            echo '<td><?=$title[$i]?></td>
+            <td><td><?=$presenters[$i]?></td>
+	    <td><td><?=$dateandtime[$i]?></td>';
+	<? } ?>
 	    <td class="text-center">
 		<a href="event_register.php" class="btn btn-success btn-sm mb-2" role="button">Register</a>
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
             </td>	
-        </tr>
-        <tr class="mb-5">
-            <td>IOT 2</td>
-            <td>Clark</td>
-	    <td>1/12/20 - 2:45pm</td>
-            <td class="text-center">
-		<a href="event_register.php" class="btn btn-success btn-sm mb-2" role="button">Register</a>
-		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
-	    </td>
-        </tr>
-        <tr class="mb-5">
-            <td>python 2</td>
-            <td>Clark</td>
-	    <td>1/12/20 - 2:45pm</td>
-            <td class="text-center">
-		<a href="event_register.php" class="btn btn-success btn-sm mb-2" role="button">Register</a>
-		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
-            </td>
         </tr>            
     </tbody>
 </table>
@@ -128,7 +133,7 @@
             <td>Clark</td>
             <td class="text-center"><a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a></td>
         </tr>
-        <tr class="mb-5">
+        <!--<tr class="mb-5">
             <td>IOT 1</td>
             <td>John</td>
             <td class="text-center"><a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a></td>
@@ -137,7 +142,7 @@
             <td>Python 1</td>
             <td>Peter</td>
             <td class="text-center"><a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a></td>
-        </tr>             
+        </tr>-->             
     </tbody>
 </table>
 		
