@@ -36,7 +36,7 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
      
      $sql= "INSERT INTO new_event(title,presenters,dateandtime,filename,description) values('$title','$presenters','$dateandtime','$filename','$description')";
           // $sql="insert into new_event(title,presenters,dateandtime,filename,description) values('".mysqli_real_escape_string($con,$title)."','".mysqli_real_escape_string($con,$presenters)."','".mysqli_real_escape_string($con,$dateandtime)."','".mysqli_real_escape_string($con,$filename)."','".mysqli_real_escape_string($con,$description)."'";
-     if($con->$query($sql)===True)   
+     if($con->query($sql)===True)   
      {
         echo "all data except file inserted";   
          
