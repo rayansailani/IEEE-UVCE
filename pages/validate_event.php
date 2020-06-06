@@ -47,6 +47,7 @@ else if($name="move")
     header("Location:profile.php");
     die();
  }
+   }
     else
     {
       echo "not deleted";
