@@ -65,6 +65,7 @@
 	  <div class="text-center">
 		  <?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="root"){
                         echo '<a class="btn btn-dark btn-sm m-4" href="create_event.php" role="button">Create a new event</a>';
+			echo '<a class="btn btn-dark btn-sm m-4" href="modify_event.php" role="button">Modify event</a>';
                     }
                     else
                     {
