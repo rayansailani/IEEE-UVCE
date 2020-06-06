@@ -59,10 +59,10 @@
 	</nav>
 	
 	
-	<div class="container"><?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="root"){
+	<div class="container m-2"><?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="root"){
                
                echo '     
- <form method="POST" action="validate_event.php">
+ <form method="POST" action="validate_event.php" enctype="multipart/form-data">
   <div class="form-row">
       <label for="validationServer01">Event title</label>
       <input type="text" class="form-control" id="title" placeholder="Title" name="title" required>
@@ -79,6 +79,16 @@
     <div class="col-md-6 mb-3">
       <label for="validationServer03">Time</label>
       <input type="time" class="form-control" id="time" placeholder="time" name="time" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">Date</label>
+      <input type='file' class="form-control" id="file" placeholder="upload_file" name='file'>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">Description</label>
+      <input type="text" class="form-control" id="description" placeholder="description" name="description" required>
     </div>
   </div>
   <button class="btn btn-dark" name="createevent" type="submit">create event</button>
