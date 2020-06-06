@@ -79,9 +79,12 @@
 		$presenters=$eve['presenters'];
 		$dateandtime=$eve['dateandtime'];
 	}
-	print_r($title);
+	
+	/*print_r($title);
 	print_r($presenters);
-	print_r($dateandtime);
+	print_r($dateandtime);*/
+	
+	$e=count($events);
 	
 ?>
 
@@ -102,7 +105,7 @@
     </thead>
     <tbody>
         <tr class="mb-5">
-	<? for($i=0;$i<e;$i++) { ?>
+	<? for($i=0;$i<$e;$i++) { ?>
             echo '<td><?=$title[$i]?></td>
             <td><td><?=$presenters[$i]?></td>
 	    <td><td><?=$dateandtime[$i]?></td>';
