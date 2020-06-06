@@ -64,17 +64,31 @@
 	$con=getCon();
 	
 	$events=Array();
+	$events2=Array();
 	
+	//new upcoming events
 	$res=$con->query("select * from new_event");
 	while($ele = $res->fetch_assoc())
 		$events[]=$ele;
 	
+	//old events
+	$res2=$con->query("select * from old_event");
+	while($ele2 = $res2->fetch_assoc())
+		$events2[]=$ele2;
 	//print_r($events);
 	
+	
+	//new events
 	$title=array();
 	$presenters=array();
 	$dateandtime=array();
 	
+	//old events
+	$title2=array();
+	$presenters2=array();
+	$dateandtime2=array();
+	
+	//new events
 	foreach($events as $eve)
 		$title[]=$eve['title'];
 	foreach($events as $eve)
@@ -82,11 +96,20 @@
 	foreach($events as $eve)
 		$dateandtime[]=$eve['dateandtime'];
 	
-	/*print_r($title);echo'<br>';
-	print_r($presenters);echo'<br>';
-	print_r($dateandtime);echo'<br>';*/
+	
+	
+	
+	//old events
+	foreach($events as $eve)
+		$title[]=$eve['title'];
+	foreach($events as $eve)
+		$presenters[]=$eve['presenters'];
+	foreach($events as $eve)
+		$dateandtime[]=$eve['dateandtime'];
+	
 	
 	$e=count($title);
+	$e2=count($title2);
 	
 ?>
 
@@ -132,25 +155,21 @@
         <tr>
             <th>Title</th>
             <th>Presenters</th>
+	    <th>Date and Time</th>
             <th>info</th>
         </tr>
     </thead>
     <tbody>
+	<? for($i=0;$i<$e2;$i++) { ?>
         <tr class="mb-5">
-            <td>Graphic Designing 1</td>
-            <td>Clark</td>
-            <td class="text-center"><a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a></td>
-        </tr>
-        <!--<tr class="mb-5">
-            <td>IOT 1</td>
-            <td>John</td>
-            <td class="text-center"><a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a></td>
-        </tr>
-        <tr class="mb-5">
-            <td>Python 1</td>
-            <td>Peter</td>
-            <td class="text-center"><a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a></td>
-        </tr>-->             
+            <td><?=$title2[$i]?></td>
+            <td><?=$presenters2[$i]?></td>
+	    <td><?=$dateandtime2[$i]?></td>
+	    <td class="text-center">
+		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
+            </td>
+        </tr>    
+	<? } ?>
     </tbody>
 </table>
 		
