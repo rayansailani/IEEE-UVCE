@@ -39,7 +39,7 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
          
      }
          
-  if (move_uploaded_file($_FILES['upload_file']['tmp_name'],$target_dir.$filename);)) 
+  if (move_uploaded_file($_FILES['upload_file']['tmp_name'],$target_dir.$filename)) 
   {
     echo "The file ". basename( $_FILES["upload_file"]["name"]). " has been uploaded.";  
   }
