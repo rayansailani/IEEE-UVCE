@@ -4,7 +4,7 @@ include '../libraries/cakes.php';
 
 //delete
 $name=$_GET['name'];
-echo '$name';
+echo $name;
 
 
 
