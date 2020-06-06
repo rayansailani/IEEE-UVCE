@@ -77,7 +77,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr class="mb-2">
+        <tr class="mb-5">
             <td>Graphic Designing 2</td>
             <td>Clark</td>
 	    <td>1/12/20 - 2:45pm</td>
@@ -86,7 +86,7 @@
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
             </td>	
         </tr>
-        <tr class="mb-2">
+        <tr class="mb-5">
             <td>IOT 2</td>
             <td>Clark</td>
 	    <td>1/12/20 - 2:45pm</td>
@@ -95,7 +95,7 @@
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
 	    </td>
         </tr>
-        <tr class="mb-2">
+        <tr class="mb-5">
             <td>python 2</td>
             <td>Clark</td>
 	    <td>1/12/20 - 2:45pm</td>
@@ -123,17 +123,17 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
+        <tr class="mb-5">
             <td>Graphic Designing 1</td>
             <td>Clark</td>
             <td class="text-center"><a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a></td>
         </tr>
-        <tr>
+        <tr class="mb-5">
             <td>IOT 1</td>
             <td>John</td>
             <td class="text-center"><a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a></td>
         </tr>
-        <tr>
+        <tr class="mb-5">
             <td>Python 1</td>
             <td>Peter</td>
             <td class="text-center"><a href="view_event.php" class="btn btn-success btn-sm" role="button">view</a></td>
