@@ -70,13 +70,11 @@
 		  	<h1>Hello</h1>	
 	
 	
-                    <? } ?>
-                    <? else
+                    <? } else
                     {
                         header("Location:../index.php");
                         die();
-                    }
-   	?>
+                    } ?>
 	  </div>
   </div>
   
