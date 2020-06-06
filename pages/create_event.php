@@ -59,8 +59,8 @@
 	</nav>
 	
 	
-	
- <form class="container m-4" method="POST" action="validate_event.php">
+	<div class="container">
+ <form method="POST" action="validate_event.php">
   <div class="form-row">
       <label for="validationServer01">Event title</label>
       <input type="text" class="form-control" id="title" placeholder="Title" name="title" required>
@@ -76,12 +76,12 @@
     </div>
     <div class="col-md-6 mb-3">
       <label for="validationServer03">Time</label>
-      <input type="time" class="form-control is-invalid" id="time" placeholder="time" name="time" required>
+      <input type="time" class="form-control" id="time" placeholder="time" name="time" required>
     </div>
   </div>
   <button class="btn btn-dark" name="createevent" type="submit">create event</button>
 </form>
-  
+	</div>
   
 	
 	
