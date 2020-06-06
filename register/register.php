@@ -55,7 +55,7 @@
 	
 	 <div class="jumbotron">
      <div class="text-center">
-        <p class="display-4">Register</p>       
+        <h1>Create an IEEE account today!</h1>       
      </div>
   </div>
   
