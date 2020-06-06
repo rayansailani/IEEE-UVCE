@@ -63,7 +63,7 @@
 	
 	$con=getCon();
 	
-	$events=array();
+	$events=Array();
 	$res=$con->query("select * from new_event");
 	while($ele = $res->fetch_assoc())
 		$events[]=$ele;
@@ -79,6 +79,9 @@
 		$presenters=$eve['presenters'];
 		$dateandtime=$eve['dateandtime'];
 	}
+	print_r($title);
+	print_r($presenters);
+	print_r($dateandtime);
 	
 ?>
 
