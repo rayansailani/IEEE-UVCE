@@ -94,9 +94,10 @@ if(isset($_POST['create_event'])){
 		echo "somthing went wrong let me head back";
   		echo '<a href="profile.php">Woooosh</a>';
 	}
-     else if($con->query($sql)===True)   
+     else 
      {
-	     echo 'info inserted<br>';
+	   if($con->query($sql)===True)  
+	      echo 'info inserted<br>';
         //header("Location:profile.php");
        //die();
          
