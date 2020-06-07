@@ -95,7 +95,7 @@
 	foreach($events2 as $eve2)
 		$dateandtime2[]=$eve2['dateandtime'];
 	
-	$c2=count($title);
+	$c2=count($title2);
 	
 ?>	
 	
