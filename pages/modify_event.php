@@ -72,6 +72,10 @@
 	foreach($events as $eve)
 		$title[]=$eve['title'];
 	
+	$dateandtime = array();
+	foreach($events as $eve)
+		$dateandtime[]=$eve['dateandtime'];
+	
 	$c=count($title);
 	
 ?>	
@@ -89,6 +93,16 @@
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=move&&title=<?=$title[$i]?>" role="button">move to history</a></div>
 		  		</div>
 		  	<? } ?>
+		  <? } else if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="amigroot") { ?>
+		  	<? for($i=0;$i<$c;$i++) { ?>
+			    <div class="row">
+				    <div class="col m-2"><?=$title[$i]?></div>
+				    <div class="col m-2"><?=$dateandtime[$i]?></div>
+				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=deletehistory&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">delete</a></div>
+		  		</div>
+		  	<? } ?>
+		  	
+		  	
                     <? } else
                     {
                         header("Location:../index.php");
