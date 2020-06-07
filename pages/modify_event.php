@@ -118,8 +118,9 @@
 			    <div class="row">
 				    <div class="col m-2"><?=$title[$i]?></div>
 				    <div class="col m-2"><?=$dateandtime[$i]?></div>
-				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=delete&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">delete</a></div>
-				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=move&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">move to history</a></div>
+				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?key=delete&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">delete</a></div>
+				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?key=move&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">move to history</a></div>
+				     <div class="col m-2"><a class="btn btn-dark btn-sm" href="#" role="button">Advanced Editing</a></div>
 		  		</div>
 		  	<? } ?>
 		  <br>
@@ -128,7 +129,8 @@
 				    <div class="col m-2"><?=$title2[$j]?></div>
 				    <div class="col m-2"><?=$dateandtime2[$j]?></div>
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="#" role="button">move to current</a></div>
-				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=deletehistory&&title=<?=$title2[$j]?>&&dateandtime=<?=$dateandtime2[$j]?>" role="button">delete History</a></div>
+				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?key=deletehistory&&title=<?=$title2[$j]?>&&dateandtime=<?=$dateandtime2[$j]?>" role="button">delete History</a></div>
+				      <div class="col m-2"><a class="btn btn-dark btn-sm" href="#" role="button">Advanced Editing</a></div>
 		  		</div>
 		  	<? } ?>
 		  	
