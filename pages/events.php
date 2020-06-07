@@ -106,7 +106,7 @@
 	//old events
 	foreach($events2 as $eve2)
 		$title2[]=$eve2['title'];
-	foreach($events as $eve)
+	foreach($events as $eve2)
 		$venue2[]=$eve['venue'];
 	foreach($events2 as $eve2)
 		$presenters2[]=$eve2['presenters'];
