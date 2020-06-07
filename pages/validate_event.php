@@ -78,10 +78,6 @@ else if($name="move")
    echo 'something went wrong not inserted';
    echo '<a href="profile.php">Woosh</a>';
  }
-  
- 
-}
-
 }
 else if($name="movetocurrent")
 {
