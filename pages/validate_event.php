@@ -5,14 +5,30 @@ include '../libraries/cakes.php';
 $name=$_GET['name'];
 $title=$_GET['title'];
 $dateandtime=$_GET['dateandtime'];
+
 if($name=="delete_event")
 {
 	echo "delete event";
 }
-else if($name=="move to history")
+else if($name=="move_to_history")
 {
 	echo "move to history";
 }
+else if($name=="move_to_current")
+{
+	echo "move to current";
+}
+else if($name=="delete_history")
+{
+	echo "delete history";
+}
+else if($name=="advanced_editing")
+{
+	echo "advanced editing";
+}
+
+
+
 
 
 if(isset($_POST['create_event'])){
