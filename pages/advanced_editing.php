@@ -105,7 +105,7 @@
 		
 	if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="amigroot"){
                
-               echo'<div class="container"><form method="POST" action="validate_event.php?name=advanced_editing_currentt" enctype="multipart/form-data">
+               echo'<div class="container"><form method="POST" action="validate_event.php" enctype="multipart/form-data">
   <div class="form-row">
       <label for="validationServer01">Event title</label>
       <input type="text" class="form-control" id="title" placeholder="Title" name="title" value="<?=$t?>" required>
