@@ -2,19 +2,17 @@
 
 include '../libraries/cakes.php';
 
-	if(isset($_GET['delete_event']))
-	{
-	
-			echo "Delete is clicked";
-	
-	}
-	else if(isset($_GET['move_event']))
-	{
-	
-		echo "Move is clicked";
-	
-	}
-
+$name=$_GET['name'];
+$title=$_GET['title'];
+$dateandtime=$_GET['dateandtime'];
+if($name=="delete_event")
+{
+	echo "delete event";
+}
+else if($name=="move to history")
+{
+	echo "move to history";
+}
 
 
 if(isset($_POST['create_event'])){
