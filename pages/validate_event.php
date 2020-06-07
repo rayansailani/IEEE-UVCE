@@ -143,9 +143,13 @@ else if($name=="delete_history")
 		
    	}	
 }
-else if($name=="advanced_editing")
+else if($name=="advanced_editing_current")
 {
 	echo "advanced editing";
+}
+else if($name=="advanced_editing_history")
+{
+	echo "advanced editing history";	
 }
 
 
