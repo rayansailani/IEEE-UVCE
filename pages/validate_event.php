@@ -118,9 +118,9 @@ if(isset($_POST['create_event'])){
 	$fileActualExt = strtolower(end($fileExt));
 	print_r($fileActualExt);
 	
-	$allowed = array('jpg','jpeg','pdf','png');
+	$allowed = array("jpg","jpeg","pdf","png");
 	
-	if($fileType == "jpg" && $fileType == "png" && $fileType == "jpeg" && $fileType == "pdf" )
+	if(in_array($fileActualExt,$allowed))
 	{
 		if($fileError===0)
 		{
