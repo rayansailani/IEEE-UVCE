@@ -8,7 +8,7 @@ $con=getCon();
 $name=$_GET['name'];
 $title=$_GET['title'];
 //echo $name;
-//if(isset($_GET['name'])||isset($_GET['title'])){
+if(isset($_GET['name'])||isset($_GET['title'])){
 if($name=="delete")
 {
 	$dateandtime=$_GET['dateandtime'];
@@ -80,7 +80,7 @@ else if($name="move")
  }
 }
 
-//}
+}
 
 
 
