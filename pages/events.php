@@ -82,15 +82,19 @@
 	$title=array();
 	$presenters=array();
 	$dateandtime=array();
+	$venue=array();
 	
 	//old events
 	$title2=array();
 	$presenters2=array();
 	$dateandtime2=array();
+	$venue2=array();
 	
 	//new events
 	foreach($events as $eve)
 		$title[]=$eve['title'];
+	foreach($events as $eve)
+		$venue[]=$eve['venue'];
 	foreach($events as $eve)
 		$presenters[]=$eve['presenters'];
 	foreach($events as $eve)
@@ -102,6 +106,8 @@
 	//old events
 	foreach($events2 as $eve2)
 		$title2[]=$eve2['title'];
+	foreach($events as $eve)
+		$venue2[]=$eve['venue'];
 	foreach($events2 as $eve2)
 		$presenters2[]=$eve2['presenters'];
 	foreach($events2 as $eve2)
@@ -134,6 +140,7 @@
             <td><?=$title[$i]?></td>
             <td><?=$presenters[$i]?></td>
 	    <td><?=$dateandtime[$i]?></td>
+	    <td><?=$venue[$i]?></td>
 	    <td class="text-center">
 		<a href="event_register.php" class="btn btn-success btn-sm mb-2" role="button">Register</a>
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
@@ -165,6 +172,7 @@
             <td><?=$title2[$j]?></td>
             <td><?=$presenters2[$j]?></td>
 	    <td><?=$dateandtime2[$j]?></td>
+	    <td><?=$venue2[$j]?></td>
 	    <td class="text-center">
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
             </td>
