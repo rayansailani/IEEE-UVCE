@@ -129,6 +129,7 @@ if(isset($_POST['create_event'])){
 			{
 				$fileNewName = $title.".".$fileActualExt;
 				$fileDestination='uploads/'.$fileNewName;
+				print_r($fileDestination);
 				move_uploaded_file($fileTmpName,$fileDestination);
 				echo "file uploaded";
 			}
