@@ -31,6 +31,7 @@ else if($name="move")
 	$title=array();
 	$presenters=array();
 	$dateandtime=array();
+	$venue=array();
 	$description=array();
 	
 	//new events
@@ -42,8 +43,10 @@ else if($name="move")
 		$dateandtime[]=$eve['dateandtime'];
 	foreach($events as $eve)
 		$description[]=$eve['description'];
+	foreach($events as $eve)
+		$venue[]=$eve['venue'];
  
-  $sql= "INSERT INTO old_event(title,presenters,dateandtime,filename,description) values('$title[0]','$presenters[0]','$dateandtime[0]','$title[0]','$description[0]')";
+  $sql= "INSERT INTO old_event(title,presenters,dateandtime,venue,filename,description) values('$title[0]','$presenters[0]','$dateandtime[0]','$venue[0]','$title[0]','$description[0]')";
    if($con->query($sql)===True)   
      {
   if(($con->query("delete from new_event where title='$title[0]'"))===True)
@@ -81,11 +84,12 @@ if(isset($_POST['create_event'])){
   $title=$con->real_escape_string($_POST['title']);
   $presenters=$con->real_escape_string($_POST['presenters']);
   $dateandtime=$con->real_escape_string($_POST['dateandtime']);
+  $venue=$con->real_escape_string($_POST['venue']);
   $description=$con->real_escape_string($_POST['description']);
 
   $filename = $title;
       
-  $sql= "INSERT INTO new_event(title,presenters,dateandtime,filename,description) values('$title','$presenters','$dateandtime','$filename','$description')";
+  $sql= "INSERT INTO new_event(title,presenters,dateandtime,venue,filename,description) values('$title','$presenters','$dateandtime','$venue','$filename','$description')";
           // $sql="insert into new_event(title,presenters,dateandtime,filename,description) values('".mysqli_real_escape_string($con,$title)."','".mysqli_real_escape_string($con,$presenters)."','".mysqli_real_escape_string($con,$dateandtime)."','".mysqli_real_escape_string($con,$filename)."','".mysqli_real_escape_string($con,$description)."'";
      
      
