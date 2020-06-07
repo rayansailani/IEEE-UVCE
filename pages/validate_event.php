@@ -114,8 +114,9 @@ if(isset($_POST['create_event'])){
 	$fileError=$_FILES['file']['error'];
 	$fileType=$_FILES['file']['type'];
 	
-	$fileExt= explode('.',$fileName);
-	$fileActualExt = strtolower(end($fileExt));
+	//$fileExt= explode('.',$fileName);
+	//$fileActualExt = strtolower(end($fileExt));
+	$$fileActualExt =strtolower(end(explode('.',$_FILES['upload_file']['name'])));
 	print_r($fileActualExt);
 	
 	$allowed = array("jpg","jpeg","pdf","png");
