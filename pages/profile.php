@@ -61,11 +61,15 @@
 	
 	<div class="container">
         <div class="text-center">
-            <?php if(isset($_SESSION['user_name'])&&(($_SESSION['user_name']=="groot")||($_SESSION['user_name']=="amigroot"))){
-                        //if($_SESSION['user_name']=="groot"){
+            <?php if(isset($_SESSION['user_name'])){
+                        if($_SESSION['user_name']=="groot"){
                             header("Location:admin_enter.php");
                             die();
-                        //}
+                        }
+			else if($_SESSION['user_name']=="amigroot"){
+                            header("Location:admin_enter.php");
+                            die();
+                        }
                     }
                     else if(isset($_SESSION['user_name'])){ 
                         echo '<h1> username : '.$_SESSION['user_name'].'</h1>';
