@@ -12,13 +12,26 @@ if(isset($_GET['name'])||isset($_GET['title'])){
 if($name=="delete")
 {
 	$dateandtime=$_GET['dateandtime'];
-   if(($con->query("delete from new_event where title='$title' and dateandtime='$dateandtime'"))===True);
+   if(($con->query("delete from new_event where title='$title' and dateandtime='$dateandtime'"))===True)
  {
     header("Location:events.php");
    	die();
- }
+ }else {
    echo 'something went wrong';
    echo '<a href="profile.php">Woosh</a>';
+   }
+}
+else if($name=="deletehistory")
+{
+	$dateandtime=$_GET['dateandtime'];
+   if(($con->query("delete from old_event where title='$title' and dateandtime='$dateandtime'"))===True)
+ {
+    header("Location:events.php");
+   	die();
+ }else {
+   echo 'something went wrong';
+   echo '<a href="profile.php">Woosh</a>';
+   }		
 }
 else if($name="move")
 {
