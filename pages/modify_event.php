@@ -109,8 +109,10 @@
 			    <div class="row">
 				    <div class="col m-2"><?=$title[$i]?></div>
 				    <div class="col m-2"><?=$dateandtime[$i]?></div>
-				    <div class="col m-2"><a href="validate_event.php" class="btn btn-dark btn-sm" name="delete_event" role="button">delete</a></div>
-				    <div class="col m-2"><a href="validate_event.php" class="btn btn-dark btn-sm" name="move_event" role="button">move to history</a></div>
+				    <form method="POST" action="validate_event.php">
+				    	<div class="col m-2"><a type="submit" class="btn btn-dark btn-sm" name="delete_event" role="button">delete</a></div>
+				    	<div class="col m-2"><a type="submit" class="btn btn-dark btn-sm" name="move_event" role="button">move to history</a></div>
+				    </form>
 				    <!--<div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=delete&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">delete</a></div>
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=move&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">move to history</a></div>-->
 		  		</div>
