@@ -141,6 +141,7 @@
   <button class="btn btn-dark" name="advanced_editing_c" type="submit">create event</button>
 </form></div>';
 	}     
+	}
 	 else if($name=="advanced_editing_history")
 	      {
 		      if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="amigroot"){
@@ -179,7 +180,7 @@
     </div>
   </div>
   <button class="btn btn-dark" name="advanced_editing_h" type="submit">create event</button>
-</form></div>';
+</form></div>';}
 	      }
 		else
                     {
