@@ -5,6 +5,7 @@ include '../libraries/cakes.php';
 $name=$_GET['name'];
 $title=$_GET['title'];
 $dateandtime=$_GET['dateandtime'];
+$con = getCon();
 
 if($name=="delete_event")
 {
