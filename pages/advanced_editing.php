@@ -138,7 +138,7 @@
       <input type="text" class="form-control" id="description" placeholder="description" name="description" value="<?=$d?>" required>
     </div>
   </div>
-  <button class="btn btn-dark" name="create_event" type="submit">create event</button>
+  <button class="btn btn-dark" name="advanced_editing_c" type="submit">create event</button>
 </form></div>';
 	}     
 	 else if($name=="advanced_editing_history")
@@ -178,7 +178,7 @@
       <input type="text" class="form-control" id="description" placeholder="description" name="description" required>
     </div>
   </div>
-  <button class="btn btn-dark" name="create_event" type="submit">create event</button>
+  <button class="btn btn-dark" name="advanced_editing_h" type="submit">create event</button>
 </form></div>';
 	      }
 		else
