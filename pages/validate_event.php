@@ -5,10 +5,10 @@ include '../libraries/cakes.php';
 
 $con=getCon();
 //delete
-$name=$_GET['name'];
+$name=$_GET['key'];
 $title=$_GET['title'];
 //echo $name;
-if(isset($_GET['name'])||isset($_GET['title'])){
+if(isset($_GET['key'])||isset($_GET['title'])){
 if($name=="delete")
 {
 	$dateandtime=$_GET['dateandtime'];
