@@ -1,6 +1,6 @@
 <?php 
 	session_start();
-	include 'libraries/cakes.php'; 
+	include '../libraries/cakes.php'; 
 ?>
 <!--HTML boiler plate-->
 <!DOCTYPE html>
@@ -61,8 +61,139 @@
 	
 	
   
+ <?php
+	
+	$name=$_GET['name'];
+	$title=$_GET['title'];
+	$dateandtime=$_GET['dateandtime'];
+	
+	$con = getCon();
+	
+	$events=Array();
+  	$res=$con->query("select * from new_event where title='$title' and dateandtime='$dateandtime'");
+		 while($ele = $res->fetch_assoc())
+			 $events[]=$ele;
+ 
+   
+	//new events
+	$title=array();
+	$presenters=array();
+	$dateandtime=array();
+	$venue=array();
+	$description=array();
+	
+	//new events
+	foreach($events as $eve)
+		$title[]=$eve['title'];
+	foreach($events as $eve)
+		$presenters[]=$eve['presenters'];
+	foreach($events as $eve)
+		$dateandtime[]=$eve['dateandtime'];
+	foreach($events as $eve)
+		$description[]=$eve['description'];
+	foreach($events as $eve)
+		$venue[]=$eve['venue'];
+	
+	$t=$title[0];
+	$p=$presenters[0];
+	$dt=$dateandtime[0];
+	$v=$venue[0];
+	$d=$description[0];
+	
+	if($name=="advanced_editing_current")
+	{
+		
+	if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="amigroot"){
+               
+               echo'<div class="container"><form method="POST" action="validate_event.php?name=advanced_editing_currentt" enctype="multipart/form-data">
+  <div class="form-row">
+      <label for="validationServer01">Event title</label>
+      <input type="text" class="form-control" id="title" placeholder="Title" name="title" value="<?=$t?>" required>
+   </div>
+    <div class="form-row">
+      <label for="validationServer02">Presenters</label>
+      <input type="text" class="form-control" id="presenters" placeholder="Presenters" name="presenters" value="<?=$p?>" required>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">Date and Time</label>
+      <input type="text" class="form-control" id="dateandtime" placeholder="format : dd/mm/yyyy - 00:00pm" name="dateandtime" value="<?=$dt?>" required>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">venue</label>
+      <input type="text" class="form-control" id="venue" placeholder="venue" name="venue" value="<?=$v?>" required>
+    </div>
+     <div class="col-md-6 mb-3">
+      <label for="validationServer03">image</label>
+      <input type="file" class="form-control" id="file" placeholder="upload_file" name="upload_file">
+    </div>
+    <!--<div class="col-md-6 mb-3">
+      <label for="validationServer03">Time</label>
+      <input type="time" class="form-control" id="time" placeholder="time" name="time" required>
+    </div>-->
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">Description</label>
+      <input type="text" class="form-control" id="description" placeholder="description" name="description" value="<?=$d?>" required>
+    </div>
+  </div>
+  <button class="btn btn-dark" name="create_event" type="submit">create event</button>
+</form></div>';
+	}     
+	 else if($name=="advanced_editing_history")
+	      {
+		      if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="amigroot"){
+               
+               echo'<div class="container"><form method="POST" action="validate_event.php?name=advanced_editing_historyy" enctype="multipart/form-data">
+  <div class="form-row">
+      <label for="validationServer01">Event title</label>
+      <input type="text" class="form-control" id="title" placeholder="Title" name="title" required>
+   </div>
+    <div class="form-row">
+      <label for="validationServer02">Presenters</label>
+      <input type="text" class="form-control" id="presenters" placeholder="Presenters" name="presenters" required>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">Date and Time</label>
+      <input type="text" class="form-control" id="dateandtime" placeholder="format : dd/mm/yyyy - 00:00pm" name="dateandtime" required>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">venue</label>
+      <input type="text" class="form-control" id="venue" placeholder="venue" name="venue" required>
+    </div>
+     <div class="col-md-6 mb-3">
+      <label for="validationServer03">image</label>
+      <input type="file" class="form-control" id="file" placeholder="upload_file" name="upload_file">
+    </div>
+    <!--<div class="col-md-6 mb-3">
+      <label for="validationServer03">Time</label>
+      <input type="time" class="form-control" id="time" placeholder="time" name="time" required>
+    </div>-->
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">Description</label>
+      <input type="text" class="form-control" id="description" placeholder="description" name="description" required>
+    </div>
+  </div>
+  <button class="btn btn-dark" name="create_event" type="submit">create event</button>
+</form></div>';
+	      }
+		else
+                    {
+                        header("Location:../index.php");
+                        die();
+                    }
+   	?>
+	</div>	
+	}
+	
+?> 
   
-  
+	
+	
   
   
   
