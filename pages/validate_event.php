@@ -68,6 +68,10 @@ else if($name="move")
 }
 
 
+
+
+
+
 if(isset($_POST['create_event'])){
  
     
@@ -85,8 +89,9 @@ if(isset($_POST['create_event'])){
           // $sql="insert into new_event(title,presenters,dateandtime,filename,description) values('".mysqli_real_escape_string($con,$title)."','".mysqli_real_escape_string($con,$presenters)."','".mysqli_real_escape_string($con,$dateandtime)."','".mysqli_real_escape_string($con,$filename)."','".mysqli_real_escape_string($con,$description)."'";
      if($con->query($sql)===True)   
      {
-        header("Location:profile.php");
-      die();
+	     echo 'info inserted<br>';
+        //header("Location:profile.php");
+       //die();
          
      }
  else
@@ -95,38 +100,53 @@ if(isset($_POST['create_event'])){
   echo '<a href="profile.php">Woooosh</a>';
  }
  
-  $target_dir='../assets/event_files/';
-  $target_file = $target_dir . basename($_FILES["upload_file"]["name"]);
-  $uploadOk = 1;
-  $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
   
   
+  	$file=$_FILES['file'];
+	
+	$fileName=$_FILES['file']['name'];
+	// or $fileName=$file['name'];	
+ 	$fileTmpName=$_FILES['file']['tmp_name'];
+	$fileSize=$_FILES['file']['size'];
+	$fileError=$_FILES['file']['error'];
+	$fileType=$_FILES['file']['type'];
+	
+	$fileExt= explode('.',$fileName);
+	$fileActualExt = strtolower(end($fileExt));
+	
+	$allowed = array('jpg','jpeg','pdf','png');
+	
+	if(in_array($fileActualExt,$allowed))
+	{
+		if($fileError===0)
+		{
+			if($fileSize<30000)
+			{
+				$fileNewName = $filename.".".$fileActualExt;
+				$fileDestination='../assets/event_files/'.$fileNewName;
+				move_uploaded_file($fileTmpName,$fileDestination);
+				echo "file uploaded";
+			}
+			else
+			{
+				echo "File is too big";
+			}
+		}
+		else
+		{
+			echo "There was an error uploading the file";
+		}
+	}
+	else
+	{
+		echo "You cannot upload files of this type";
+	}
+	
     
-  // Allow certain file formats
-if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg") {
-  echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-  $uploadOk = 0;
-    //not right format
-} 
     
     
-    if ($uploadOk == 0) {
-  echo "Sorry, your file was not uploaded.";
-// something was wrong
-} else {
      
-    
-         
-  if (move_uploaded_file($_FILES['upload_file']['tmp_name'],$target_dir.$filename)) 
-  {
-    echo "The file ". basename( $_FILES["upload_file"]["name"]). " has been uploaded.";  
-  }
-  else
-  {
-    echo "Sorry, there was an error uploading your file.";
-  }
-}
-    
+
     
     
 }
