@@ -106,10 +106,12 @@ else if($name="movetocurrent")
 	foreach($events2 as $eve2)
 		$venue2[]=$eve2['venue'];
  
-  $sql= "INSERT INTO new_event(title,presenters,dateandtime,venue,filename,description) values('$title2[0]','$presenters2[0]','$dateandtime2[0]','$venue2[0]','$title2[0]','$description2[0]')";
+	$c2=count($title2);
+	
+  $sql= "INSERT INTO new_event(title,presenters,dateandtime,venue,filename,description) values('$title2[$c2-1]','$presenters2[$c2-1]','$dateandtime2[$c2-1]','$venue2[$c2-1]','$title2[$c2-1]','$description2[$c2-1]')";
    if($con->query($sql)===True)   
      {
-  if(($con->query("delete from old_event where title='$title2[0]' and dateandtime='$dateandtime2[0]'"))===True)
+  if(($con->query("delete from old_event where title='$title2[$c2-1]' and dateandtime='$dateandtime2[$c2-1]'"))===True)
  {
     header("Location:events.php");
     die();
