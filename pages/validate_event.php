@@ -2,13 +2,13 @@
 
 include '../libraries/cakes.php';
 
-	if(isset($_GET['delete_event']))
+	if(isset($_POST['delete_event']))
 	{
 	
 			echo "Delete is clicked";
 	
 	}
-	else if(isset($_GET['move_event']))
+	else if(isset($_POST['move_event']))
 	{
 	
 		echo "Move is clicked";
