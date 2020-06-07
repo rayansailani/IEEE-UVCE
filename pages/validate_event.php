@@ -123,7 +123,7 @@ if(isset($_POST['create_event'])){
 	
 	if(in_array($fileActualExt,$allowed))
 	{
-		if($fileError===0)
+		if($fileError==0)
 		{
 			if($fileSize<30000)
 			{
