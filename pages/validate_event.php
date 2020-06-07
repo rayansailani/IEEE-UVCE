@@ -51,7 +51,7 @@ else if($name="move")
      {
   if(($con->query("delete from new_event where title='$title[0]'"))===True)
  {
-    header("Location:profile.php");
+    header("Location:events.php");
     die();
  } else
     {
