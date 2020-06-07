@@ -94,11 +94,11 @@
 	foreach($events as $eve)
 		$venue[]=$eve['venue'];
 	
-	$t=$title[0];
-	$p=$presenters[0];
-	$dt=$dateandtime[0];
-	$v=$venue[0];
-	$d=$description[0];
+	$t=count($title);
+	$p=count($presenters);
+	$dt=count($dateandtime);
+	$v=count($venue);
+	$d=count($description);
 	
 	if($name=="advanced_editing_current")
 	{
@@ -108,7 +108,7 @@
                echo'<div class="container"><form method="POST" action="validate_event.php" enctype="multipart/form-data">
   <div class="form-row">
       <label for="validationServer01">Event title</label>
-      <input type="text" class="form-control" id="title" placeholder="Title" name="title" value='.$t.' required>
+      <input type="text" class="form-control" id="title" placeholder="Title" name="title" value='.for($i=0;$i<$t;$i++)echo title[$i].' required>
    </div>
     <div class="form-row">
       <label for="validationServer02">Presenters</label>
