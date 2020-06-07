@@ -79,56 +79,6 @@ else if($name="move")
    echo '<a href="profile.php">Woosh</a>';
  }
 }
-else if($name="movetocurrent")
-{
-  $events2=Array();
-  $res2=$con->query("select * from old_event");
-	 while($ele2 = $res2->fetch_assoc())
-		 $events2[]=$ele2;
- 
-   
-	//new events
-	$title2=array();
-	$presenters2=array();
-	$dateandtime2=array();
-	$venue2=array();
-	$description2=array();
-	
-	//new events
-	foreach($events2 as $eve2)
-		$title2[]=$eve2['title'];
-	foreach($events2 as $eve2)
-		$presenters2[]=$eve2['presenters'];
-	foreach($events2 as $eve2)
-		$dateandtime2[]=$eve2['dateandtime'];
-	foreach($events2 as $eve2)
-		$description2[]=$eve2['description'];
-	foreach($events2 as $eve2)
-		$venue2[]=$eve2['venue'];
- 
-	$c2=count($title2);
-	
-  $sql= "INSERT INTO new_event(title,presenters,dateandtime,venue,filename,description) values('$title2[$c2-1]','$presenters2[$c2-1]','$dateandtime2[$c2-1]','$venue2[$c2-1]','$title2[$c2-1]','$description2[$c2-1]')";
-   if($con->query($sql)===True)   
-     {
-  if(($con->query("delete from old_event where title='$title2[$c2-1]' and dateandtime='$dateandtime2[$c2-1]'"))===True)
- {
-    header("Location:events.php");
-    die();
- } else
-    {
-      echo "not deleted";
-     echo '<a href="profile.php">Woosh</a>';
-    }
-}
- else
- {
-   echo 'something went wrong not inserted';
-   echo '<a href="profile.php">Woosh</a>';
- }
-  
- 
-}
 
 }
 
