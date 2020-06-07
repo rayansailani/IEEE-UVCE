@@ -120,7 +120,7 @@ if(isset($_POST['create_event'])){
 	
 	$allowed = array('jpg','jpeg','pdf','png');
 	
-	if(in_array($fileActualExt,$allowed))
+	if($fileType == "jpg" && $fileType == "png" && $fileType == "jpeg" && $fileType == "pdf" )
 	{
 		if($fileError===0)
 		{
