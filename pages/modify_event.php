@@ -116,8 +116,8 @@
 		  <? } else if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="amigroot") { ?>
 		  	<? for($i=0;$i<$c2;$i++) { ?>
 			    <div class="row">
-				    <div class="col m-2"><?=$title[$i]?></div>
-				    <div class="col m-2"><?=$dateandtime[$i]?></div>
+				    <div class="col m-2"><?=$title2[$i]?></div>
+				    <div class="col m-2"><?=$dateandtime2[$i]?></div>
 				     <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=delete&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">delete</a></div>
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=move&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">move to history</a></div>
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=deletehistory&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">delete</a></div>
