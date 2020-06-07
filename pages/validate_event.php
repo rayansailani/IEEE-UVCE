@@ -2,20 +2,20 @@
 
 include '../libraries/cakes.php';
 
-
-if(isset($_POST['delete_event']))
-{
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+	if(isset($_POST['delete_event']))
+	{
 	
-	echo "Delete is clicked";
+			echo "Delete is clicked";
 	
+	}
+	else if(isset($_POST['move_event']))
+	{
+	
+		echo "Move is clicked";
+	
+	}
 }
-else if(isset($_POST['move_event']))
-{
-	
-	echo "Move is clicked";
-	
-}
-
 
 
 if(isset($_POST['create_event'])){
