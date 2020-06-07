@@ -81,35 +81,35 @@ else if($name="move")
 }
 else if($name="movetocurrent")
 {
-  $events=Array();
-  $res=$con->query("select * from old_event");
-	 while($ele = $res->fetch_assoc())
-		 $events[]=$ele;
+  $events2=Array();
+  $res2=$con->query("select * from old_event");
+	 while($ele2 = $res2->fetch_assoc())
+		 $events2[]=$ele2;
  
    
 	//new events
-	$title=array();
-	$presenters=array();
-	$dateandtime=array();
-	$venue=array();
-	$description=array();
+	$title2=array();
+	$presenters2=array();
+	$dateandtime2=array();
+	$venue2=array();
+	$description2=array();
 	
 	//new events
-	foreach($events as $eve)
-		$title[]=$eve['title'];
-	foreach($events as $eve)
-		$presenters[]=$eve['presenters'];
-	foreach($events as $eve)
-		$dateandtime[]=$eve['dateandtime'];
-	foreach($events as $eve)
-		$description[]=$eve['description'];
-	foreach($events as $eve)
-		$venue[]=$eve['venue'];
+	foreach($events2 as $eve2)
+		$title2[]=$eve2['title'];
+	foreach($events2 as $eve2)
+		$presenters2[]=$eve2['presenters'];
+	foreach($events2 as $eve2)
+		$dateandtime2[]=$eve2['dateandtime'];
+	foreach($events2 as $eve2)
+		$description2[]=$eve2['description'];
+	foreach($events2 as $eve2)
+		$venue2[]=$eve2['venue'];
  
-  $sql= "INSERT INTO new_event(title,presenters,dateandtime,venue,filename,description) values('$title[0]','$presenters[0]','$dateandtime[0]','$venue[0]','$title[0]','$description[0]')";
+  $sql= "INSERT INTO new_event(title,presenters,dateandtime,venue,filename,description) values('$title2[0]','$presenters2[0]','$dateandtime2[0]','$venue2[0]','$title2[0]','$description2[0]')";
    if($con->query($sql)===True)   
      {
-  if(($con->query("delete from old_event where title='$title[0]' and dateandtime='$dateandtime[0]'"))===True)
+  if(($con->query("delete from old_event where title='$title2[0]' and dateandtime='$dateandtime2[0]'"))===True)
  {
     header("Location:events.php");
     die();
