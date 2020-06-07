@@ -107,7 +107,7 @@
 	foreach($events2 as $eve2)
 		$title2[]=$eve2['title'];
 	foreach($events as $eve2)
-		$venue2[]=$eve['venue'];
+		$venue2[]=$eve2['venue'];
 	foreach($events2 as $eve2)
 		$presenters2[]=$eve2['presenters'];
 	foreach($events2 as $eve2)
