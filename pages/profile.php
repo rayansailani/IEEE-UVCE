@@ -61,8 +61,8 @@
 	
 	<div class="container">
         <div class="text-center">
-            <?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="root"){
-                        //if($_SESSION['user_name']=="root"){
+            <?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="groot"){
+                        //if($_SESSION['user_name']=="groot"){
                             header("Location:admin_enter.php");
                             die();
                         //}
