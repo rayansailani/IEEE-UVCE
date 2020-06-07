@@ -80,7 +80,7 @@
 	
 	<div class="container">
 	  <div class="text-center">
-		  <?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="root") { ?>
+		  <?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="groot") { ?>
                        
 		  	<? for($i=0;$i<$c;$i++) { ?>
 			    <div class="row">
