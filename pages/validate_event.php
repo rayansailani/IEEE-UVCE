@@ -89,7 +89,7 @@ if(isset($_POST['create_event'])){
           // $sql="insert into new_event(title,presenters,dateandtime,filename,description) values('".mysqli_real_escape_string($con,$title)."','".mysqli_real_escape_string($con,$presenters)."','".mysqli_real_escape_string($con,$dateandtime)."','".mysqli_real_escape_string($con,$filename)."','".mysqli_real_escape_string($con,$description)."'";
      
      
-	if(rowExists('new_event','title',$title)){	
+	if(rowExists('new_event','title',$title))	
 	{
 		echo "somthing went wrong let me head back";
   		echo '<a href="profile.php">Woooosh</a>';
