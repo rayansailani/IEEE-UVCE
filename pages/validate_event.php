@@ -103,6 +103,9 @@ if(isset($_POST['create_event'])){
   
   
   	$file=$_FILES['file'];
+	print_r($file);
+	echo '<br>';
+	
 	
 	$fileName=$_FILES['file']['name'];
 	// or $fileName=$file['name'];	
@@ -113,6 +116,7 @@ if(isset($_POST['create_event'])){
 	
 	$fileExt= explode('.',$fileName);
 	$fileActualExt = strtolower(end($fileExt));
+	print_r($fileActualExt);
 	
 	$allowed = array('jpg','jpeg','pdf','png');
 	
