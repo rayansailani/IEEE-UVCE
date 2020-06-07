@@ -129,8 +129,8 @@
     <thead>
         <tr>
             <th>Title</th>
-            <th>Presenters</th>
 	    <th>Date and Time</th>
+	    <th>venue</th>
             <th>info</th>
         </tr>
     </thead>
@@ -138,7 +138,6 @@
 	<? for($i=0;$i<$e;$i++) { ?>
         <tr class="mb-5">
             <td><?=$title[$i]?></td>
-            <td><?=$presenters[$i]?></td>
 	    <td><?=$dateandtime[$i]?></td>
 	    <td><?=$venue[$i]?></td>
 	    <td class="text-center">
@@ -161,8 +160,8 @@
     <thead>
         <tr>
             <th>Title</th>
-            <th>Presenters</th>
 	    <th>Date and Time</th>
+            <th>Venue</th>
             <th>info</th>
         </tr>
     </thead>
@@ -170,7 +169,6 @@
 	<? for($j=$e2-1;$j>=0;$j--) { ?>
         <tr class="mb-5">
             <td><?=$title2[$j]?></td>
-            <td><?=$presenters2[$j]?></td>
 	    <td><?=$dateandtime2[$j]?></td>
 	    <td><?=$venue2[$j]?></td>
 	    <td class="text-center">
