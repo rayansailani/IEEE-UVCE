@@ -59,7 +59,7 @@
 	</nav>
 	
 	
-	<div class="container"><?php if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="groot"){
+	<div class="container"><?php if(isset($_SESSION['user_name'])&&($_SESSION['user_name']=="groot"||$_SESSION['user_name']=="amigroot")){
                
                echo '     
  <form method="POST" action="validate_event.php" enctype="multipart/form-data">
