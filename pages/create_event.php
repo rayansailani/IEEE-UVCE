@@ -76,6 +76,10 @@
       <label for="validationServer03">Date and Time</label>
       <input type="text" class="form-control" id="dateandtime" placeholder="format : dd/mm/yyyy - 00:00pm" name="dateandtime" required>
     </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">venue</label>
+      <input type="text" class="form-control" id="venue" placeholder="venue" name="venue" required>
+    </div>
      <div class="col-md-6 mb-3">
       <label for="validationServer03">image</label>
       <input type="file" class="form-control" id="file" placeholder="upload_file" name="upload_file">
