@@ -157,6 +157,10 @@ else if($name=="advanced_editing_history")
 ////////////advanced editing
 if(isset($_POST['advanced_editing_c'])){
 
+	
+	$sent_title=$POST['sent_title'];
+        $sent_dateandtime=$POST['sent_dateandtime'];	
+	
 	$title=$con->real_escape_string($_POST['title']);
   $presenters=$con->real_escape_string($_POST['presenters']);
   $dateandtime=$con->real_escape_string($_POST['dateandtime']);
@@ -165,7 +169,7 @@ if(isset($_POST['advanced_editing_c'])){
 
   $filename = $title;
       
-	if(($con->query("delete from new_event where title='$title' and dateandtime='$dateandtime'"))===True)
+	if(($con->query("delete from new_event where title='$sent_title' and dateandtime='$sent_dateandtime'"))===True)
 	{
 		if(rowExists('new_event','title',$title))	
 		{
