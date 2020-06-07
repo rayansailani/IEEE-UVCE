@@ -79,7 +79,13 @@ else if($name="move")
    echo '<a href="profile.php">Woosh</a>';
  }
 }
-
+else if($name="movetocurrent")
+{
+	echo "<br>":
+	echo $name."<br>";
+	echo $title."<br>";
+	echo $dateandtime."<br>";
+}
 }
 
 
