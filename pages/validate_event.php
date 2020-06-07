@@ -8,12 +8,8 @@ $con=getCon();
 $name=$_GET['name'];
 $title=$_GET['title'];
 //echo $name;
-if(isset($_GET['name'])||isset($_GET['title'])){
-if($name="movetocurrent")
-{
-	echo "<br>".$name."<br>".$title."<br>".$dateandtime."<br>";
-}
-else if($name=="delete")
+//if(isset($_GET['name'])||isset($_GET['title'])){
+if($name=="delete")
 {
 	$dateandtime=$_GET['dateandtime'];
    if(($con->query("delete from new_event where title='$title' and dateandtime='$dateandtime'"))===True)
@@ -84,7 +80,7 @@ else if($name="move")
  }
 }
 
-}
+//}
 
 
 
