@@ -11,7 +11,8 @@ $title=$_GET['title'];
 if(isset($_GET['name'])||isset($_GET['title'])){
 if($name=="delete")
 {
-   if(($con->query("delete from new_event where title='$title'"))===True);
+	$dateandtime=$_GET['dateandtime'];
+   if(($con->query("delete from new_event where title='$title' and dateandtime='$dateandtime'"))===True);
  {
     header("Location:events.php");
    	die();
@@ -49,7 +50,7 @@ else if($name="move")
   $sql= "INSERT INTO old_event(title,presenters,dateandtime,venue,filename,description) values('$title[0]','$presenters[0]','$dateandtime[0]','$venue[0]','$title[0]','$description[0]')";
    if($con->query($sql)===True)   
      {
-  if(($con->query("delete from new_event where title='$title[0]'"))===True)
+  if(($con->query("delete from new_event where title='$title[0]' and dateandtime='$dateandtime[0]'"))===True)
  {
     header("Location:events.php");
     die();
