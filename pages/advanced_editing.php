@@ -113,8 +113,7 @@
 		 while($ele2 = $res2->fetch_assoc())
 			 $events2[]=$ele2;
  
-        print_r($events2);
-   
+        var_dump($events2);
 	//new events
 
 
