@@ -74,7 +74,7 @@
 		 while($ele = $res->fetch_assoc())
 			 $events[]=$ele;
  
-        print_r($events);
+        //print_r($events);
    
 	//new events
 
@@ -99,6 +99,44 @@
 		$venue[]=$eve['venue'];
 	foreach($events as $eve)
 		$arrange[]=$eve['arrange_id'];
+	
+	
+	
+	
+	
+	
+	
+	
+	$events2=Array();
+  	$res2=$con->query("select * from old_event where title='$title' and dateandtime='$dateandtime'");
+		 while($ele2 = $res2->fetch_assoc())
+			 $events2[]=$ele2;
+ 
+        //print_r($events);
+   
+	//new events
+
+
+	$title2=array();
+	$presenters2=array();
+	$dateandtime2=array();
+	$venue2=array();
+	$description2=array();
+	$arrange2=array();
+	
+	//new events
+	foreach($events2 as $eve2)
+		$title2[]=$eve2['title'];
+	foreach($events2 as $eve2)
+		$presenters2[]=$eve2['presenters'];
+	foreach($events2 as $eve2)
+		$dateandtime2[]=$eve2['dateandtime'];
+	foreach($events2 as $eve2)
+		$description2[]=$eve2['description'];
+	foreach($events2 as $eve2)
+		$venue2[]=$eve2['venue'];
+	foreach($events2 as $eve2)
+		$arrange2[]=$eve2['arrange_id'];
 	
 	
 	/*echo "<br>";
@@ -165,24 +203,24 @@
                echo'<div class="container"><form method="POST" action="validate_event.php" enctype="multipart/form-data">
   <div class="form-row">
       <label for="validationServer01">Event title</label>
-      <input type="text" class="form-control" id="title" placeholder="Title" name="title" value="'.$title[0].'" required>
+      <input type="text" class="form-control" id="title" placeholder="Title" name="title" value="'.$title2[0].'" required>
    </div>
     <div class="form-row">
       <label for="validationServer02">Presenters</label>
-      <input type="text" class="form-control" id="presenters" placeholder="Presenters" name="presenters" value="'.$presenters[0].'" required>
+      <input type="text" class="form-control" id="presenters" placeholder="Presenters" name="presenters" value="'.$presenters2[0].'" required>
   </div>
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationServer03">Date and Time</label>
-      <input type="text" class="form-control" id="dateandtime" placeholder="format : dd/mm/yyyy - 00:00pm" name="dateandtime" value="'.$dateandtime[0].'" required>
+      <input type="text" class="form-control" id="dateandtime" placeholder="format : dd/mm/yyyy - 00:00pm" name="dateandtime" value="'.$dateandtime2[0].'" required>
     </div>
     <div class="col-md-6 mb-3">
       <label for="validationServer03">venue</label>
-      <input type="text" class="form-control" id="venue" placeholder="venue" name="venue" value="'.$venue[0].'" required>
+      <input type="text" class="form-control" id="venue" placeholder="venue" name="venue" value="'.$venue2[0].'" required>
     </div>
     <div class="col-md-6 mb-3">
       <label for="validationServer03">arrange id</label>
-      <input type="number" class="form-control" id="arrange_id" placeholder="arrange id" name="arrange_id" value="'.$arrange[0].'" required>
+      <input type="number" class="form-control" id="arrange_id" placeholder="arrange id" name="arrange_id" value="'.$arrange2[0].'" required>
     </div>
      <div class="col-md-6 mb-3">
       <label for="validationServer03">image</label>
@@ -196,7 +234,7 @@
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationServer03">Description</label>
-      <input type="text" class="form-control" id="description" placeholder="description" name="description" value="'.$description[0].'" required>
+      <input type="text" class="form-control" id="description" placeholder="description" name="description" value="'.$description2[0].'" required>
     </div>
   </div>
   <input type="hidden" name="sent_title" value="<?php echo $t;?>" />
