@@ -143,6 +143,34 @@ else if($name=="delete_history")
 		
    	}	
 }
+else if($name=="update_arrange_id")
+{
+	$events=Array();
+  	$res=$con->query("select * from new_event where title='$title' and dateandtime='$dateandtime'");
+		 while($ele = $res->fetch_assoc())
+			 $events[]=$ele;
+ 
+   
+	//new events
+	$title=array();
+	$dateandtime=array();
+	
+	//new events
+	foreach($events as $eve)
+		$title[]=$eve['title'];
+	foreach($events as $eve)
+		$dateandtime[]=$eve['dateandtime'];
+	
+	$co=count($title);
+	
+	for($k=1;$k<=$co;$k++)
+	{
+		$sql="update new_event set arrange_id='$k' where title='$title[$k]' and dateandtime='$dateandtime[$k]'";
+		$con->query($sql);
+	}
+	
+	
+}
 /*else if($name=="advanced_editing_current")
 {
 	echo "advanced editing";
