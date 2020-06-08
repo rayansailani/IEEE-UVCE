@@ -106,10 +106,10 @@
 	
 	
 	
-	
+	$con2=getCon();
 	
 	$events2=Array();
-  	$res2=$con->query("select * from old_event where title='$title' and dateandtime='$dateandtime'");
+  	$res2=$con2->query("select * from old_event where title='$title' and dateandtime='$dateandtime'");
 		 while($ele2 = $res2->fetch_assoc())
 			 $events2[]=$ele2;
  
