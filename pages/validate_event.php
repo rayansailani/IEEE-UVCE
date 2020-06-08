@@ -390,7 +390,7 @@ if(isset($_POST['create_event'])){
 			if($fileSize<3000000)
 			{
 				$fileNewName = $title.".".$fileActualExt;
-				$directory = dirname(__FILE__).'/assets/event_files/';
+				$directory = dirname(__FILE__).'/uploads/';
 				$fileDestination=$directory.$fileNewName;
 				print_r($fileDestination);
 				move_uploaded_file($fileTmpName,$fileDestination);
