@@ -134,7 +134,9 @@
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=delete_event&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">delete</a></div>
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=move_to_history&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">move to history</a></div>
 				     <div class="col m-2"><a class="btn btn-dark btn-sm" href="advanced_editing.php?name=advanced_editing_current&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">Advanced Editing</a></div>
-		  		</div>
+		  		</div><br><br>
+		  
+		  		<a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id" role="button">update arrange id</a>
 		  	<? } ?>
 		  <br>
 		  	<? for($j=$c2-1;$j>=0;$j--) { ?>
