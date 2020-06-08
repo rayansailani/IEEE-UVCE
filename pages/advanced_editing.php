@@ -75,7 +75,7 @@
 		 while($ele = $res->fetch_assoc())
 			 $events[]=$ele;
  
-        print_r($events);
+        //print_r($events);
    
 	//new events
 
@@ -117,7 +117,7 @@
 	//new events
 
 	
-	print_r($events2);
+	//print_r($events2);
 
 	$title2=array();
 	$presenters2=array();
