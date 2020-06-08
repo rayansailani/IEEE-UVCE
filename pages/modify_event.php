@@ -101,7 +101,7 @@
 	
 	$c2=count($title2);
 	
-	print_r($arrange_id);
+	
 	
 	
 	
