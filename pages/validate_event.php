@@ -379,7 +379,7 @@ if(isset($_POST['create_event'])){
 	//$fileExt= explode('.',$fileName);
 	//$fileActualExt = strtolower(end($fileExt));
 	$fileActualExt =strtolower(end(explode('.',$_FILES['upload_file']['name'])));
-	print_r($fileActualExt);
+	//print_r($fileActualExt);
 	
 	$allowed = array("jpg","jpeg","pdf","png");
 	
@@ -390,7 +390,8 @@ if(isset($_POST['create_event'])){
 			if($fileSize<30000)
 			{
 				$fileNewName = $title.".".$fileActualExt;
-				$fileDestination="uploads/".$fileNewName;
+				$directory = dirname(__FILE__).'/uploads/';
+				$fileDestination=$directory.$fileNewName;
 				print_r($fileDestination);
 				move_uploaded_file($fileTmpName,$fileDestination);
 				echo "file uploaded";
