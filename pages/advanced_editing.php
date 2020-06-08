@@ -103,8 +103,13 @@
 	$v=count($venue);
 	$d=count($description);
 	
-	$ti=implode(" ",$title);
 	
+	echo "<br>";
+	print_r($title);
+	
+	echo "<br>";
+	$ti=implode(" ",$title);
+	print_r($ti);
 	
 	if($name=="advanced_editing_current")
 	{
