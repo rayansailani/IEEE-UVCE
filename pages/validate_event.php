@@ -192,6 +192,55 @@ else if($name=="update_arrange_id")
 	
 	
 }
+else if($name=="update_arrange_id_history")
+{
+	$events=Array();
+  	$res=$con->query("select * from old_event");
+		 while($ele = $res->fetch_assoc())
+			 $events[]=$ele;
+ 
+   
+	//new events
+	$title=array();
+	$dateandtime=array();
+	
+	//new events
+	foreach($events as $eve)
+		$title[]=$eve['title'];
+	foreach($events as $eve)
+		$dateandtime[]=$eve['dateandtime'];
+	
+	$co=count($title);
+	$coo=0;
+	for($k=$co-1;$k>=0;$k--)
+	{
+		$sql="update old_event set arrange_id='$k' where title='$title[$k]' and dateandtime='$dateandtime[$k]'";
+		if(($con->query($sql))===True)
+ 		{
+			$coo++;
+			
+ 		} else {
+  
+  			echo "not deleted";
+     			echo '<a href="profile.php">Woosh</a>';
+			
+    		}
+	}
+	if($coo==$co)
+	{
+		
+    		header("Location:modify_event.php");
+    		die();
+			
+ 	} else {
+  
+  		echo "not deleted";
+     		echo '<a href="profile.php">Woosh</a>';
+			
+    	}
+	
+	
+}
 /*else if($name=="advanced_editing_current")
 {
 	echo "advanced editing";
