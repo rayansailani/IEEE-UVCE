@@ -84,6 +84,7 @@
 	$dateandtime=array();
 	$venue=array();
 	$description=array();
+	$arrange=array();
 	
 	//new events
 	foreach($events as $eve)
@@ -96,15 +97,18 @@
 		$description[]=$eve['description'];
 	foreach($events as $eve)
 		$venue[]=$eve['venue'];
-
+	foreach($events as $eve)
+		$arrange[]=$eve['arrange_id'];
 	
 	
-	echo "<br>";
+	/*echo "<br>";
 	print_r($title);
 	
 	echo "<br>";
 	$ti=implode(" ",$title);
-	print_r($ti);
+	print_r($ti);*/
+	
+	
 	
 	if($name=="advanced_editing_current")
 	{
