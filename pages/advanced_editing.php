@@ -201,7 +201,7 @@
   </div>
   <input type="hidden" name="sent_title" value="<?php echo $t;?>" />
   <input type="hidden" name="sent_dateandtime" value="<?php echo $dt;?>" />
-  <button class="btn btn-dark" name="advanced_editing_c" type="submit">create event</button>
+  <button class="btn btn-dark" name="advanced_editing_h" type="submit">create event</button>
 </form></div>';
 		}
 	      }
