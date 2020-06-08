@@ -1,6 +1,6 @@
 <?php 
 	session_start();
-	include 'libraries/cakes.php'; 
+	include '../libraries/cakes.php'; 
 ?>
 <!--HTML boiler plate-->
 <!DOCTYPE html>
