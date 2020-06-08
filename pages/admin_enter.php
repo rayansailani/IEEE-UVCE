@@ -69,7 +69,7 @@
                     }
 		    else if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="amigroot"){
                         echo '<a class="btn btn-dark btn-sm mt-4" href="create_event.php" role="button">Create a new event</a><br>';
-			echo '<a class="btn btn-dark btn-sm mt-4" href="modify_event.php" role="button">Modify event</a><br>';
+			echo '<a class="btn btn-dark btn-sm mt-4 mb-4" href="modify_event.php" role="button">Modify event</a><br>';
                     }
                     else
                     {
