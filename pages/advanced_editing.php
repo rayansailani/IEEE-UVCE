@@ -162,23 +162,27 @@
 	      {
 		      if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="amigroot"){
                
-               echo'<div class="container"><form method="POST" action="validate_event.php?name=advanced_editing_historyy" enctype="multipart/form-data">
+               echo'<div class="container"><form method="POST" action="validate_event.php" enctype="multipart/form-data">
   <div class="form-row">
       <label for="validationServer01">Event title</label>
-      <input type="text" class="form-control" id="title" placeholder="Title" name="title" required>
+      <input type="text" class="form-control" id="title" placeholder="Title" name="title" value="'.$title[0].'" required>
    </div>
     <div class="form-row">
       <label for="validationServer02">Presenters</label>
-      <input type="text" class="form-control" id="presenters" placeholder="Presenters" name="presenters" required>
+      <input type="text" class="form-control" id="presenters" placeholder="Presenters" name="presenters" value="'.$presenters[0].'" required>
   </div>
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationServer03">Date and Time</label>
-      <input type="text" class="form-control" id="dateandtime" placeholder="format : dd/mm/yyyy - 00:00pm" name="dateandtime" required>
+      <input type="text" class="form-control" id="dateandtime" placeholder="format : dd/mm/yyyy - 00:00pm" name="dateandtime" value="'.$dateandtime[0].'" required>
     </div>
     <div class="col-md-6 mb-3">
       <label for="validationServer03">venue</label>
-      <input type="text" class="form-control" id="venue" placeholder="venue" name="venue" required>
+      <input type="text" class="form-control" id="venue" placeholder="venue" name="venue" value="'.$venue[0].'" required>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">arrange id</label>
+      <input type="number" class="form-control" id="arrange_id" placeholder="arrange id" name="arrange_id" value="'.$arrange[0].'" required>
     </div>
      <div class="col-md-6 mb-3">
       <label for="validationServer03">image</label>
@@ -192,11 +196,14 @@
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationServer03">Description</label>
-      <input type="text" class="form-control" id="description" placeholder="description" name="description" required>
+      <input type="text" class="form-control" id="description" placeholder="description" name="description" value="'.$description[0].'" required>
     </div>
   </div>
-  <button class="btn btn-dark" name="advanced_editing_h" type="submit">create event</button>
-</form></div>';}
+  <input type="hidden" name="sent_title" value="<?php echo $t;?>" />
+  <input type="hidden" name="sent_dateandtime" value="<?php echo $dt;?>" />
+  <button class="btn btn-dark" name="advanced_editing_c" type="submit">create event</button>
+</form></div>';
+		}
 	      }
 		else
                     {
