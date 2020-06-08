@@ -80,20 +80,20 @@
 	//new events
 
 
-	$title=array();
+	$title3=array();
 	$presenters=array();
-	$dateandtime=array();
+	$dateandtime3=array();
 	$venue=array();
 	$description=array();
 	$arrange=array();
 	
 	//new events
 	foreach($events as $eve)
-		$title[]=$eve['title'];
+		$title3[]=$eve['title'];
 	foreach($events as $eve)
 		$presenters[]=$eve['presenters'];
 	foreach($events as $eve)
-		$dateandtime[]=$eve['dateandtime'];
+		$dateandtime3[]=$eve['dateandtime'];
 	foreach($events as $eve)
 		$description[]=$eve['description'];
 	foreach($events as $eve)
@@ -166,7 +166,7 @@
                echo'<div class="container"><form method="POST" action="validate_event.php" enctype="multipart/form-data">
   <div class="form-row">
       <label for="validationServer01">Event title</label>
-      <input type="text" class="form-control" id="title" placeholder="Title" name="title" value="'.$title[0].'" required>
+      <input type="text" class="form-control" id="title" placeholder="Title" name="title" value="'.$title3[0].'" required>
    </div>
     <div class="form-row">
       <label for="validationServer02">Presenters</label>
@@ -175,7 +175,7 @@
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationServer03">Date and Time</label>
-      <input type="text" class="form-control" id="dateandtime" placeholder="format : dd/mm/yyyy - 00:00pm" name="dateandtime" value="'.$dateandtime[0].'" required>
+      <input type="text" class="form-control" id="dateandtime" placeholder="format : dd/mm/yyyy - 00:00pm" name="dateandtime" value="'.$dateandtime3[0].'" required>
     </div>
     <div class="col-md-6 mb-3">
       <label for="validationServer03">venue</label>
