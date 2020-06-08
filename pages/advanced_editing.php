@@ -67,6 +67,10 @@
 	$title=$_GET['title'];
 	$dateandtime=$_GET['dateandtime'];
 	
+	echo $name;
+	echo '<br>'.$title;
+	echo '<br>'.$dateandtime;
+	
 	$con = getCon();
 	
 	$events=Array();
@@ -139,7 +143,7 @@
 		$arrange2[]=$eve2['arrange_id'];
 	
 	
-	print_r($events2);
+	//print_r($events2);
 	
 	/*print_r($title2);echo'<br>';
 	print_r($prsenters2);echo'<br>';
