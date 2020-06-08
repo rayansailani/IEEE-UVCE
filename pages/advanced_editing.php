@@ -67,9 +67,6 @@
 	$title=$_GET['title'];
 	$dateandtime=$_GET['dateandtime'];
 	
-	echo $name;
-	echo '<br>'.$title;
-	echo '<br>'.$dateandtime;
 	
 	$con = getCon();
 	
@@ -116,7 +113,7 @@
 		 while($ele2 = $res2->fetch_assoc())
 			 $events2[]=$ele2;
  
-        //print_r($events);
+        print_r($events);
    
 	//new events
 
