@@ -218,21 +218,17 @@ if(isset($_POST['advanced_editing_c'])){
 
   $filename = $title;
       
-	if(($con->query("delete from new_event where title='$sent_title' and dateandtime='$sent_dateandtime'"))===True)
+	$sql="delete from new_event where title='$sent_title' and dateandtime='$sent_dateandtime'";
+	if(($con->query($sql))===True)
 	{
-		if(rowExists('new_event','title',$title))	
-		{
-			echo "somthing went wrong let me head back";
-  			echo '<a href="profile.php">Woooosh</a>';
-		}
-     		else 
-     		{
-			$sql= "INSERT INTO new_event(title,presenters,dateandtime,venue,filename,description) values('$title','$presenters','$dateandtime','$venue','$filename','$description')";
+		$sql= "INSERT INTO new_event(title,presenters,dateandtime,venue,filename,description) values('$title','$presenters','$dateandtime','$venue','$filename','$description')";
 	   		if($con->query($sql)===True)  
 	      			echo 'info updated<br>';
-        		//header("Location:profile.php");
-       			//die();
-     		}
+			else
+			{
+				echo "somthing went wrong let me head back";
+  				echo '<a href="profile.php">Woooosh</a>';	
+			}
 	}
   	
           // $sql="insert into new_event(title,presenters,dateandtime,filename,description) values('".mysqli_real_escape_string($con,$title)."','".mysqli_real_escape_string($con,$presenters)."','".mysqli_real_escape_string($con,$dateandtime)."','".mysqli_real_escape_string($con,$filename)."','".mysqli_real_escape_string($con,$description)."'";
@@ -258,19 +254,14 @@ else if(isset($_POST['advanced_editing_h'])){
       
 	if(($con->query("delete from old_event where title='$sent_title' and dateandtime='$sent_dateandtime'"))===True)
 	{
-		if(rowExists('new_event','title',$title))	
-		{
-			echo "somthing went wrong let me head back";
-  			echo '<a href="profile.php">Woooosh</a>';
-		}
-     		else 
-     		{
-			$sql= "INSERT INTO old_event(title,presenters,dateandtime,venue,filename,description) values('$title','$presenters','$dateandtime','$venue','$filename','$description')";
+		$sql= "INSERT INTO old_event(title,presenters,dateandtime,venue,filename,description) values('$title','$presenters','$dateandtime','$venue','$filename','$description')";
 	   		if($con->query($sql)===True)  
 	      			echo 'info updated<br>';
-        		//header("Location:profile.php");
-       			//die();
-     		}
+			else
+			{
+				echo "somthing went wrong let me head back";
+  				echo '<a href="profile.php">Woooosh</a>';	
+			}
 	}
   	
           // $sql="insert into new_event(title,presenters,dateandtime,filename,description) values('".mysqli_real_escape_string($con,$title)."','".mysqli_real_escape_string($con,$presenters)."','".mysqli_real_escape_string($con,$dateandtime)."','".mysqli_real_escape_string($con,$filename)."','".mysqli_real_escape_string($con,$description)."'";
