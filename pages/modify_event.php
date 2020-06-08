@@ -117,7 +117,7 @@
 	foreach($events3 as $eve3)
 		$arrange_id3[]=$eve3['arrange_id'];
 	
-	
+	print_r($arrange_id3);
 	
 	
 	
