@@ -82,7 +82,7 @@
 	$title=array();
 	$presenters=array();
 	$dateandtime=array();
-	$venue=array();
+	$venue=array();echo "<br>";
 	$description=array();
 	
 	//new events
@@ -96,12 +96,7 @@
 		$description[]=$eve['description'];
 	foreach($events as $eve)
 		$venue[]=$eve['venue'];
-	
-	$t=count($title);
-	$p=count($presenters);
-	$dt=count($dateandtime);
-	$v=count($venue);
-	$d=count($description);
+
 	
 	
 	echo "<br>";
@@ -123,16 +118,16 @@
    </div>
     <div class="form-row">
       <label for="validationServer02">Presenters</label>
-      <input type="text" class="form-control" id="presenters" placeholder="Presenters" name="presenters" value='.$p.' required>
+      <input type="text" class="form-control" id="presenters" placeholder="Presenters" name="presenters" value='.$presenters[0].' required>
   </div>
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationServer03">Date and Time</label>
-      <input type="text" class="form-control" id="dateandtime" placeholder="format : dd/mm/yyyy - 00:00pm" name="dateandtime" value='.$dt.' required>
+      <input type="text" class="form-control" id="dateandtime" placeholder="format : dd/mm/yyyy - 00:00pm" name="dateandtime" value='.$dateandtime[0].' required>
     </div>
     <div class="col-md-6 mb-3">
       <label for="validationServer03">venue</label>
-      <input type="text" class="form-control" id="venue" placeholder="venue" name="venue" value='.$v.' required>
+      <input type="text" class="form-control" id="venue" placeholder="venue" name="venue" value='.$value[0].' required>
     </div>
      <div class="col-md-6 mb-3">
       <label for="validationServer03">image</label>
@@ -146,7 +141,7 @@
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationServer03">Description</label>
-      <input type="text" class="form-control" id="description" placeholder="description" name="description" value='.$d.' required>
+      <input type="text" class="form-control" id="description" placeholder="description" name="description" value='.$description[0].' required>
     </div>
   </div>
   <input type="hidden" name="sent_title" value="<?php echo $t;?>" />
