@@ -109,7 +109,7 @@
     </div>
     <div class="col-md-6 mb-3">
       <label for="validationServer03">arrange id</label>
-      <input type="number" class="form-control" id="arrange_id" placeholder="arrange id" name="arrange_id" value="'.$arrange_size.'" disabled>
+      <input type="number" class="form-control" id="arrange_id" placeholder="arrange id" name="arrange_id" value="'.$arrange_size.'">
     </div>
     <!--<div class="col-md-6 mb-3">
       <label for="validationServer03">Time</label>
