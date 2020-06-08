@@ -114,7 +114,7 @@
                echo'<div class="container"><form method="POST" action="validate_event.php" enctype="multipart/form-data">
   <div class="form-row">
       <label for="validationServer01">Event title</label>
-      <input type="text" class="form-control" id="title" placeholder="Title" name="title" value="'.$ti.'" required>
+      <input type="text" class="form-control" id="title" placeholder="Title" name="title" value="'.$title[0].'" required>
    </div>
     <div class="form-row">
       <label for="validationServer02">Presenters</label>
