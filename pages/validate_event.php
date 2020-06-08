@@ -13,7 +13,7 @@ if($name=="delete_event")
 	if(($con->query("delete from new_event where title='$title' and dateandtime='$dateandtime'"))===True)
  	{
 		
-    		header("Location:events.php");
+    		header("Location:modify_event.php");
    		die();
 		
  	} 
@@ -60,7 +60,7 @@ else if($name=="move_to_history")
   		if(($con->query("delete from new_event where title='$title[0]' and dateandtime='$dateandtime[0]'"))===True)
  		{
 			
-    			header("Location:events.php");
+    			header("Location:modify_event.php");
     			die();
 			
  		} else {
@@ -111,7 +111,7 @@ else if($name=="move_to_current")
   		if(($con->query("delete from old_event where title='$title2[0]' and dateandtime='$dateandtime2[0]'"))===True)
  		{
 			
-    			header("Location:events.php");
+    			header("Location:modify_event.php");
     			die();
 			
  		} else {
@@ -133,7 +133,7 @@ else if($name=="delete_history")
    	if(($con->query("delete from old_event where title='$title' and dateandtime='$dateandtime'"))===True)
  	{
 		
-    		header("Location:events.php");
+    		header("Location:modify_event.php");
    		die();
 		
  	} else {
