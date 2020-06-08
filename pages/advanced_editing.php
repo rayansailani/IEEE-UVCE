@@ -139,12 +139,14 @@
 		$arrange2[]=$eve2['arrange_id'];
 	
 	
-	print_r($title2);echo'<br>';
+	print_r($events2);
+	
+	/*print_r($title2);echo'<br>';
 	print_r($prsenters2);echo'<br>';
 	print_r($dateandtime2);echo'<br>';
 	print_r($venue2);echo'<br>';
 	print_r($description2);echo'<br>';
-	print_r($arrange2);echo'<br>';
+	print_r($arrange2);echo'<br>';*/
 	/*echo "<br>";
 	print_r($title);
 	
