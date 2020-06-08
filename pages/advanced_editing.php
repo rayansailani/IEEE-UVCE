@@ -123,11 +123,11 @@
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationServer03">Date and Time</label>
-      <input type="text" class="form-control" id="dateandtime" placeholder="format : dd/mm/yyyy - 00:00pm" name="dateandtime" value='.$dateandtime[0].' required>
+      <input type="text" class="form-control" id="dateandtime" placeholder="format : dd/mm/yyyy - 00:00pm" name="dateandtime" value="'.$dateandtime[0].'" required>
     </div>
     <div class="col-md-6 mb-3">
       <label for="validationServer03">venue</label>
-      <input type="text" class="form-control" id="venue" placeholder="venue" name="venue" value='.$venue[0].' required>
+      <input type="text" class="form-control" id="venue" placeholder="venue" name="venue" value="'.$venue[0].'" required>
     </div>
      <div class="col-md-6 mb-3">
       <label for="validationServer03">image</label>
@@ -141,7 +141,7 @@
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationServer03">Description</label>
-      <input type="text" class="form-control" id="description" placeholder="description" name="description" value='.$description[0].' required>
+      <input type="text" class="form-control" id="description" placeholder="description" name="description" value="'.$description[0].'" required>
     </div>
   </div>
   <input type="hidden" name="sent_title" value="<?php echo $t;?>" />
