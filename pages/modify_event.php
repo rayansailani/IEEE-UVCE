@@ -154,8 +154,9 @@
 				      <div class="col m-2"><a class="btn btn-dark btn-sm" href="advanced_editing.php?name=advanced_editing_history&&title=<?=$title2[$j]?>&&dateandtime=<?=$dateandtime2[$j]?>" role="button">Advanced Editing</a></div>
 		  		</div>
 		  	<? } ?>
-		  	
-		  	
+		  	<br><br>
+		   <a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id_history" role="button">update arrange id</a><br><br>
+		  	<br><br>
                     <? } else
                     {
                         header("Location:../index.php");
