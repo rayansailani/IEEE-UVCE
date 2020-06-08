@@ -82,7 +82,7 @@
 	$title=array();
 	$presenters=array();
 	$dateandtime=array();
-	$venue=array();echo "<br>";
+	$venue=array();
 	$description=array();
 	
 	//new events
