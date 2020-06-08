@@ -73,7 +73,7 @@
 
 
 	$title=array();
-	$arrange_id=count($title)+1;
+	$arrange_size=count($title)+1;
 	//new events
 	foreach($events as $eve)
 		$title[]=$eve['title'];	
