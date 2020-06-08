@@ -292,7 +292,7 @@ if(isset($_POST['create_event'])){
 
   $filename = $title;
       
-	print_r($arrange_id);
+	echo $arrange_id."<br>";
 	
   $sql= "INSERT INTO new_event(title,presenters,dateandtime,venue,filename,description,arrange_id) values('$title','$presenters','$dateandtime','$venue','$filename','$description','$arrange_id')";
           // $sql="insert into new_event(title,presenters,dateandtime,filename,description) values('".mysqli_real_escape_string($con,$title)."','".mysqli_real_escape_string($con,$presenters)."','".mysqli_real_escape_string($con,$dateandtime)."','".mysqli_real_escape_string($con,$filename)."','".mysqli_real_escape_string($con,$description)."'";
