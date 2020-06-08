@@ -118,7 +118,7 @@
    </div>
     <div class="form-row">
       <label for="validationServer02">Presenters</label>
-      <input type="text" class="form-control" id="presenters" placeholder="Presenters" name="presenters" value='.$presenters[0].' required>
+      <input type="text" class="form-control" id="presenters" placeholder="Presenters" name="presenters" value="'.$presenters[0].'" required>
   </div>
   <div class="form-row">
     <div class="col-md-6 mb-3">
