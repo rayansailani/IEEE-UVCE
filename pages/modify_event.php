@@ -147,8 +147,8 @@
 			    <div class="row">
 				    <div class="col m-2"><?=$title2[$j]?></div>
 				    <div class="col m-2"><?=$dateandtime2[$j]?></div>
-				    <div class="col m-2"><?=$arrange_id2[$i]?></div>
-				    <div class="col m-2"><input type="number" class="form-control" id="arrange_id" placeholder="arrange id" name="arrange_id" value="<?=$arrange_id2[$i]?>" ></div>
+				    <div class="col m-2"><?=$arrange_id2[$j]?></div>
+				    <div class="col m-2"><input type="number" class="form-control" id="arrange_id" placeholder="arrange id" name="arrange_id" value="<?=$arrange_id2[$j]?>" ></div>
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=move_to_current&&title=<?=$title2[$j]?>&&dateandtime=<?=$dateandtime2[$j]?>" role="button">move to current</a></div>
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=delete_history&&title=<?=$title2[$j]?>&&dateandtime=<?=$dateandtime2[$j]?>" role="button">delete History</a></div>
 				      <div class="col m-2"><a class="btn btn-dark btn-sm" href="advanced_editing.php?name=advanced_editing_history&&title=<?=$title2[$j]?>&&dateandtime=<?=$dateandtime2[$j]?>" role="button">Advanced Editing</a></div>
