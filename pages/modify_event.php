@@ -105,22 +105,6 @@
 	
 	
 	
-	$events3=Array();
-	
-	//new upcoming events
-	$res3=$con->query("select * from new_event");
-	while($ele3 = $res3->fetch_assoc())
-		$events3[]=$ele;
-	
-	$arrange_id3=array();
-	
-	foreach($events3 as $eve3)
-		$arrange_id3[]=$eve3['arrange_id'];
-	
-	print_r($arrange_id3);
-	
-	
-	
 ?>	
 	
 	
@@ -142,7 +126,6 @@
 			    <div class="row">
 				    <div class="col m-2"><?=$title[$i]?></div>
 				    <div class="col m-2"><?=$dateandtime[$i]?></div>
-				    <div class="col m-2"><?=$arrange_id3[$i]?></div>
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=delete_event&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">delete</a></div>
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=move_to_history&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">move to history</a></div>
 				     <div class="col m-2"><a class="btn btn-dark btn-sm" href="advanced_editing.php?name=advanced_editing_current&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">Advanced Editing</a></div>
