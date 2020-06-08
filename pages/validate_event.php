@@ -165,7 +165,7 @@ else if($name=="update_arrange_id")
 	$coo=0;
 	for($k=1;$k<=$co;$k++)
 	{
-		$sql="update new_event set arrange_id='$k' where title='$title[$k]' and dateandtime='$dateandtime[$k]'";
+		$sql="update new_event set arrange_id='$k' where title='$title[$k-1]' and dateandtime='$dateandtime[$k-1]'";
 		if(($con->query($sql))===True)
  		{
 			$coo++;
