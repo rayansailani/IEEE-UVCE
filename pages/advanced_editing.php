@@ -127,7 +127,7 @@
     </div>
     <div class="col-md-6 mb-3">
       <label for="validationServer03">venue</label>
-      <input type="text" class="form-control" id="venue" placeholder="venue" name="venue" value='.$value[0].' required>
+      <input type="text" class="form-control" id="venue" placeholder="venue" name="venue" value='.$venue[0].' required>
     </div>
      <div class="col-md-6 mb-3">
       <label for="validationServer03">image</label>
