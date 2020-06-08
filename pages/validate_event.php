@@ -166,7 +166,18 @@ else if($name=="update_arrange_id")
 	for($k=1;$k<=$co;$k++)
 	{
 		$sql="update new_event set arrange_id='$k' where title='$title[$k]' and dateandtime='$dateandtime[$k]'";
-		$con->query($sql);
+		if(($con->query($sql))===True)
+ 		{
+			
+    			header("Location:modify_event.php");
+    			die();
+			
+ 		} else {
+  
+  			echo "not deleted";
+     			echo '<a href="profile.php">Woosh</a>';
+			
+    		}
 	}
 	
 	
