@@ -242,6 +242,44 @@ if(isset($_POST['advanced_editing_c'])){
 	
 		
 }
+else if(isset($_POST['advanced_editing_h'])){
+
+	
+	$sent_title=$POST['sent_title'];
+        $sent_dateandtime=$POST['sent_dateandtime'];	
+	
+	$title=$con->real_escape_string($_POST['title']);
+  $presenters=$con->real_escape_string($_POST['presenters']);
+  $dateandtime=$con->real_escape_string($_POST['dateandtime']);
+  $venue=$con->real_escape_string($_POST['venue']);
+  $description=$con->real_escape_string($_POST['description']);
+
+  $filename = $title;
+      
+	if(($con->query("delete from old_event where title='$sent_title' and dateandtime='$sent_dateandtime'"))===True)
+	{
+		if(rowExists('new_event','title',$title))	
+		{
+			echo "somthing went wrong let me head back";
+  			echo '<a href="profile.php">Woooosh</a>';
+		}
+     		else 
+     		{
+			$sql= "INSERT INTO old_event(title,presenters,dateandtime,venue,filename,description) values('$title','$presenters','$dateandtime','$venue','$filename','$description')";
+	   		if($con->query($sql)===True)  
+	      			echo 'info updated<br>';
+        		//header("Location:profile.php");
+       			//die();
+     		}
+	}
+  	
+          // $sql="insert into new_event(title,presenters,dateandtime,filename,description) values('".mysqli_real_escape_string($con,$title)."','".mysqli_real_escape_string($con,$presenters)."','".mysqli_real_escape_string($con,$dateandtime)."','".mysqli_real_escape_string($con,$filename)."','".mysqli_real_escape_string($con,$description)."'";
+     
+     
+	
+	
+		
+}
 
 	
 	
