@@ -74,8 +74,11 @@
 		 while($ele = $res->fetch_assoc())
 			 $events[]=$ele;
  
+        print_r($events);
    
 	//new events
+
+
 	$title=array();
 	$presenters=array();
 	$dateandtime=array();
