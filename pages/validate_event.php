@@ -169,8 +169,6 @@ else if($name=="update_arrange_id")
 		if(($con->query($sql))===True)
  		{
 			$coo++;
-    			header("Location:modify_event.php");
-    			die();
 			
  		} else {
   
