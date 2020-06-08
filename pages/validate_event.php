@@ -146,7 +146,7 @@ else if($name=="delete_history")
 else if($name=="update_arrange_id")
 {
 	$events=Array();
-  	$res=$con->query("select * from new_event where title='$title' and dateandtime='$dateandtime'");
+  	$res=$con->query("select * from new_event");
 		 while($ele = $res->fetch_assoc())
 			 $events[]=$ele;
  
