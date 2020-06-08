@@ -136,9 +136,8 @@
 				     <div class="col m-2"><a class="btn btn-dark btn-sm" href="advanced_editing.php?name=advanced_editing_current&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">Advanced Editing</a></div>
 		  		</div><br><br>
 		  
-		  		<a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id" role="button">update arrange id</a>
 		  	<? } ?>
-		  <br>
+		  <br><br><a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id" role="button">update arrange id</a>
 		  	<? for($j=$c2-1;$j>=0;$j--) { ?>
 			    <div class="row">
 				    <div class="col m-2"><?=$title2[$j]?></div>
