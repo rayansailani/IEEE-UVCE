@@ -58,6 +58,27 @@
 		</div>
 	</nav>
 	
+	<?php
+		
+		$con = getCon();
+	
+	$events=Array();
+  	$res=$con->query("select * from new_event);
+		 while($ele = $res->fetch_assoc())
+			 $events[]=$ele;
+ 
+        //print_r($events);
+   
+	//new events
+
+
+	$title=array();
+	$arrange_id=count($title)+1;
+	//new events
+	foreach($events as $eve)
+		$title[]=$eve['title'];	
+	
+	?>
 	
 	<div class="container"><?php if(isset($_SESSION['user_name'])&&($_SESSION['user_name']=="groot"||$_SESSION['user_name']=="amigroot")){
                
@@ -83,6 +104,10 @@
      <div class="col-md-6 mb-3">
       <label for="validationServer03">image</label>
       <input type="file" class="form-control" id="file" placeholder="upload_file" name="upload_file">
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">arrange id</label>
+      <input type="number" class="form-control" id="arrange_id" placeholder="arrange id" name="arrange_id" value="'.$arrange_size.'" disabled>
     </div>
     <!--<div class="col-md-6 mb-3">
       <label for="validationServer03">Time</label>
