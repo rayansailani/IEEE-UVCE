@@ -76,6 +76,10 @@
 	foreach($events as $eve)
 		$dateandtime[]=$eve['dateandtime'];
 	
+	$arrange_id = array();
+	foreach($events as $eve)
+		$arrange_id[]=$eve['arrange_id'];
+	
 	$c=count($title);
 	
 	
@@ -97,7 +101,7 @@
 	
 	$c2=count($title2);
 	
-	
+	print_r($arrange_id);
 	
 	
 	
