@@ -116,6 +116,8 @@
         
 	//new events
 
+	
+	print_r($events2);
 
 	$title2=array();
 	$presenters2=array();
