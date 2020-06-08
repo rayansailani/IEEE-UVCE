@@ -162,13 +162,13 @@ else if($name=="update_arrange_id")
 		$dateandtime[]=$eve['dateandtime'];
 	
 	$co=count($title);
-	
+	$coo=0;
 	for($k=1;$k<=$co;$k++)
 	{
 		$sql="update new_event set arrange_id='$k' where title='$title[$k]' and dateandtime='$dateandtime[$k]'";
 		if(($con->query($sql))===True)
  		{
-			
+			$coo++;
     			header("Location:modify_event.php");
     			die();
 			
@@ -179,6 +179,18 @@ else if($name=="update_arrange_id")
 			
     		}
 	}
+	if($coo==$co)
+	{
+		
+    		header("Location:modify_event.php");
+    		die();
+			
+ 	} else {
+  
+  		echo "not deleted";
+     		echo '<a href="profile.php">Woosh</a>';
+			
+    	}
 	
 	
 }
