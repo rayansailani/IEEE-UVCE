@@ -67,7 +67,7 @@
 	$events2=Array();
 	
 	//new upcoming events
-	$res=$con->query("select * from new_event");
+	$res=$con->query("select * from new_event order by arrange_id asc");
 	while($ele = $res->fetch_assoc())
 		$events[]=$ele;
 	
@@ -83,6 +83,7 @@
 	$presenters=array();
 	$dateandtime=array();
 	$venue=array();
+	$arrange_id=array();
 	
 	//old events
 	$title2=array();
@@ -99,6 +100,9 @@
 		$presenters[]=$eve['presenters'];
 	foreach($events as $eve)
 		$dateandtime[]=$eve['dateandtime'];
+	foreach($events as $eve)
+		$arrange_id[]=$eve['arrange_id'];
+	
 	
 	
 	
