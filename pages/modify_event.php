@@ -71,6 +71,10 @@
 	while($ele = $res->fetch_assoc())
 		$events[]=$ele;
 	
+	$event_id = array();
+	foreach($events as $eve)
+		$event_id[]=$eve['event_id'];
+	
 	$title = array();
 	foreach($events as $eve)
 		$title[]=$eve['title'];
@@ -93,6 +97,10 @@
 	$res4 = $con->query("select * from new_event order by arrange_id asc");
 	while($ele4 = $res4->fetch_assoc())
 		$events4[]=$ele4;
+	
+	$event_id4 = array();
+	foreach($events4 as $eve4)
+		$event_id4[]=$eve4['event_id'];
 	
 	$title4 = array();
 	foreach($events4 as $eve4)
@@ -117,6 +125,10 @@
 	while($ele2 = $res2->fetch_assoc())
 		$events2[]=$ele2;
 	
+	
+	$event_id2 = array();
+	foreach($events2 as $eve2)
+		$event_id2[]=$eve2['event_id'];
 	
 	$title2 = array();
 	foreach($events2 as $eve2)
@@ -157,12 +169,13 @@
 		  		</div>
 		  	<? } ?>
 		  <? } else if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="amigroot") { ?>
+		  <br><br>
 		  <? if($order) { ?>
-		  
 		  	<form method="POST" action="validate_event.php"> 
 			  
 		  	<? for($i=0;$i<$c4;$i++) { ?>
 			    <div class="row">
+				    <div class="col m-2"><?=$event_id4[$i]?></div>
 				    <div class="col m-2"><?=$title4[$i]?></div>
 				    <div class="col m-2"><?=$dateandtime4[$i]?></div>
 				    <div class="col m-2"><?=$arrange_id4[$i]?></div>
@@ -183,6 +196,7 @@
 			  
 		  	<? for($i=0;$i<$c;$i++) { ?>
 			    <div class="row">
+				    <div class="col m-2"><?=$event_id[$i]?></div>
 				    <div class="col m-2"><?=$title[$i]?></div>
 				    <div class="col m-2"><?=$dateandtime[$i]?></div>
 				    <div class="col m-2"><?=$arrange_id[$i]?></div>
@@ -201,6 +215,7 @@
 		  <!--<a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id" role="button">update arrange id</a><br><br>-->
 		  	<? for($j=$c2-1;$j>=0;$j--) { ?>
 			    <div class="row">
+				    <div class="col m-2"><?=$event_id2[$i]?></div>
 				    <div class="col m-2"><?=$title2[$j]?></div>
 				    <div class="col m-2"><?=$dateandtime2[$j]?></div>
 				    <div class="col m-2"><?=$arrange_id2[$j]?></div>
