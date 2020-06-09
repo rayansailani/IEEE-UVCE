@@ -198,7 +198,7 @@
 		  </form>	
 		  
 		  <? } ?>
-		  <a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id" role="button">update arrange id</a><br><br>
+		  <!--<a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id" role="button">update arrange id</a><br><br>-->
 		  	<? for($j=$c2-1;$j>=0;$j--) { ?>
 			    <div class="row">
 				    <div class="col m-2"><?=$title2[$j]?></div>
