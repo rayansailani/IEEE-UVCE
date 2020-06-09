@@ -123,6 +123,15 @@
 	$e=count($title);
 	$e2=count($title2);
 	
+	
+	
+	
+	////register////
+	
+	$url=array("www.google.com","www.ieeeuvce.in");
+	
+	////register////
+	
 ?>
 
 	<div class=" container mt-4 mb-4">
@@ -147,7 +156,7 @@
 	    <td><?=$dateandtime[$i]?></td>
 	    <td><?=$venue[$i]?></td>
 	    <td class="text-center">
-		<a href="event_register.php?id=<?=$event_id[$i]?>" class="btn btn-success btn-sm mb-2" role="button">Register</a>
+		<a href="<?=$url[$i]?>" class="btn btn-success btn-sm mb-2" role="button">Register</a>
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
             </td>
         </tr>    
