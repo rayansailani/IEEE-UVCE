@@ -296,12 +296,12 @@ if(isset($_POST['change_order']))
 	if($coo==$t)
 	{
 		$reorder=true;
-    		header("Location:modify_event.php?order=".$reorder.");
+    		header("Location:modify_event.php?order=".$reorder);
     		die();
 			
  	} else {
   
-  		echo "not deleted";
+  		echo 'not deleted';
      		echo '<a href="profile.php">Woosh</a>';
 			
     	}
