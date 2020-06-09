@@ -172,7 +172,7 @@ else if($name=="update_arrange_id")
 			
  		} else {
   
-  			echo "not deleted";
+  			echo 'not deleted';
      			echo '<a href="profile.php">Woosh</a>';
 			
     		}
