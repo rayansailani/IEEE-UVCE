@@ -60,6 +60,10 @@
 	
 	
 <?php  
+	
+	$order=$_GET['order'];
+	
+	
 	$con = getCon();
 	
 	$events=Array();
@@ -80,6 +84,30 @@
 		$arrange_id[]=$eve['arrange_id'];
 	
 	$c=count($title);
+	
+	
+	
+	////4////
+	
+	$events4=Array();
+	$res4 = $con->query("select * from new_event order by arrange_id asc");
+	while($ele4 = $res4->fetch_assoc())
+		$events4[]=$ele4;
+	
+	$title4 = array();
+	foreach($events4 as $eve4)
+		$title4[]=$eve4['title'];
+	
+	$dateandtime4 = array();
+	foreach($events4 as $eve4)
+		$dateandtime4[]=$eve4['dateandtime'];
+	
+	$arrange_id4 = array();
+	foreach($events4 as $eve4)
+		$arrange_id4[]=$eve4['arrange_id'];
+	
+	$c4=count($title);
+	////4////
 	
 	
 	
@@ -129,7 +157,29 @@
 		  		</div>
 		  	<? } ?>
 		  <? } else if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="amigroot") { ?>
-		  <form method="POST" action="validate_event.php">
+		  <? if($order) { ?>
+		  
+		  	<form method="POST" action="validate_event.php"> 
+			  
+		  	<? for($i=0;$i<$c4;$i++) { ?>
+			    <div class="row">
+				    <div class="col m-2"><?=$title4[$i]?></div>
+				    <div class="col m-2"><?=$dateandtime4[$i]?></div>
+				    <div class="col m-2"><?=$arrange_id4[$i]?></div>
+				    <div class="col m-2"><input type="number" class="form-control" id="arrange_id" placeholder="arrange id" name="arrange_id[]" value="<?=$arrange_id4[$i]?>" ></div>
+				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=delete_event&&title=<?=$title4[$i]?>&&dateandtime=<?=$dateandtime4[$i]?>" role="button">delete</a></div>
+				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=move_to_history&&title=<?=$title4[$i]?>&&dateandtime=<?=$dateandtime4[$i]?>" role="button">move to history</a></div>
+				     <div class="col m-2"><a class="btn btn-dark btn-sm" href="advanced_editing.php?name=advanced_editing_current&&title=<?=$title4[$i]?>&&dateandtime=<?=$dateandtime4[$i]?>" role="button">Advanced Editing</a></div>
+		  		</div><br><br>
+		  
+		  	<? } ?>
+			  
+			 <button class="btn btn-dark btn-block" name="change_order" type="submit">change order</button><br><br>
+		  </form>
+		  
+		  <? } else { ?>
+		  	
+		  	<form method="POST" action="validate_event.php"> 
 			  
 		  	<? for($i=0;$i<$c;$i++) { ?>
 			    <div class="row">
@@ -145,7 +195,9 @@
 		  	<? } ?>
 			  
 			 <button class="btn btn-dark btn-block" name="change_order" type="submit">change order</button><br><br>
-		  </form>
+		  </form>	
+		  
+		  <? } ?>
 		  <a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id" role="button">update arrange id</a><br><br>
 		  	<? for($j=$c2-1;$j>=0;$j--) { ?>
 			    <div class="row">
