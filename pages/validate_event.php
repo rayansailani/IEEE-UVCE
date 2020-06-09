@@ -179,8 +179,7 @@ else if($name=="update_arrange_id")
 	}
 	if($coo==$co)
 	{
-		$reorder=true;
-    		header("Location:modify_event.php?order=".$reorder.");
+    		header("Location:modify_event.php");
     		die();
 			
  	} else {
@@ -296,8 +295,8 @@ if(isset($_POST['change_order']))
 	}
 	if($coo==$t)
 	{
-		
-    		header("Location:modify_event.php");
+		$reorder=true;
+    		header("Location:modify_event.php?order=".$reorder.");
     		die();
 			
  	} else {
