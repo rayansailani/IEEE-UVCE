@@ -247,7 +247,9 @@ else if($name=="getids")
 	print_r($title);echo "<br>";
 	print_r($dateandtime);echo "<br>";*/
 	
-	echo $name;
+	echo $name."<br>";
+	
+	print_r($_POST['arrange_id']);
 }
 /*else if($name=="advanced_editing_current")
 {
