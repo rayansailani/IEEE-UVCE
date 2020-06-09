@@ -259,7 +259,8 @@ else if($name=="advanced_editing_history")
 
 if(isset($_POST['change_order']))
 {
-	print_r($arrange_id);
+	$order=$_POST['arrange_id'];
+	print_r($order);
 	
 	
 	
