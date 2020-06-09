@@ -241,15 +241,12 @@ else if($name=="update_arrange_id_history")
 	
 	
 }
-else if($name=="getids")
+
+
+
+if(isset($_POST['change_order']))
 {
-	/*print_r($arrange_id);echo "<br>";
-	print_r($title);echo "<br>";
-	print_r($dateandtime);echo "<br>";*/
-	isset($_POST['getids'])
-	{echo $name."<br>";
-	
-	print_r($_POST['arrange_id']);}
+	print_r($_POST['arrange_id']); 	
 }
 /*else if($name=="advanced_editing_current")
 {
