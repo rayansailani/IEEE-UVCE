@@ -241,6 +241,12 @@ else if($name=="update_arrange_id_history")
 	
 	
 }
+else if($name=="getids")
+{
+	print_r($arrange_id);echo "<br>";
+	print_r($title);echo "<br>";
+	print_r($dateandtime);echo "<br>";
+}
 /*else if($name=="advanced_editing_current")
 {
 	echo "advanced editing";
