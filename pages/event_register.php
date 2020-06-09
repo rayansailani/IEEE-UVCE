@@ -64,12 +64,7 @@
 	echo $id;
 ?>
 
-	<div class="container">
-		<div class="text-center">
-			<iframe name="571" src="https://docs.google.com/forms/d/e/1FAIpQLSeD_w2z6ENaqiIhGGq0bpdSzS1txvKPdVhD7f7LuRH600VbTg/viewform?embedded=true" width="640" height="947" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-			<iframe name="711" src="https://docs.google.com/forms/d/e/1FAIpQLSfYTYl1LHY3yt8PIfQBF3--6p3fOsytWF-ktUYXa-6HrYJ53Q/viewform?embedded=true" width="640" height="947" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-		</div>
-	</div>
+	
 	
 	
 </body>
