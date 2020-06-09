@@ -93,6 +93,8 @@
 	
 	//new events
 	foreach($events as $eve)
+		$event_id[]=$eve['event_id'];
+	foreach($events as $eve)
 		$title[]=$eve['title'];
 	foreach($events as $eve)
 		$venue[]=$eve['venue'];
@@ -145,7 +147,7 @@
 	    <td><?=$dateandtime[$i]?></td>
 	    <td><?=$venue[$i]?></td>
 	    <td class="text-center">
-		<a href="event_register.php" class="btn btn-success btn-sm mb-2" role="button">Register</a>
+		<a href="event_register.php?id=<?=$event_id[$i]?>" class="btn btn-success btn-sm mb-2" role="button">Register</a>
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
             </td>
         </tr>    
