@@ -156,7 +156,12 @@
 	    <td><?=$dateandtime[$i]?></td>
 	    <td><?=$venue[$i]?></td>
 	    <td class="text-center">
-		<a href="<?=$url[$i]?>" class="btn btn-success btn-sm mb-2" role="button">Register</a>
+		<a onclick="directme()" class="btn btn-success btn-sm mb-2" role="button">Register</a>
+		    <script>
+			function directme() {
+  				window.location.assign("google.com")
+			}
+		</script>
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
             </td>
         </tr>    
