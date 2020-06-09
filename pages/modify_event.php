@@ -145,7 +145,7 @@
 		  
 		  	<? } ?>
 			  
-			 <a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=getids" role="button">Get ids</a><br><br>
+			 <a class="btn btn-dark btn-sm btn-block" type="submit" name="change_order" role="button">Change Order</a><br><br>
 		  </form>
 		  <a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id" role="button">update arrange id</a><br><br>
 		  	<? for($j=$c2-1;$j>=0;$j--) { ?>
