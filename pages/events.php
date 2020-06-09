@@ -147,7 +147,7 @@
 	    <td><?=$dateandtime[$i]?></td>
 	    <td><?=$venue[$i]?></td>
 	    <td class="text-center">
-		<a href="event_register.php?id=<?=$event_id[$i]?>" target="<?=$event_id[$i]?>" class="btn btn-success btn-sm mb-2" role="button">Register</a>
+		<a href="event_register.php?id=<?=$event_id[$i]?>" class="btn btn-success btn-sm mb-2" role="button">Register</a>
 		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
             </td>
         </tr>    
