@@ -242,12 +242,6 @@ else if($name=="update_arrange_id_history")
 	
 }
 
-
-
-if(isset($_POST['change_order']))
-{
-	print_r($_POST['arrange_id']); 	
-}
 /*else if($name=="advanced_editing_current")
 {
 	echo "advanced editing";
@@ -256,6 +250,23 @@ else if($name=="advanced_editing_history")
 {
 	echo "advanced editing history";	
 }*/
+
+
+
+
+
+////////chnage order
+
+if(isset($_POST['change_order']))
+{
+	print_r($arrange_id);
+	
+	
+	
+	
+}
+
+
 
 
 
