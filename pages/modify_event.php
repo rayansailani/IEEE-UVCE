@@ -63,10 +63,11 @@
 	$con = getCon();
 	
 	$events=Array();
-	$res = $con->query("select * from new_event order by arrange_id asc");
+	$res = $con->query("select * from new_event");
 	while($ele = $res->fetch_assoc())
 		$events[]=$ele;
 	
+	//order by arrange_id asc
 	
 	$title = array();
 	foreach($events as $eve)
