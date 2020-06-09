@@ -130,6 +130,8 @@
 		  		</div>
 		  	<? } ?>
 		  <? } else if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="amigroot") { ?>
+		  <form method="POST" action="validate_event.php">
+			  
 		  	<? for($i=0;$i<$c;$i++) { ?>
 			    <div class="row">
 				    <div class="col m-2"><?=$title[$i]?></div>
@@ -142,6 +144,9 @@
 		  		</div><br><br>
 		  
 		  	<? } ?>
+			  
+			 <a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=getids" role="button">Get ids</a><br><br>
+		  </form>
 		  <a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id" role="button">update arrange id</a><br><br>
 		  	<? for($j=$c2-1;$j>=0;$j--) { ?>
 			    <div class="row">
