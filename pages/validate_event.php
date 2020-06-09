@@ -260,8 +260,52 @@ else if($name=="advanced_editing_history")
 if(isset($_POST['change_order']))
 {
 	$order=$_POST['arrange_id'];
-	print_r($order);
+	//print_r($order);
+	$events=Array();
+  	$res=$con->query("select * from new_event");
+		 while($ele = $res->fetch_assoc())
+			 $events[]=$ele;
+ 
+   
+	//new events
+	$title=array();
+	$dateandtime=array();
 	
+	//new events
+	foreach($events as $eve)
+		$title[]=$eve['title'];
+	foreach($events as $eve)
+		$dateandtime[]=$eve['dateandtime'];
+	
+	
+	$t=count($title);
+	$coo=0;
+	for($k=0;$k<$t;$k++)
+	{
+		$sql="update new_event set arrange_id='$order[$k]' where title='$title[$k]' and dateandtime='$dateandtime[$k]'";
+		if(($con->query($sql))===True)
+ 		{
+			$coo++;
+			
+ 		} else {
+  
+  			echo "not deleted";
+     			echo '<a href="profile.php">Woosh</a>';
+			
+    		}
+	}
+	if($coo==$t)
+	{
+		
+    		header("Location:modify_event.php");
+    		die();
+			
+ 	} else {
+  
+  		echo "not deleted";
+     		echo '<a href="profile.php">Woosh</a>';
+			
+    	}
 	
 	
 	
