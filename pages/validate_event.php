@@ -40,6 +40,7 @@ else if($name=="move_to_history")
 	$dateandtime=array();
 	$venue=array();
 	$description=array();
+	$filename=array();
 	
 	//new events
 	foreach($events as $eve)
@@ -52,8 +53,10 @@ else if($name=="move_to_history")
 		$description[]=$eve['description'];
 	foreach($events as $eve)
 		$venue[]=$eve['venue'];
+	foreach($events as $eve)
+		$filename[]=$eve['filename'];
  
-  	$sql= "INSERT INTO old_event(title,presenters,dateandtime,venue,filename,description) values('$title[0]','$presenters[0]','$dateandtime[0]','$venue[0]','$title[0]','$description[0]')";
+  	$sql= "INSERT INTO old_event(title,presenters,dateandtime,venue,filename,description) values('$title[0]','$presenters[0]','$dateandtime[0]','$venue[0]','$filename[0]','$description[0]')";
 	
    	if($con->query($sql)===True)   
      	{
@@ -91,6 +94,7 @@ else if($name=="move_to_current")
 	$dateandtime2=array();
 	$venue2=array();
 	$description2=array();
+	$filename2=array();
 	
 	//new events
 	foreach($events2 as $eve2)
@@ -104,7 +108,7 @@ else if($name=="move_to_current")
 	foreach($events2 as $eve2)
 		$venue2[]=$eve2['venue'];
  
-  	$sql= "INSERT INTO new_event(title,presenters,dateandtime,venue,filename,description) values('$title2[0]','$presenters2[0]','$dateandtime2[0]','$venue2[0]','$title2[0]','$description2[0]')";
+  	$sql= "INSERT INTO new_event(title,presenters,dateandtime,venue,filename,description) values('$title2[0]','$presenters2[0]','$dateandtime2[0]','$venue2[0]','$filename2[0]','$description2[0]')";
 	
    	if($con->query($sql)===True)   
      	{
@@ -326,8 +330,8 @@ if(isset($_POST['advanced_editing_c'])){
   $dateandtime=$con->real_escape_string($_POST['dateandtime']);
   $venue=$con->real_escape_string($_POST['venue']);
   $description=$con->real_escape_string($_POST['description']);
+	$filename=$con->real_escape_string($_POST['filename']);
 
-  $filename = $title;
       
 	$sql="delete from new_event where title='$sent_title' and dateandtime='$sent_dateandtime'";
 	if(($con->query($sql))===True)
@@ -360,9 +364,8 @@ else if(isset($_POST['advanced_editing_h'])){
   $dateandtime=$con->real_escape_string($_POST['dateandtime']);
   $venue=$con->real_escape_string($_POST['venue']);
   $description=$con->real_escape_string($_POST['description']);
+	$filename=$con->real_escape_string($_POST['filename']);
 
-  $filename = $title;
-      
 	if(($con->query("delete from old_event where title='$sent_title' and dateandtime='$sent_dateandtime'"))===True)
 	{
 		$sql= "INSERT INTO old_event(title,presenters,dateandtime,venue,filename,description) values('$title','$presenters','$dateandtime','$venue','$filename','$description')";
@@ -400,8 +403,8 @@ if(isset($_POST['create_event'])){
   $venue=$con->real_escape_string($_POST['venue']);
   $description=$con->real_escape_string($_POST['description']);
 	$arrange_id=$con->real_escape_string($_POST['arrange_id']);
+	$filename=$con->real_escape_string($_POST['filename']);
 
-  $filename = $title;
       
 	echo $arrange_id."<br>";
 	
