@@ -426,7 +426,8 @@ if(isset($_POST['create_event'])){
  	
   
 	
-	require('vendor/autoload.php');
+	require '../aws.phar';
+	
 // this will simply read AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY from env vars
 $s3 = new Aws\S3\S3Client([
     'version'  => '2006-03-01',
