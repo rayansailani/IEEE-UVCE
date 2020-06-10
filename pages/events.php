@@ -126,8 +126,9 @@
 	foreach($events2 as $eve2)
 		$dateandtime2[]=$eve2['dateandtime'];
 	foreach($events2 as $eve2)
-		$filename2[]=$eve2['filename']
+		$filename2[]=$eve2['filename'];
 	
+		
 	$e=count($title);
 	$e2=count($title2);
 	
