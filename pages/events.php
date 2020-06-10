@@ -161,7 +161,7 @@
 	    <td><?=$venue[$i]?></td>
 	    <td class="text-center">
 		<a href="#" class="btn btn-success btn-sm mb-2" role="button">Register</a>
-		<a href="view_event.php?event_id=<?=$event_id[$i]?>" class="btn btn-success btn-sm mb-2" role="button">view</a>
+		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
             </td>
         </tr>    
 	<? } ?>
@@ -191,7 +191,7 @@
 	    <td><?=$dateandtime2[$j]?></td>
 	    <td><?=$venue2[$j]?></td>
 	    <td class="text-center">
-		<a href="view_event.php?event_id=<?=$event_id2[$j]?>" class="btn btn-success btn-sm mb-2" role="button">view</a>
+		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
             </td>
         </tr>    
 	<? } ?>
