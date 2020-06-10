@@ -60,9 +60,19 @@
 	</nav>
 	
 
-
+<?php
 	
+	$filename=$_GET['filename'];
+	echo $filename;
 	
+?>
+	
+	<div class="container">
+		<div class="text-center">
+			<img src="../assets/event_files/<?=$filename?>.jpg" class="img-fluid" alt="Responsive image">
+		</div>
+	</div>
+		
 	
 </body>
 	
