@@ -443,6 +443,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_FILES['upload_file']) && $_FI
         // FIXME: you should not use 'name' for the upload, since that's the original filename from the user's computer - generate a random filename that you then store in your database, or similar
         $upload = $s3->upload($bucket, $_FILES['upload_file']['name'], fopen($_FILES['userfile']['tmp_name'], 'rb'), 'public-read');
 
+    } catch(Exception $e) {
+	    
+	    echo 'upload error';
+	    
     }
 }
   
