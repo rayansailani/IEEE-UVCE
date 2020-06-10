@@ -106,10 +106,10 @@
       <label for="validationServer03">venue</label>
       <input type="text" class="form-control" id="venue" placeholder="venue" name="venue" required>
     </div>
-     <div class="col-md-6 mb-3">
+     <!--<div class="col-md-6 mb-3">
       <label for="validationServer03">image</label>
       <input type="file" class="form-control" id="file" placeholder="upload_file" name="upload_file">
-    </div>
+    </div>-->
     <div class="col-md-6 mb-3">
       <label for="validationServer03">arrange id</label>
       <input type="number" class="form-control" id="arrange_id" placeholder="arrange id" name="arrange_id" value="'.$arrange_size.'">
