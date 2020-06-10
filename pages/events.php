@@ -79,6 +79,7 @@
 	
 	
 	//new events
+	$event_id=array();
 	$title=array();
 	$presenters=array();
 	$dateandtime=array();
@@ -86,6 +87,7 @@
 	$arrange_id=array();
 	
 	//old events
+	$event_id2=array();
 	$title2=array();
 	$presenters2=array();
 	$dateandtime2=array();
@@ -110,6 +112,8 @@
 	
 	
 	//old events
+	foreach($events2 as $eve2)
+		$event_id2[]=$eve2['event_id'];
 	foreach($events2 as $eve2)
 		$title2[]=$eve2['title'];
 	foreach($events2 as $eve2)
@@ -157,7 +161,7 @@
 	    <td><?=$venue[$i]?></td>
 	    <td class="text-center">
 		<a href="#" class="btn btn-success btn-sm mb-2" role="button">Register</a>
-		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
+		<a href="view_event.php?event_id=<?=$event_id[$i]?>" class="btn btn-success btn-sm mb-2" role="button">view</a>
             </td>
         </tr>    
 	<? } ?>
@@ -187,7 +191,7 @@
 	    <td><?=$dateandtime2[$j]?></td>
 	    <td><?=$venue2[$j]?></td>
 	    <td class="text-center">
-		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
+		<a href="view_event.php?event_id=<?=$event_id2[$j]?>" class="btn btn-success btn-sm mb-2" role="button">view</a>
             </td>
         </tr>    
 	<? } ?>
