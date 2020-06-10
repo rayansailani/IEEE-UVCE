@@ -85,6 +85,7 @@
 	$dateandtime=array();
 	$venue=array();
 	$arrange_id=array();
+	$filename=array();
 	
 	//old events
 	$event_id2=array();
@@ -92,6 +93,7 @@
 	$presenters2=array();
 	$dateandtime2=array();
 	$venue2=array();
+	$filename2=array();
 	
 	//new events
 	foreach($events as $eve)
@@ -106,7 +108,8 @@
 		$dateandtime[]=$eve['dateandtime'];
 	foreach($events as $eve)
 		$arrange_id[]=$eve['arrange_id'];
-	
+	foreach($events as $eve)
+		$filename[]=$eve['filename'];
 	
 	
 	
@@ -122,7 +125,8 @@
 		$presenters2[]=$eve2['presenters'];
 	foreach($events2 as $eve2)
 		$dateandtime2[]=$eve2['dateandtime'];
-	
+	foreach($events2 as $eve2)
+		$filename2[]=$eve2['filename']
 	
 	$e=count($title);
 	$e2=count($title2);
@@ -161,7 +165,7 @@
 	    <td><?=$venue[$i]?></td>
 	    <td class="text-center">
 		<a href="#" class="btn btn-success btn-sm mb-2" role="button">Register</a>
-		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
+		<a href="view_event.php?filename=<?=$filename[$i]?>" class="btn btn-success btn-sm mb-2" role="button">view</a>
             </td>
         </tr>    
 	<? } ?>
@@ -191,7 +195,7 @@
 	    <td><?=$dateandtime2[$j]?></td>
 	    <td><?=$venue2[$j]?></td>
 	    <td class="text-center">
-		<a href="view_event.php" class="btn btn-success btn-sm mb-2" role="button">view</a>
+		<a href="view_event.php?filename=<?=$filename2[$j]?>" class="btn btn-success btn-sm mb-2" role="button">view</a>
             </td>
         </tr>    
 	<? } ?>
