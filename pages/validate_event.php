@@ -423,10 +423,12 @@ if(isset($_POST['create_event'])){
          
      }
 
- 
+ 	
   
+	
+	
   
-  	$file=$_FILES['upload_file'];
+  	/*$file=$_FILES['upload_file'];
 	print_r($file);
 	echo '<br>';
 	
@@ -477,7 +479,7 @@ if(isset($_POST['create_event'])){
 	
     
     
-    
+    */
      
 
     
