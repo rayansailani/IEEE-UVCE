@@ -99,12 +99,16 @@
   </div>
   <div class="form-row">
     <div class="col-md-6 mb-3">
-      <label for="validationServer03">Date and Time</label>
+      <label for="validationServer03">Date and Time format : dd/mm/yyyy - 00:00pm</label>
       <input type="text" class="form-control" id="dateandtime" placeholder="format : dd/mm/yyyy - 00:00pm" name="dateandtime" required>
     </div>
     <div class="col-md-6 mb-3">
       <label for="validationServer03">venue</label>
       <input type="text" class="form-control" id="venue" placeholder="venue" name="venue" required>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">filename</label>
+      <input type="text" class="form-control" id="filename" placeholder="filename" name="filename" required>
     </div>
      <!--<div class="col-md-6 mb-3">
       <label for="validationServer03">image</label>
@@ -120,7 +124,7 @@
     </div>-->
   </div>
   <div class="form-row">
-    <div class="col-md-6 mb-3">
+    <div class="col">
       <label for="validationServer03">Description</label>
       <input type="text" class="form-control" id="description" placeholder="description" name="description" required>
     </div>
