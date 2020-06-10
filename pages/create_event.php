@@ -58,6 +58,9 @@
 		</div>
 	</nav>
 	
+	
+	
+	
 	<?php
 		
 		$con = getCon();
