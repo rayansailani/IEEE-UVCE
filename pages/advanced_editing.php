@@ -86,6 +86,7 @@
 	$venue=array();
 	$description=array();
 	$arrange=array();
+	$filename=array();
 	
 	//new events
 	foreach($events as $eve)
@@ -100,6 +101,8 @@
 		$venue[]=$eve['venue'];
 	foreach($events as $eve)
 		$arrange[]=$eve['arrange_id'];
+	foreach($events as $eve)
+		$filename[]=$eve['filename'];
 	
 	
 	
@@ -125,6 +128,7 @@
 	$venue2=array();
 	$description2=array();
 	$arrange2=array();
+	$filename2=array();
 	
 	//new events
 	foreach($events2 as $eve2)
@@ -139,7 +143,8 @@
 		$venue2[]=$eve2['venue'];
 	foreach($events2 as $eve2)
 		$arrange2[]=$eve2['arrange_id'];
-	
+	foreach($events2 as $eve2)
+		$filename2[]=$eve2['filename'];
 	
 	//print_r($events2);
 	
@@ -186,23 +191,27 @@
       <input type="number" class="form-control" id="arrange_id" placeholder="arrange id" name="arrange_id" value="'.$arrange[0].'" required>
     </div>
      <div class="col-md-6 mb-3">
+      <label for="validationServer03">filename</label>
+      <input type="text" class="form-control" id="filename" placeholder="filename" name="filename" value="'.$filename[0].'" required>
+    </div>
+     <!--<div class="col-md-6 mb-3">
       <label for="validationServer03">image</label>
       <input type="file" class="form-control" id="file" placeholder="upload_file" name="upload_file">
-    </div>
+    </div>-->
     <!--<div class="col-md-6 mb-3">
       <label for="validationServer03">Time</label>
       <input type="time" class="form-control" id="time" placeholder="time" name="time" required>
     </div>-->
   </div>
   <div class="form-row">
-    <div class="col-md-6 mb-3">
+    <div class="col">
       <label for="validationServer03">Description</label>
       <input type="text" class="form-control" id="description" placeholder="description" name="description" value="'.$description[0].'" required>
     </div>
   </div>
   <input type="hidden" name="sent_title" value="<?php echo $t;?>" />
   <input type="hidden" name="sent_dateandtime" value="<?php echo $dt;?>" />
-  <button class="btn btn-dark" name="advanced_editing_c" type="submit">create event</button>
+  <button class="btn btn-dark" name="advanced_editing_c" type="submit">modify event</button>
 </form></div>';
 	}     
 	}
@@ -232,24 +241,28 @@
       <label for="validationServer03">arrange id</label>
       <input type="number" class="form-control" id="arrange_id" placeholder="arrange id" name="arrange_id" value="'.$arrange2[0].'" required>
     </div>
-     <div class="col-md-6 mb-3">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">filename</label>
+      <input type="text" class="form-control" id="filename" placeholder="filename" name="filename" value="'.$filename2[0].'" required>
+    </div>
+     <!--<div class="col-md-6 mb-3">
       <label for="validationServer03">image</label>
       <input type="file" class="form-control" id="file" placeholder="upload_file" name="upload_file">
-    </div>
+    </div>-->
     <!--<div class="col-md-6 mb-3">
       <label for="validationServer03">Time</label>
       <input type="time" class="form-control" id="time" placeholder="time" name="time" required>
     </div>-->
   </div>
   <div class="form-row">
-    <div class="col-md-6 mb-3">
+    <div class="col">
       <label for="validationServer03">Description</label>
       <input type="text" class="form-control" id="description" placeholder="description" name="description" value="'.$description2[0].'" required>
     </div>
   </div>
   <input type="hidden" name="sent_title" value="<?php echo $t;?>" />
   <input type="hidden" name="sent_dateandtime" value="<?php echo $dt;?>" />
-  <button class="btn btn-dark" name="advanced_editing_h" type="submit">create event</button>
+  <button class="btn btn-dark" name="advanced_editing_h" type="submit">modify event</button>
 </form></div>';
 		}
 	      }
