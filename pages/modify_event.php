@@ -62,6 +62,7 @@
 <?php  
 	
 	$order=$_GET['order'];
+	$order2=$_GET['order2'];
 	
 	
 	$con = getCon();
@@ -122,8 +123,42 @@
 	foreach($events4 as $eve4)
 		$arrange_id4[]=$eve4['arrange_id'];
 	
-	$c4=count($title);
+	$c4=count($title4);
+	
 	////4////
+	
+	
+	/////5/////
+	
+	$events5=Array();
+	$res5 = $con->query("select * from old_event order by arrange_id asc");
+	while($ele5 = $res5->fetch_assoc())
+		$events5[]=$ele5;
+	
+	$event_id5 = array();
+	foreach($events5 as $eve5)
+		$event_id5[]=$eve5['event_id'];
+	
+	$filename5 = array();
+	foreach($events5 as $eve5)
+		$filename5[]=$eve5['filename'];
+	
+	$title5 = array();
+	foreach($events5 as $eve5)
+		$title5[]=$eve5['title'];
+	
+	$dateandtime5 = array();
+	foreach($events5 as $eve5)
+		$dateandtime5[]=$eve5['dateandtime'];
+	
+	$arrange_id5 = array();
+	foreach($events5 as $eve5)
+		$arrange_id5[]=$eve5['arrange_id'];
+	
+	$c5=count($title5);
+	
+	
+	/////5/////
 	
 	
 	
@@ -227,8 +262,38 @@
 		  </form>	
 		  
 		  <? } ?>
+		  
+		  <? if($order2) { ?>
+		  	
+		  <form method="POST" action="validate_event.php"> 
+		  
 		  <!--<a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id" role="button">update arrange id</a><br><br>-->
 		  	<? for($j=$c2-1;$j>=0;$j--) { ?>
+			    <div class="row">
+				    <div class="col m-2"><?=$event_id5[$j]?></div>
+				    <div class="col m-2"><?=$filename5[$j]?></div>
+				    <div class="col m-2"><?=$title5[$j]?></div>
+				    <div class="col m-2"><?=$dateandtime5[$j]?></div>
+				    <div class="col m-2"><?=$arrange_id5[$j]?></div>
+				    <div class="col m-2"><input type="number" class="form-control" id="arrange_id" placeholder="arrange id" name="arrange_id" value="<?=$arrange_id5[$j]?>" ></div>
+				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=move_to_current&&title=<?=$title5[$j]?>&&dateandtime=<?=$dateandtime5[$j]?>&&event_id=<?=$event_id5[$j]?>&&filename=<?=$filename5[$j]?>" role="button">move to current</a></div>
+				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=delete_history&&title=<?=$title5[$j]?>&&dateandtime=<?=$dateandtime5[$j]?>&&event_id=<?=$event_id5[$j]?>" role="button">delete History</a></div>
+				      <div class="col m-2"><a class="btn btn-dark btn-sm" href="advanced_editing.php?name=advanced_editing_history&&title=<?=$title5[$j]?>&&dateandtime=<?=$dateandtime5[$j]?>&&$event_id=<?=$event_id5[$j]?>" role="button">Advanced Editing</a></div>
+		  		</div>
+		  	<? } ?>
+		  	<br><br>
+		   <a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id_history" role="button">change history order</a><br><br>
+		  	</form>
+		  
+		  
+		  
+		<? } ?>
+		  <? } else { ?>
+		  	
+		  	<form method="POST" action="validate_event.php"> 
+		  
+		  <!--<a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id" role="button">update arrange id</a><br><br>-->
+		  	<? for($j=$c5-1;$j>=0;$j--) { ?>
 			    <div class="row">
 				    <div class="col m-2"><?=$event_id2[$j]?></div>
 				    <div class="col m-2"><?=$filename2[$j]?></div>
@@ -242,8 +307,10 @@
 		  		</div>
 		  	<? } ?>
 		  	<br><br>
-		   <a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id_history" role="button">update arrange id</a><br><br>
-		  	<br><br>
+		   <a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id_history" role="button">change history order</a><br><br>
+		  	</form>
+		  
+				<br><br>
                     <? } else
                     {
                         header("Location:../index.php");
