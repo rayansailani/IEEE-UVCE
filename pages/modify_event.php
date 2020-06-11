@@ -231,7 +231,7 @@
 		  	<? for($j=$c2-1;$j>=0;$j--) { ?>
 			    <div class="row">
 				    <div class="col m-2"><?=$event_id2[$j]?></div>
-				    <div class="col m-2"><?=$filename2[$i]?></div>
+				    <div class="col m-2"><?=$filename2[$j]?></div>
 				    <div class="col m-2"><?=$title2[$j]?></div>
 				    <div class="col m-2"><?=$dateandtime2[$j]?></div>
 				    <div class="col m-2"><?=$arrange_id2[$j]?></div>
