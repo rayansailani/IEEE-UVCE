@@ -10,7 +10,8 @@ $con = getCon();
 if($name=="delete_event")
 {
 	//echo "delete event";
-	if(($con->query("delete from new_event where title='$title' and dateandtime='$dateandtime'"))===True)
+	$event_id=$_GET['event_id'];
+	if(($con->query("delete from new_event where title='$title' and dateandtime='$dateandtime' and event_id='$event_id'"))===True)
  	{
 		
     		header("Location:modify_event.php");
@@ -134,7 +135,8 @@ else if($name=="move_to_current")
 else if($name=="delete_history")
 {
 	//echo "delete history";
-   	if(($con->query("delete from old_event where title='$title' and dateandtime='$dateandtime'"))===True)
+	$event_id=$_GET['event_id'];
+   	if(($con->query("delete from old_event where title='$title' and dateandtime='$dateandtime' and event_id='$event_id'"))===True)
  	{
 		
     		header("Location:modify_event.php");
