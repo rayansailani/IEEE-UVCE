@@ -99,7 +99,7 @@
 	////4////
 	
 	$events4=Array();
-	$res4 = $con->query("select * from new_event order by arrange_id dsc");
+	$res4 = $con->query("select * from new_event order by arrange_id desc");
 	while($ele4 = $res4->fetch_assoc())
 		$events4[]=$ele4;
 	
