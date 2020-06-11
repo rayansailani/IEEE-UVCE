@@ -94,7 +94,7 @@
         <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password" required>
     </div>
     <button type="submit" name="register_user" class="btn btn-dark">Register</button>
-	  <p class="text-muted">Already have an account? <a href="../login/login.php">sign in</a></p>
+	  <p class="text-muted mt-2">Already have an account? <a href="../login/login.php">sign in</a></p>
 </form>
   
   
