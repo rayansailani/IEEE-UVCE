@@ -334,7 +334,7 @@ if(isset($_POST['advanced_editing_c'])){
 
       
 	$sql="delete from new_event where title='$sent_title' and dateandtime='$sent_dateandtime'";
-	if(($con->query($sql))===True)
+	if($con->query($sql)===True)  
 	{
 		$sql= "INSERT INTO new_event(title,presenters,dateandtime,venue,filename,description) values('$title','$presenters','$dateandtime','$venue','$filename','$description')";
 	   		if($con->query($sql)===True)  
