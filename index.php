@@ -105,7 +105,7 @@
 	<!--About-->
 	<div id="about" class="m-5">
 		<div class="text-center">
-			<h1 class="animate__animated animate__fadeIn animate__delay-1s fade mt-4 mb-4">IEEE UVCE</h1>
+			<h1 class="animate__animated animate__fadeIn animate__delay-1s mt-4 mb-4">IEEE UVCE</h1>
 			<p class="animate__animated animate__fadeIn animate__delay-2s">IEEE Student Branch of UVCE endeavors to enhance the learning experience of the student community on the UVCE campus. The Student Branch intends on providing different social, cultural and technical events for the students throughout the year. We encourage the students to take full advantage of the benefits of IEEE membership, including scholarships, competitions, and conference grants. The Student Branch also emphasizes the students to work with peers in other institutes, academicians, professionals, engineers, and scientists through the on campus IEEE Student Branch and the Local IEEE Section, thereby encouraging students to be a part of the global IEEE community.</p>
 		</div>
 	</div>
