@@ -285,9 +285,6 @@
 		   <a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id_history" role="button">change history order</a><br><br>
 		  	</form>
 		  
-		  
-		  
-		<? } ?>
 		  <? } else { ?>
 		  	
 		  	<form method="POST" action="validate_event.php"> 
