@@ -63,6 +63,7 @@
   
  <?php
 	
+	$event_id=$_GET['event_id'];
 	$name=$_GET['name'];
 	$title=$_GET['title'];
 	$dateandtime=$_GET['dateandtime'];
@@ -209,6 +210,7 @@
       <input type="text" class="form-control" id="description" placeholder="description" name="description" value="'.$description[0].'" required>
     </div>
   </div>
+  <input type="hidden" name="sent_title" value="<?php echo $event_id;?>" />
   <input type="hidden" name="sent_title" value="<?php echo $t;?>" />
   <input type="hidden" name="sent_dateandtime" value="<?php echo $dt;?>" />
   <button class="btn btn-dark" name="advanced_editing_c" type="submit">modify event</button>
@@ -260,6 +262,7 @@
       <input type="text" class="form-control" id="description" placeholder="description" name="description" value="'.$description2[0].'" required>
     </div>
   </div>
+  <input type="hidden" name="sent_title" value="<?php echo $event_id;?>" />
   <input type="hidden" name="sent_title" value="<?php echo $t;?>" />
   <input type="hidden" name="sent_dateandtime" value="<?php echo $dt;?>" />
   <button class="btn btn-dark" name="advanced_editing_h" type="submit">modify event</button>
