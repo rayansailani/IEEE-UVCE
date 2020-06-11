@@ -1,7 +1,7 @@
  
 <?php 
 	session_start();
-	include 'libraries/cakes.php'; 
+	include '../libraries/cakes.php'; 
 ?>
 <!--HTML boiler plate-->
 <!DOCTYPE html>
@@ -63,15 +63,28 @@
 <?php
 	
 	$filename=$_GET['filename'];
-	echo $filename."<br>";
+	//echo $filename."<br>";
 	$event_id=$_GET['event_id'];
-	echo $event_id;
+	//echo $event_id;
+	
+	$con = getCon();
+	
+	$events = Array();
+	$res=$con->query("select * from new_event where event_id='$event_id'");
+	while($ele = $res->fetch_assoc())
+		$events[]=$ele;
+	
+	$description=array();
+	foreach($events as $eve)
+		$description[]=$eve['description'];
+	
 	
 ?>
 	
 	<div class="container">
 		<div class="text-center">
-			<img src="../assets/event_files/<?=$filename?>.jpg" class="img-fluid" alt="Responsive image">
+			<img src="../assets/event_files/<?=$filename?>.jpg" class="img-fluid caro" alt="eventimage">
+			<p class="mt-4 mb-4"><?=$description[0]?></p>
 		</div>
 	</div>
 		
