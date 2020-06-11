@@ -324,8 +324,10 @@ if(isset($_POST['change_order']))
 if(isset($_POST['advanced_editing_c'])){
 
 	
-	$sent_title=$POST['sent_title'];
-        $sent_dateandtime=$POST['sent_dateandtime'];	
+	$sent_title=$_POST['sent_title'];
+        $sent_dateandtime=$_POST['sent_dateandtime'];	
+	$sent_event_id=$_POST['event_id'];
+	
 	
 	$title=$con->real_escape_string($_POST['title']);
   $presenters=$con->real_escape_string($_POST['presenters']);
@@ -335,7 +337,7 @@ if(isset($_POST['advanced_editing_c'])){
 	$filename=$con->real_escape_string($_POST['filename']);
 
       
-	$sql="delete from new_event where title='$sent_title' and dateandtime='$sent_dateandtime'";
+	$sql="delete from new_event where title='$sent_title' and dateandtime='$sent_dateandtime' and event_id='$sent_event_id'";
 	if($con->query($sql)===True)  
 	{
 		$sql= "INSERT INTO new_event(title,presenters,dateandtime,venue,filename,description) values('$title','$presenters','$dateandtime','$venue','$filename','$description')";
@@ -358,8 +360,9 @@ if(isset($_POST['advanced_editing_c'])){
 else if(isset($_POST['advanced_editing_h'])){
 
 	
-	$sent_title=$POST['sent_title'];
-        $sent_dateandtime=$POST['sent_dateandtime'];	
+	$sent_title=$_POST['sent_title'];
+        $sent_dateandtime=$_POST['sent_dateandtime'];	
+	$sent_event_id=$_POST['sent_event_id'];
 	
 	$title=$con->real_escape_string($_POST['title']);
   $presenters=$con->real_escape_string($_POST['presenters']);
@@ -368,7 +371,7 @@ else if(isset($_POST['advanced_editing_h'])){
   $description=$con->real_escape_string($_POST['description']);
 	$filename=$con->real_escape_string($_POST['filename']);
 
-	if(($con->query("delete from old_event where title='$sent_title' and dateandtime='$sent_dateandtime'"))===True)
+	if(($con->query("delete from old_event where title='$sent_title' and dateandtime='$sent_dateandtime' and event_id='$sent_event_id'"))===True)
 	{
 		$sql= "INSERT INTO old_event(title,presenters,dateandtime,venue,filename,description) values('$title','$presenters','$dateandtime','$venue','$filename','$description')";
 	   		if($con->query($sql)===True)  
