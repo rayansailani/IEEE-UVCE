@@ -39,8 +39,10 @@
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 			<div class="navbar-nav">
 					<a class="nav-link" href="../index.php">Home<span class="sr-only">(current)</span></a>
+				<div class="navbar-nav ml-auto">
 					<a class="nav-link" href="../register/register.php">Register</a>
 					<a class="nav-link" href="#">Login</a>
+				</div>
 			</div>
 		</div>
 	</nav>
