@@ -75,6 +75,10 @@
 	foreach($events as $eve)
 		$event_id[]=$eve['event_id'];
 	
+	$filename = array();
+	foreach($events as $eve)
+		$filename[]=$eve['filename'];
+	
 	$title = array();
 	foreach($events as $eve)
 		$title[]=$eve['title'];
@@ -101,6 +105,10 @@
 	$event_id4 = array();
 	foreach($events4 as $eve4)
 		$event_id4[]=$eve4['event_id'];
+	
+	$filename4 = array();
+	foreach($events4 as $eve4)
+		$filename4[]=$eve4['filename'];
 	
 	$title4 = array();
 	foreach($events4 as $eve4)
@@ -129,6 +137,10 @@
 	$event_id2 = array();
 	foreach($events2 as $eve2)
 		$event_id2[]=$eve2['event_id'];
+	
+	$filename2 = array();
+	foreach($events2 as $eve2)
+		$filename2[]=$eve2['filename'];
 	
 	$title2 = array();
 	foreach($events2 as $eve2)
@@ -163,6 +175,7 @@
 		  	<? for($i=0;$i<$c;$i++) { ?>
 			    <div class="row">
 				    <div class="col m-2"><?=$title[$i]?></div>
+				    <div class="col m-2"><?=$filename[$i]?></div>
 				    <div class="col m-2"><?=$dateandtime[$i]?></div>
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=delete_event&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>&&event_id=<?=$event_id[$i]?>" role="button">delete</a></div>
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=move_to_history&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>" role="button">move to history</a></div>
@@ -176,6 +189,7 @@
 		  	<? for($i=0;$i<$c4;$i++) { ?>
 			    <div class="row">
 				    <div class="col m-2"><?=$event_id4[$i]?></div>
+				    <div class="col m-2"><?=$filename4[$i]?></div>
 				    <div class="col m-2"><?=$title4[$i]?></div>
 				    <div class="col m-2"><?=$dateandtime4[$i]?></div>
 				    <div class="col m-2"><?=$arrange_id4[$i]?></div>
@@ -197,6 +211,7 @@
 		  	<? for($i=0;$i<$c;$i++) { ?>
 			    <div class="row">
 				    <div class="col m-2"><?=$event_id[$i]?></div>
+				    <div class="col m-2"><?=$filename[$i]?></div>
 				    <div class="col m-2"><?=$title[$i]?></div>
 				    <div class="col m-2"><?=$dateandtime[$i]?></div>
 				    <div class="col m-2"><?=$arrange_id[$i]?></div>
@@ -216,6 +231,7 @@
 		  	<? for($j=$c2-1;$j>=0;$j--) { ?>
 			    <div class="row">
 				    <div class="col m-2"><?=$event_id2[$j]?></div>
+				    <div class="col m-2"><?=$filename2[$i]?></div>
 				    <div class="col m-2"><?=$title2[$j]?></div>
 				    <div class="col m-2"><?=$dateandtime2[$j]?></div>
 				    <div class="col m-2"><?=$arrange_id2[$j]?></div>
