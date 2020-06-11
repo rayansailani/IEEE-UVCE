@@ -218,6 +218,7 @@
 		  	<? } ?>
 		  <? } else if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="amigroot") { ?>
 		  <br><br>
+		  
 		  <? if($order) { ?>
 		  	<form method="POST" action="validate_event.php"> 
 			  
@@ -308,6 +309,9 @@
 		  	</form>
 		  
 				<br><br>
+		  <? } ?>
+		  
+		  <? } ?>
                     <? } else
                     {
                         header("Location:../index.php");
