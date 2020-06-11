@@ -28,9 +28,10 @@ if($name=="delete_event")
 }
 else if($name=="move_to_history")
 {
+	$event_id=$_GET['event_id'];
 	//echo "move to history";
 	$events=Array();
-  	$res=$con->query("select * from new_event where title='$title' and dateandtime='$dateandtime'");
+  	$res=$con->query("select * from new_event where title='$title' and dateandtime='$dateandtime' and event_id='$event_id'");
 		 while($ele = $res->fetch_assoc())
 			 $events[]=$ele;
  
@@ -82,9 +83,10 @@ else if($name=="move_to_history")
 }
 else if($name=="move_to_current")
 {
+	$event_id=$_GET['event_id'];
 	//echo "move to current";
 	$events2=Array();
-  	$res2=$con->query("select * from old_event where title='$title' and dateandtime='$dateandtime'");
+  	$res2=$con->query("select * from old_event where title='$title' and dateandtime='$dateandtime' and event_id='$event_id'");
 		 while($ele2 = $res2->fetch_assoc())
 			 $events2[]=$ele2;
  
