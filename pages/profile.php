@@ -73,7 +73,7 @@
                     }
                     else if(isset($_SESSION['user_name'])){ 
                         echo '<h1> username : '.$_SESSION['user_name'].'</h1>';
-			echo '<br><h1> ieeenumber : '..'</h1>';
+			echo '<br><h1> ieeenumber : </h1>';
                     }
                     else
                     {
