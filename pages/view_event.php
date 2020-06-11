@@ -63,7 +63,9 @@
 <?php
 	
 	$filename=$_GET['filename'];
-	echo $filename;
+	echo $filename."<br>";
+	$event_id=$_GET['event_id'];
+	echo $event_id;
 	
 ?>
 	
