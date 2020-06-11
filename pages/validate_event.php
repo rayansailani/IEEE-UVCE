@@ -29,6 +29,7 @@ if($name=="delete_event")
 else if($name=="move_to_history")
 {
 	$event_id=$_GET['event_id'];
+	$filename_s=$_GET['filename'];
 	//echo "move to history";
 	$events=Array();
   	$res=$con->query("select * from new_event where title='$title' and dateandtime='$dateandtime' and event_id='$event_id'");
@@ -58,7 +59,7 @@ else if($name=="move_to_history")
 	foreach($events as $eve)
 		$filename[]=$eve['filename'];
  
-  	$sql= "INSERT INTO old_event(title,presenters,dateandtime,venue,filename,description) values('$title[0]','$presenters[0]','$dateandtime[0]','$venue[0]','$filename[0]','$description[0]')";
+  	$sql= "INSERT INTO old_event(title,presenters,dateandtime,venue,filename,description) values('$title[0]','$presenters[0]','$dateandtime[0]','$venue[0]','$filename_s','$description[0]')";
 	
    	if($con->query($sql)===True)   
      	{
@@ -84,6 +85,7 @@ else if($name=="move_to_history")
 else if($name=="move_to_current")
 {
 	$event_id=$_GET['event_id'];
+	$filename_s=$_GET['filename'];
 	//echo "move to current";
 	$events2=Array();
   	$res2=$con->query("select * from old_event where title='$title' and dateandtime='$dateandtime' and event_id='$event_id'");
@@ -111,7 +113,7 @@ else if($name=="move_to_current")
 	foreach($events2 as $eve2)
 		$venue2[]=$eve2['venue'];
  
-  	$sql= "INSERT INTO new_event(title,presenters,dateandtime,venue,filename,description) values('$title2[0]','$presenters2[0]','$dateandtime2[0]','$venue2[0]','$filename2[0]','$description2[0]')";
+  	$sql= "INSERT INTO new_event(title,presenters,dateandtime,venue,filename,description) values('$title2[0]','$presenters2[0]','$dateandtime2[0]','$venue2[0]','$filename_s','$description2[0]')";
 	
    	if($con->query($sql)===True)   
      	{
