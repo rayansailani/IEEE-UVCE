@@ -83,7 +83,7 @@
 	
 	<div class="container">
 		<div class="text-center">
-			<img src="../assets/event_files/<?=$filename?>.jpg" class="img-fluid caro" alt="eventimage">
+			<img src="../assets/event_files/<?=$filename?>.jpg" class="img-fluid caro mt-4" alt="eventimage">
 			<p class="mt-4 mb-4"><?=$description[0]?></p>
 		</div>
 	</div>
