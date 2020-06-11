@@ -153,7 +153,7 @@ else if($name=="delete_history")
 		
    	}	
 }
-else if($name=="update_arrange_id")
+/*else if($name=="update_arrange_id")
 {
 	$events=Array();
   	$res=$con->query("select * from new_event");
@@ -200,7 +200,7 @@ else if($name=="update_arrange_id")
     	}
 	
 	
-}
+}*/
 else if($name=="update_arrange_id_history")
 {
 	$events=Array();
