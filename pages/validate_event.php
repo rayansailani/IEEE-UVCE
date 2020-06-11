@@ -239,7 +239,8 @@ else if($name=="update_arrange_id_history")
 	if($coo==$co)
 	{
 		
-    		header("Location:modify_event.php");
+    		$reorder2=true;
+    		header("Location:modify_event.php?order2=".$reorder2);
     		die();
 			
  	} else {
