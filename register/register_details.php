@@ -9,6 +9,7 @@
   //getting username and password from register.php
   $u = $_POST['user_name'];
   $e = $_POST['email'];
+  $i = $_POST['ieeenumber'];
   //$n = $_POST['name'];
   $p = $_POST['password'];
   $p = password_hash($p,PASSWORD_DEFAULT);
@@ -28,7 +29,7 @@
   }
     else
     {
-      if(($con->query("insert into user(user_name,email,password) values('$u','$e','$p');"))===True){
+      if(($con->query("insert into user(user_name,email,password,ieeenumber) values('$u','$e','$p','$i');"))===True){
         //echo "YES";
           header("Location:../login/login.php");
           die();
