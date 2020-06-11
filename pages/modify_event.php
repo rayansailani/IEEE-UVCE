@@ -311,7 +311,6 @@
 				<br><br>
 		  <? } ?>
 		  
-		  <? } ?>
                     <? } else
                     {
                         header("Location:../index.php");
