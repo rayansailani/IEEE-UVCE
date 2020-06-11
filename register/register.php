@@ -44,8 +44,10 @@
 					<a class="nav-link" href="#sigs">SIG</a>
 					<a class="nav-link" href="#">Team</a>
 					<a class="nav-link" href="#gallery">Gallery</a>-->
+				<div class="navbar-nav ml-auto">
 					<a class="nav-link" href="#">Register</a>
 					<a class="nav-link" href="../login/login.php">Login</a>
+				</div>
 			</div>
 		</div>
 	</nav>
