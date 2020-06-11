@@ -90,9 +90,14 @@
         <input type="email" class="form-control" id="inputEmail" placeholder="email" name="email" required>
     </div>
     <div class="form-group">
+	    <label for="inputieeenumber">IEEE number <p class="text-muted">(optional)</p></label>
+        <input type="number" class="form-control" id="inputieeenumber" placeholder="ieeenumber" name="ieeenumber" required>
+    </div>
+    <div class="form-group">
         <label for="inputPassword">Password</label>
         <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password" required>
     </div>
+	  
     <button type="submit" name="register_user" class="btn btn-dark">Register</button>
 	  <p class="text-muted mt-2">Already have an account? <a href="../login/login.php">sign in</a></p>
 </form>
