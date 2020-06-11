@@ -94,7 +94,7 @@
     </div>
     <div class="form-group">
 	    <label for="inputieeenumber">IEEE number</label> <p class="text-muted">(optional)</p>
-        <input type="number" class="form-control" id="inputieeenumber" placeholder="ieeenumber" name="ieeenumber" required>
+        <input type="number" class="form-control" id="inputieeenumber" placeholder="ieeenumber" name="ieeenumber">
     </div>
     <div class="form-group">
         <label for="inputPassword">Password</label>
