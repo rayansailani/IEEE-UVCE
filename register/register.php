@@ -90,7 +90,7 @@
         <input type="email" class="form-control" id="inputEmail" placeholder="email" name="email" required>
     </div>
     <div class="form-group">
-	    <label for="inputieeenumber">IEEE number <p class="text-muted">(optional)</p></label>
+	    <label for="inputieeenumber">IEEE number</label> <p class="text-muted">(optional)</p>
         <input type="number" class="form-control" id="inputieeenumber" placeholder="ieeenumber" name="ieeenumber" required>
     </div>
     <div class="form-group">
