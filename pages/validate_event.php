@@ -213,10 +213,13 @@ else if($name=="update_arrange_id_history")
 	//new events
 	$title=array();
 	$dateandtime=array();
+	$event_id=array();
 	
 	//new events
 	foreach($events as $eve)
 		$title[]=$eve['title'];
+	foreach($events as $eve)
+		$event_id[]=$eve['event_id'];
 	foreach($events as $eve)
 		$dateandtime[]=$eve['dateandtime'];
 	
@@ -224,7 +227,7 @@ else if($name=="update_arrange_id_history")
 	$coo=0;
 	for($k=$co-1;$k>=0;$k--)
 	{
-		$sql="update old_event set arrange_id='$order2[$k]' where title='$title[$k]' and dateandtime='$dateandtime[$k]'";
+		$sql="update old_event set arrange_id='$order2[$k]' where title='$title[$k]' and dateandtime='$dateandtime[$k]' and event_id='$event_id[$k]'";
 		if(($con->query($sql))===True)
  		{
 			$coo++;
@@ -283,10 +286,13 @@ if(isset($_POST['change_order']))
 	//new events
 	$title=array();
 	$dateandtime=array();
+	$event_id=array();
 	
 	//new events
 	foreach($events as $eve)
 		$title[]=$eve['title'];
+	foreach($events as $eve)
+		$event_id[]=$eve['event_id'];
 	foreach($events as $eve)
 		$dateandtime[]=$eve['dateandtime'];
 	
@@ -295,7 +301,7 @@ if(isset($_POST['change_order']))
 	$coo=0;
 	for($k=0;$k<$t;$k++)
 	{
-		$sql="update new_event set arrange_id='$order[$k]' where title='$title[$k]' and dateandtime='$dateandtime[$k]'";
+		$sql="update new_event set arrange_id='$order[$k]' where title='$title[$k]' and dateandtime='$dateandtime[$k]' and event_id='$event_id[$k]'";
 		if(($con->query($sql))===True)
  		{
 			$coo++;
