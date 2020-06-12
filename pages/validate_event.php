@@ -210,6 +210,8 @@ else if($name=="update_arrange_id_history")
 			 $events[]=$ele;
  
    
+	print_r($events);echo "<br>";
+	print_r($order2);
 	//new events
 	$title=array();
 	$dateandtime=array();
