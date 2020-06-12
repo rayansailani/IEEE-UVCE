@@ -194,7 +194,7 @@
 				    <div class="col m-2"><?=$filename[$i]?></div>
 				    <div class="col m-2"><?=$title[$i]?></div>
 				    <div class="col m-2"><?=$dateandtime[$i]?></div>
-				    <div class="col m-2"><?=$arrange_id[$c-$i]?></div>
+				    <div class="col m-2"><?=$arrange_id[$i]?></div>
 				    <div class="col m-2"><input type="number" class="form-control" id="arrange_id" placeholder="arrange id" name="arrange_id[]" value="<?=$arrange_id[$i]?>" ></div>
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=delete_event&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>&&event_id=<?=$event_id[$i]?>" role="button">delete</a></div>
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=move_to_history&&title=<?=$title[$i]?>&&dateandtime=<?=$dateandtime[$i]?>&&event_id=<?=$event_id[$i]?>&&filename=<?=$filename[$i]?>" role="button">move to history</a></div>
@@ -214,7 +214,7 @@
 				    <div class="col m-2"><?=$filename2[$j]?></div>
 				    <div class="col m-2"><?=$title2[$j]?></div>
 				    <div class="col m-2"><?=$dateandtime2[$j]?></div>
-				    <div class="col m-2"><?=$arrange_id2[$j]?></div>
+				    <div class="col m-2"><?=$arrange_id2[$c2-$j]?></div>
 				    <div class="col m-2"><input type="number" class="form-control" id="arrange_id2" placeholder="arrange id in 2" name="arrange_id2in[]" value="<?=$arrange_id2[$j]?>" ></div>
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=move_to_current&&title=<?=$title2[$j]?>&&dateandtime=<?=$dateandtime2[$j]?>&&event_id=<?=$event_id2[$j]?>&&filename=<?=$filename2[$j]?>" role="button">move to current</a></div>
 				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=delete_history&&title=<?=$title2[$j]?>&&dateandtime=<?=$dateandtime2[$j]?>&&event_id=<?=$event_id2[$j]?>" role="button">delete History</a></div>
