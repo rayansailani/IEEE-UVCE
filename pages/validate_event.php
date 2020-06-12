@@ -211,7 +211,7 @@ else if($name=="update_arrange_id_history")
  
    
 	print_r($events);echo "<br>";
-	print_r($order2);
+	
 	//new events
 	$title=array();
 	$dateandtime=array();
@@ -243,8 +243,8 @@ else if($name=="update_arrange_id_history")
 	}
 	if($coo==$co)
 	{
-		
-    		header("Location:modify_event.php");
+		print_r($order2);
+    		//header("Location:modify_event.php");
     		die();
 			
  	} else {
