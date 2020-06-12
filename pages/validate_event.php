@@ -269,6 +269,7 @@ else if($name=="advanced_editing_history")
 if(isset($_POST['change_order']))
 {
 	$order=$_POST['arrange_id'];
+	
 	//print_r($order);
 	$events=Array();
   	$res=$con->query("select * from new_event");
@@ -276,6 +277,8 @@ if(isset($_POST['change_order']))
 			 $events[]=$ele;
  
    
+	print_r($events);
+	
 	//new events
 	$title=array();
 	$dateandtime=array();
