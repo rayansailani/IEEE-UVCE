@@ -38,6 +38,7 @@ else if($name=="move_to_history")
  
    
 	//new events
+	$event_id=array();
 	$title=array();
 	$presenters=array();
 	$dateandtime=array();
@@ -46,6 +47,8 @@ else if($name=="move_to_history")
 	$filename=array();
 	
 	//new events
+	foreach($events as $eve)
+		$event_id[]=$eve['event_id'];
 	foreach($events as $eve)
 		$title[]=$eve['title'];
 	foreach($events as $eve)
@@ -63,7 +66,7 @@ else if($name=="move_to_history")
 	
    	if($con->query($sql)===True)   
      	{
-  		if(($con->query("delete from new_event where title='$title[0]' and dateandtime='$dateandtime[0]'"))===True)
+  		if(($con->query("delete from new_event where title='$title[0]' and dateandtime='$dateandtime[0]' and event_id='$event_id[0]'"))===True)
  		{
 			
     			header("Location:modify_event.php");
@@ -95,6 +98,7 @@ else if($name=="move_to_current")
    
 	//new events
 	$title2=array();
+	$event_id=array();
 	$presenters2=array();
 	$dateandtime2=array();
 	$venue2=array();
@@ -104,6 +108,8 @@ else if($name=="move_to_current")
 	//new events
 	foreach($events2 as $eve2)
 		$title2[]=$eve2['title'];
+	foreach($events2 as $eve2)
+		$event_id2[]=$eve2['event_id'];
 	foreach($events2 as $eve2)
 		$presenters2[]=$eve2['presenters'];
 	foreach($events2 as $eve2)
@@ -117,7 +123,7 @@ else if($name=="move_to_current")
 	
    	if($con->query($sql)===True)   
      	{
-  		if(($con->query("delete from old_event where title='$title2[0]' and dateandtime='$dateandtime2[0]'"))===True)
+  		if(($con->query("delete from old_event where title='$title2[0]' and dateandtime='$dateandtime2[0]' and event_id='$event_id2[0]'"))===True)
  		{
 			
     			header("Location:modify_event.php");
