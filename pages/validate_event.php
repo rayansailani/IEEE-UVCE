@@ -203,7 +203,6 @@ else if($name=="delete_history")
 }*/
 else if($name=="update_arrange_id_history")
 {
-	$order2=$_POST['arrange_id'];
 	$events=Array();
   	$res=$con->query("select * from old_event");
 		 while($ele = $res->fetch_assoc())
@@ -224,7 +223,7 @@ else if($name=="update_arrange_id_history")
 	$coo=0;
 	for($k=$co-1;$k>=0;$k--)
 	{
-		$sql="update old_event set arrange_id='order2[$k]' where title='$title[$k]' and dateandtime='$dateandtime[$k]'";
+		$sql="update old_event set arrange_id='$k' where title='$title[$k]' and dateandtime='$dateandtime[$k]'";
 		if(($con->query($sql))===True)
  		{
 			$coo++;
@@ -239,8 +238,7 @@ else if($name=="update_arrange_id_history")
 	if($coo==$co)
 	{
 		
-    		$reorder2=true;
-    		header("Location:modify_event.php?order2=".$reorder2);
+    		header("Location:modify_event.php");
     		die();
 			
  	} else {
