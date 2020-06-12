@@ -234,7 +234,7 @@ if(isset($_POST['update_arrange_id_history']))
 	
 	$co=count($title);
 	$coo=0;
-	for($k=$co-1;$k>=0;$k--)
+	for($k=0;$k<$co;$k++)
 	{
 		$sql="update old_event set arrange_id='$order2[$k]' where title='$title[$k]' and dateandtime='$dateandtime[$k]' and event_id='$event_id[$k]'";
 		if(($con->query($sql))===True)
