@@ -184,28 +184,6 @@
 		  	<? } ?>
 		  <? } else if(isset($_SESSION['user_name'])&&$_SESSION['user_name']=="amigroot") { ?>
 		  <br><br>
-		  <? if($order) { ?>
-		  	<form method="POST" action="validate_event.php"> 
-			  
-		  	<? for($i=0;$i<$c4;$i++) { ?>
-			    <div class="row">
-				    <div class="col m-2"><?=$event_id4[$i]?></div>
-				    <div class="col m-2"><?=$filename4[$i]?></div>
-				    <div class="col m-2"><?=$title4[$i]?></div>
-				    <div class="col m-2"><?=$dateandtime4[$i]?></div>
-				    <div class="col m-2"><?=$arrange_id4[$i]?></div>
-				    <div class="col m-2"><input type="number" class="form-control" id="arrange_id" placeholder="arrange id" name="arrange_id[]" value="<?=$arrange_id4[$i]?>" ></div>
-				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=delete_event&&title=<?=$title4[$i]?>&&dateandtime=<?=$dateandtime4[$i]?>&&event_id=<?=$event_id4[$i]?>" role="button">delete</a></div>
-				    <div class="col m-2"><a class="btn btn-dark btn-sm" href="validate_event.php?name=move_to_history&&title=<?=$title4[$i]?>&&dateandtime=<?=$dateandtime4[$i]?>&&event_id=<?=$event_id4[$i]?>&&filename=<?=$filename4[$i]?>" role="button">move to history</a></div>
-				     <div class="col m-2"><a class="btn btn-dark btn-sm" href="advanced_editing.php?name=advanced_editing_current&&title=<?=$title4[$i]?>&&dateandtime=<?=$dateandtime4[$i]?>&&$event_id=<?=$event_id4[$i]?>" role="button">Advanced Editing</a></div>
-		  		</div><br><br>
-		  
-		  	<? } ?>
-			  
-			 <button class="btn btn-dark btn-block" name="change_order" type="submit">change order</button><br><br>
-		  </form>
-		  
-		  <? } else { ?>
 		  	
 		  	<form method="POST" action="validate_event.php"> 
 			  
@@ -227,7 +205,6 @@
 			 <button class="btn btn-dark btn-block" name="change_order" type="submit">change order</button><br><br>
 		  </form>	
 		  
-		  <? } ?>
 		  <!--<a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id" role="button">update arrange id</a><br><br>-->
 		  	<? for($j=$c2-1;$j>=0;$j--) { ?>
 			    <div class="row">
