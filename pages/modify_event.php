@@ -68,7 +68,7 @@
 	$con = getCon();
 	
 	$events=Array();
-	$res = $con->query("select * from new_event");
+	$res = $con->query("select * from new_event order by arrange_id asc");
 	while($ele = $res->fetch_assoc())
 		$events[]=$ele;
 	
@@ -98,7 +98,7 @@
 	
 	////4////
 	
-	$events4=Array();
+	/* $events4=Array();
 	$res4 = $con->query("select * from new_event order by arrange_id asc");
 	while($ele4 = $res4->fetch_assoc())
 		$events4[]=$ele4;
@@ -123,7 +123,7 @@
 	foreach($events4 as $eve4)
 		$arrange_id4[]=$eve4['arrange_id'];
 	
-	$c4=count($title);
+	$c4=count($title); */
 	////4////
 	
 	
