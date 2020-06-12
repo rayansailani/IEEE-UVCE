@@ -305,8 +305,9 @@ if(isset($_POST['change_order']))
 	}
 	if($coo==$t)
 	{
-		$reorder=true;
-    		header("Location:modify_event.php?order=".$reorder);
+		print_r($order);
+		//$reorder=true;
+    		//header("Location:modify_event.php?order=".$reorder);
     		die();
 			
  	} else {
