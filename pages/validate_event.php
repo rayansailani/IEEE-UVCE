@@ -201,7 +201,8 @@ else if($name=="delete_history")
 	
 	
 }*/
-else if($name=="update_arrange_id_history")
+
+if(isset($_POST['update_arrange_id_history']))
 {
 	$order2=$_POST['arrange_id2in'];
 	$events=Array();
