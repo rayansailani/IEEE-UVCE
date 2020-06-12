@@ -277,7 +277,7 @@ if(isset($_POST['change_order']))
 			 $events[]=$ele;
  
    
-	print_r($events);
+	//print_r($events);
 	
 	//new events
 	$title=array();
@@ -308,9 +308,10 @@ if(isset($_POST['change_order']))
 	}
 	if($coo==$t)
 	{
-		print_r($order);
+		//print_r($order);
 		//$reorder=true;
     		//header("Location:modify_event.php?order=".$reorder);
+		header("Location:modify_event.php");
     		die();
 			
  	} else {
