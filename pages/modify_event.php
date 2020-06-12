@@ -223,7 +223,7 @@
 		  		</div>
 		  	<? } ?>
 		  	<br><br>
-		    <button class="btn btn-dark btn-block" name="change_order" type="submit">change order of history</button><br><br>
+		    <button class="btn btn-dark btn-block" name="update_arrange_id_history" type="submit">change order of history</button><br><br>
 		  	<br><br>
 		  </form>
                     <? } else
