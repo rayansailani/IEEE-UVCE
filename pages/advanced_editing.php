@@ -214,9 +214,9 @@
       <input type="text" class="form-control" id="description" placeholder="description" name="description" value="'.$description[0].'" required>
     </div>
   </div>
-  <input type="hidden" name="sent_event_id" value="<?php echo $event_id;?>" />
-  <input type="hidden" name="sent_title" value="<?php echo $title;?>" />
-  <input type="hidden" name="sent_dateandtime" value="<?php echo $dateandtime;?>" />
+  <input type="hidden" name="sent_event_id" value="<?=$event_id?>" />
+  <input type="hidden" name="sent_title" value="<?=$title?>" />
+  <input type="hidden" name="sent_dateandtime" value="<?=$dateandtime?>" />
   <button class="btn btn-dark" name="advanced_editing_c" type="submit">modify event</button>
 </form></div>';
 	}     
