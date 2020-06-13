@@ -72,7 +72,7 @@
 		$events[]=$ele;
 	
 	//old events
-	$res2=$con->query("select * from old_event order by arrange_id desc");
+	$res2=$con->query("select * from old_event order by arrange_id asc");
 	while($ele2 = $res2->fetch_assoc())
 		$events2[]=$ele2;
 	//print_r($events);
