@@ -211,6 +211,8 @@ else if($name=="delete_history")
 if(isset($_POST['update_arrange_id_history']))
 {
 	$order2=$_POST['arrange_id2in'];
+	array_reverse($order2);
+		
 	$events=Array();
   	$res=$con->query("select * from old_event");
 		 while($ele = $res->fetch_assoc())
