@@ -208,7 +208,7 @@
 		  
 		  <!--<a class="btn btn-dark btn-sm btn-block" href="validate_event.php?name=update_arrange_id" role="button">update arrange id</a><br><br>-->
 		  <form method="POST" action="validate_event.php"> 	
-		  <? for($j=$c2-1;$j>=0;$j--) { ?>
+		  <? for($j=0;$j<$c2;$j++) { ?>
 			    <div class="row">
 				    <div class="col m-2"><?=$event_id2[$j]?></div>
 				    <div class="col m-2"><?=$filename2[$j]?></div>
