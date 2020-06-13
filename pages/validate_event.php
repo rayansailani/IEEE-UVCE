@@ -354,6 +354,9 @@ if(isset($_POST['advanced_editing_c'])){
         $sent_dateandtime=$_POST['sent_dateandtime'];	
 	$sent_event_id=$_POST['event_id'];
 	
+	print_r($sent_title);echo "<br>";
+	print_r($sent_dateandtime);echo "<br>";
+	print_r($sent_event_id);echo "<br>";	
 	
 	$title=$con->real_escape_string($_POST['title']);
   $presenters=$con->real_escape_string($_POST['presenters']);
