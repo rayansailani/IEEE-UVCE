@@ -63,7 +63,7 @@
   
  <?php
 	
-	$event_id=$_GET['event_id'];
+	$event_id=$_POST['event_id'];
 	$name=$_GET['name'];
 	$title=$_GET['title'];
 	$dateandtime=$_GET['dateandtime'];
