@@ -215,8 +215,8 @@
     </div>
   </div>
   <input type="hidden" name="sent_event_id" value="<?php echo $event_id;?>" />
-  <input type="hidden" name="sent_title" value="<?php echo $t;?>" />
-  <input type="hidden" name="sent_dateandtime" value="<?php echo $dt;?>" />
+  <input type="hidden" name="sent_title" value="<?php echo $title;?>" />
+  <input type="hidden" name="sent_dateandtime" value="<?php echo $dateandtime;?>" />
   <button class="btn btn-dark" name="advanced_editing_c" type="submit">modify event</button>
 </form></div>';
 	}     
@@ -267,8 +267,8 @@
     </div>
   </div>
   <input type="hidden" name="sent_event_id" value="<?php echo $event_id;?>" />
-  <input type="hidden" name="sent_title" value="<?php echo $t;?>" />
-  <input type="hidden" name="sent_dateandtime" value="<?php echo $dt;?>" />
+  <input type="hidden" name="sent_title" value="<?php echo $title;?>" />
+  <input type="hidden" name="sent_dateandtime" value="<?php echo $dateandtime;?>" />
   <button class="btn btn-dark" name="advanced_editing_h" type="submit">modify event</button>
 </form></div>';
 		}
