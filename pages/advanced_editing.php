@@ -185,7 +185,7 @@
   <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationServer03">Date and Time</label>
-      <input type="text" class="form-control" id="dateandtime" placeholder="format : dd/mm/yyyy - 00:00pm" name="dateandtime" value="'.$dateandtime[0].'" required>
+      <input type="text" class="form-control" id="dateandtime" placeholder="format : dd/mm/yyyy - 00:00pm" name="dateandtime" value="'.$dateandtime3[0].'" required>
     </div>
     <div class="col-md-6 mb-3">
       <label for="validationServer03">venue</label>
