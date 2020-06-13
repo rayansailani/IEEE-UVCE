@@ -216,6 +216,7 @@ if(isset($_POST['update_arrange_id_history']))
 		 while($ele = $res->fetch_assoc())
 			 $events[]=$ele;
  
+        array_reverse($order2);
 	print_r($events);echo "<br>";
 	
 	//new events
