@@ -216,8 +216,6 @@ if(isset($_POST['update_arrange_id_history']))
 		 while($ele = $res->fetch_assoc())
 			 $events[]=$ele;
  
-	print_r($events);
-   
 	//print_r($events);echo "<br>";
 	
 	//new events
@@ -251,8 +249,8 @@ if(isset($_POST['update_arrange_id_history']))
 	}
 	if($coo==$co)
 	{
-		print_r($order2);
-    		//header("Location:modify_event.php");
+		//print_r($order2);
+    		header("Location:modify_event.php");
     		die();
 			
  	} else {
