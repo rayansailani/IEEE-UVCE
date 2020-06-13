@@ -190,7 +190,7 @@
         </tr>
     </thead>
     <tbody>
-	<? for($j=$e2-1;$j>=0;$j--) { ?>
+	<? for($j=0;$j<$e2;$j++) { ?>
         <tr class="mb-5">
             <td><?=$title2[$j]?></td>
 	    <td><?=$dateandtime2[$j]?></td>
