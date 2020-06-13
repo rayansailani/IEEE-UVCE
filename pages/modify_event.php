@@ -135,7 +135,7 @@
 	while($ele2 = $res2->fetch_assoc())
 		$events2[]=$ele2;
 	
-	print_r($events2);echo "<br>":
+	print_r($events2);echo "<br>";
 	
 	$event_id2 = array();
 	foreach($events2 as $eve2)
