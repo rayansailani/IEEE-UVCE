@@ -131,7 +131,7 @@
 	
 	
 	$events2=Array();
-	$res2 = $con->query("select * from old_event");
+	$res2 = $con->query("select * from old_event order by arrange_id desc");
 	while($ele2 = $res2->fetch_assoc())
 		$events2[]=$ele2;
 	
