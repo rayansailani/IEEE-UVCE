@@ -68,6 +68,10 @@
 	$title=$_GET['title'];
 	$dateandtime=$_GET['dateandtime'];
 	
+	print_r($event_id);echo "<br>";
+	print_r($name);echo "<br>";
+	print_r($title);echo "<br>";
+	print_r($dateandtime);echo "<br>";
 	
 	$con = getCon();
 	
