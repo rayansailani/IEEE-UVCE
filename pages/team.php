@@ -74,13 +74,14 @@
 	
 	<h1 class="mt-4 mb-4 text-center fade">Team IEEE UVCE</h1>
 	<? for($i=0;$i<11;$i++) { ?>
-		<div class="card text-center">
+		<div class="card m-4 text-center">
   			<div class="card-body">
     				<h5 class="card-title"><?=$person[$c]?></h5>
     				<p class="card-text"><?=$post[$c]?></p>
+				<br><br>
   			</div>
 		</div>
-	<? } ?>
+	<? $c++; } ?>
 	
 	
 	
