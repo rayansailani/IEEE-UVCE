@@ -85,7 +85,7 @@
 			   "Vice-Chairperson","Vice-Chairperson","Vice-Chairperson","Treasurer","Joint Treasurer",
 			    "General Secretary","Joint Secretary","Joint Secretary","Membership Development Committee Chair",
 			    "Membership Secretary",
-			    "Chairperson","Vice-Chairperson","Coordinator"
+			    "Chairperson","Vice-Chairperson","Coordinator",
 			    "Chairperson","Vice-Chairperson","General Secretary","Joint Secretary",
 			    "Chairperson","Vice-Chairperson","Vice-Chairperson","General Secretary","Joint Secretary",
 			    "Joint Secretary","NCode Secretary","NCode Secretary",
