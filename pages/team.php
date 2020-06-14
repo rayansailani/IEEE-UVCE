@@ -291,7 +291,21 @@
 	<? } ?>
 	
 	
-	<!--SAC chair-->
+	<!--sac vice and chair-->
+	<div class="row">
+		<? for($i=0;$i<2;$i++) { ?>
+			<div class="col">
+				<div class="card border-dark m-4 text-center">
+  					<div class="card-body p-4">
+    						<h5 class="card-title"><?=$person[$c]?></h5>
+    						<p class="card-text"><?=$post[$c]?></p>
+  					</div>
+				</div>
+			</div>
+		<? $c++; } ?>
+	</div>	
+		
+	<!--SAC co-->
 	<h1 class="mt-5 mb-4 text-center fade">Student Activities Committee (SAC)</h1>
 	<div class="row">
 		<div class="col"></div>
@@ -309,7 +323,11 @@
 	<?php $c++; ?>
 
 		
-	<!--sac vice and co-->
+	
+		
+	
+	<!--WIE-->
+	<h1 class="mt-5 mb-4 text-center fade">Women In Engineering (WIE)</h1>
 	<div class="row">
 		<? for($i=0;$i<2;$i++) { ?>
 			<div class="col">
@@ -323,27 +341,9 @@
 		<? $c++; } ?>
 	</div>
 		
-	
-	<!--WIE-->
-	<h1 class="mt-5 mb-4 text-center fade">Women In Engineering (WIE)</h1>
-	<div class="row">
-		<div class="col"></div>
-		<div class="col">
-			<div class="card border-dark m-4 text-center">
-  				<div class="card-body p-4">
-    					<h5 class="card-title"><?=$person[$c]?></h5>
-    					<p class="card-text"><?=$post[$c]?></p>
-  				</div>
-			</div>
-		</div>
-		<div class="col"></div>
-	</div>
-		
-	<?php $c++; ?>
-		
 	<!--vice chair,gen,joint-->
 	<div class="row">
-		<? for($i=0;$i<3;$i++) { ?>
+		<? for($i=0;$i<2;$i++) { ?>
 			<div class="col">
 				<div class="card border-dark m-4 text-center">
   					<div class="card-body p-4">
