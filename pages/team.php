@@ -80,21 +80,36 @@
 	<div class="container">
 		
 	<div class="row">
-		<? for($i=0;$i<2;$i++) { ?>
-			<div class="col">
-				<div class="card border-dark m-4 text-center">
-  					<div class="card-body p-4">
-    						<h5 class="card-title"><?=$person[$c]?></h5>
-    						<p class="card-text"><?=$post[$c]?></p>
-  					</div>
-				</div>
+		<div class="col"></div>
+		<div class="col-5">
+			<div class="card border-dark m-4 text-center">
+  				<div class="card-body p-4">
+   					<h5 class="card-title"><?=$person[$c]?></h5>
+   					<p class="card-text"><?=$post[$c]?></p>
+  				</div>
 			</div>
-		<? $c++; } ?>
+		</div>
+		<div class="col"></div>
 	</div>
+	
+	<div class="row">
+		<div class="col"></div>
+		<div class="col-5">
+			<div class="card border-dark m-4 text-center">
+  				<div class="card-body p-4">
+   					<h5 class="card-title"><?=$person[$c+1]?></h5>
+   					<p class="card-text"><?=$post[$c+1]?></p>
+  				</div>
+			</div>
+		</div>
+		<div class="col"></div>
+	</div>
+		
+	<? $c+=2; ?>	
 		
 	<div class="row">
 		<div class="col"></div>
-		<div class="col">
+		<div class="col-5">
 			<div class="card border-dark m-4 text-center">
   				<div class="card-body p-4">
    					<h5 class="card-title"><?=$person[$c]?></h5>
