@@ -75,7 +75,8 @@
 	<div class="m-5">
 		<div class="list-group">
 			<? for($i=0;$i<$n;$i++) { ?>
-  				<a href="#" class="list-group-item list-group-item-action p-4 text-center"><?=$person[$i]?> - <?=$post[$i]?></a>
+				<a style="cursor:pointer;" class="list-group-item list-group-item-action p-4 text-center"><?=$person[$i]?> - <?=$post[$i]?></a>
+  				<!--<a href="#" class="list-group-item list-group-item-action p-4 text-center"><?=$person[$i]?> - <?=$post[$i]?></a>-->
 			<? } ?>
 		</div>
 	</div>
