@@ -61,11 +61,13 @@
 	<?php
 		$person=array("Dr. Venugopal K R","Dr. P Deepa Shenoy","Dr. Kiran K","Dr. Venkatesh M",
 			      "Dr. Lata B T","Dr. Pushpa C N","Prof. H S Veena","Dr. K P Guruswamy",
-			      "Dr. Thriveni J","Dr. B M Rajaprakash","Dr. Rekha H B");
+			      "Dr. Thriveni J","Dr. B M Rajaprakash","Dr. Rekha H B","Kennith O Koshy",
+			     "Hamsa Shree N A","Sandya Shree N","Vishal M Kanthi");
 	
 		$post=array("Branch Patron","Branch Advisor","Branch Counselor","Branch Mentor", 
 				"Branch Mentor","WIE Advisor","PES Advisor","PELS Advisor", 
-				"SIGHT Faculty Mentor","MDC Advisor", "Civil Advisor");
+				"SIGHT Faculty Mentor","MDC Advisor", "Civil Advisor","Chairperson",
+			   "Vice-Chairperson","Vice-Chairperson","Vice-Chairperson");
 	
 		$n=count($person);
 		$lim = intval($n/3)+1;
@@ -145,9 +147,38 @@
 		<? $c++; } ?>
 	</div>
 		
+	<div class="row">
+		<div class="col"></div>
+		<div class="col-5">
+			<div class="card border-dark m-4 text-center">
+  				<div class="card-body p-4">
+    					<h5 class="card-title"><?=$person[$c]?></h5>
+    					<p class="card-text"><?=$post[$c]?></p>
+  				</div>
+			</div>
+		</div>
+		<div class="col"></div>
 	</div>
-	
-	<br><br>
+		
+	<?php $c++; ?>
+
+	<div class="row">
+		<? for($i=0;$i<3;$i++) { ?>
+			<div class="col">
+				<div class="card border-dark m-4 text-center">
+  					<div class="card-body p-4">
+    						<h5 class="card-title"><?=$person[$c]?></h5>
+    						<p class="card-text"><?=$post[$c]?></p>
+  					</div>
+				</div>
+			</div>
+		<? $c++; } ?>
+	</div>
+		
+		
+		
+	</div>
+
 	
 	
 </body>
