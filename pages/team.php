@@ -64,6 +64,10 @@
 			      "Dr. Thriveni J","Dr. B M Rajaprakash","Dr. Rekha H B",
 			      "Kennith O Koshy",
 			     "Hamsa Shree N A","Sandya Shree N","Vishal M Kanthi",
+			      "Rajat R Lingadalli","Joint Treasurer ",
+			      "Pruthvi Raj R ","Devika K N","Sanketh Rajshekhar Patil",
+			      "Gokula Krishnan S ","Jitendra Prasad K K",
+			      
 			     "Keerthi N C","Shubham N J","Srinidhi S Prasad","Kavya Bhat","Shriya A","Kruthin N",
 			      "Mohith Varma VS","Shrinidhi P","Neha H","Nilkant Bharat Gunjote","Sukhada G Rao",
 			     "Kalyan K R","Kishan S T","Deeksha Kalkatte L","Deepak K S","Kalyan Kumar P","Karthik K S",
@@ -72,11 +76,13 @@
 		$post=array("Branch Patron","Branch Advisor","Branch Counselor","Branch Mentor", 
 				"Branch Mentor","WIE Advisor","PES Advisor","PELS Advisor", 
 				"SIGHT Faculty Mentor","MDC Advisor", "Civil Advisor","Chairperson",
-			   "Vice-Chairperson","Vice-Chairperson","Vice-Chairperson","RepCom Member","RepCom Member",
+			   "Vice-Chairperson","Vice-Chairperson","Vice-Chairperson","Treasurer","Joint Treasurer",
+			    "General Secretary","Joint Secretary","Joint Secretary","Membership Development Committee Chair",
+			   
 			    "RepCom Member","RepCom Member","RepCom Member","RepCom Member","RepCom Member",
-			   "RepCom Member","RepCom Member","RepCom Member","RepCom Member","RepCom Member",
-			   "RepCom Member","RepCom Member","RepCom Member","RepCom Member","RepCom Member",
-			    "RepCom Member");
+			    "RepCom Member","RepCom Member","RepCom Member","RepCom Member","RepCom Member",
+			    "RepCom Member","RepCom Member","RepCom Member","RepCom Member","RepCom Member",
+			    "RepCom Member","RepCom Member","RepCom Member");
 	
 	
 		$n=count($person);
@@ -174,7 +180,7 @@
 	
 		
 		
-		
+	<!---------EXECOM-------->	
 	<h1 class="mt-5 mb-4 text-center fade">Executive Committee</h1>
 	<div class="row">
 		<div class="col"></div>
@@ -203,9 +209,50 @@
 			</div>
 		<? $c++; } ?>
 	</div>
-		
+	
+	<div class="row">
+		<? for($j=0;$j<2;$j++) { ?>
+			<div class="col">
+				<div class="card border-dark m-4 text-center">
+  					<div class="card-body p-4">
+    						<h5 class="card-title"><?=$person[$c]?></h5>
+    						<p class="card-text"><?=$post[$c]?></p>
+  					</div>
+				</div>
+			</div>
+		<? $c++; } ?>
+	</div>
+	
+	<div class="row">
+		<div class="col"></div>
+		<div class="col">
+			<div class="card border-dark m-4 text-center">
+  				<div class="card-body p-4">
+    					<h5 class="card-title"><?=$person[$c]?></h5>
+    					<p class="card-text"><?=$post[$c]?></p>
+  				</div>
+			</div>
+		</div>
+		<div class="col"></div>
+	</div>	
+	
+	<? for($i=0;$i<2;$i++) { ?>
+	<div class="row">
+		<? for($j=0;$j<2;$j++) { ?>
+			<div class="col">
+				<div class="card border-dark m-4 text-center">
+  					<div class="card-body p-4">
+    						<h5 class="card-title"><?=$person[$c]?></h5>
+    						<p class="card-text"><?=$post[$c]?></p>
+  					</div>
+				</div>
+			</div>
+		<? $c++; } ?>
+	</div>
+	<? } ?>
 	
 		
+	<!---------RepCOM-------->	
 	<h1 class="mt-5 mb-4 text-center fade">Representative Committee</h1>
 	<? for($i=0;$i<6;$i++) { ?>
 	<div class="row">
