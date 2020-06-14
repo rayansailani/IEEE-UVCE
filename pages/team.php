@@ -69,7 +69,6 @@
 	
 		$n=count($person);
 		$lim = intval($n/3)+1;
-		echo $lim;
 	
 	?>
 	
@@ -80,7 +79,7 @@
 			<? for($i=0;$i<3;$i++) { ?>
 				<div class="col">
 					<div class="list-group">
-  						<a class="list-group-item list-group-item-action text-center"><?=$person[$c]?> - <?=$post[$c]?></a>
+  						<a class="list-group-item list-group-item-action text-center m-4"><?=$person[$c]?> - <?=$post[$c]?></a>
 					</div>
 				</div>
 			<?  $c++; } ?>
