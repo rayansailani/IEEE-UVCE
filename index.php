@@ -406,11 +406,11 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	
 	/*Media Queries*/
 	@media (min-width:320px)  { .sig { overflow-y:scroll;height:210px } /* smartphones, iPhone, portrait 480x320 phones */ }
-	@media (min-width:481px)  {  .sig { overflow-y:scroll;height:420px } /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-	@media (min-width:641px)  {  .sig { overflow-y:scroll;height:420px }/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-	@media (min-width:961px)  { .caro { object-fit: cover;width: 100%;height: 600px; } .sig { overflow-y:scroll;height:420px } /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-	@media (min-width:1025px) { .caro { object-fit: cover;width: 100%;height: 600px; }  .sig { overflow-y:scroll;height:420px }/* big landscape tablets, laptops, and desktops */ }
-	@media (min-width:1281px) { .caro { object-fit: cover;width: 100%;height: 600px; } .sig { overflow-y:scroll;height:420px } /* hi-res laptops and desktops */ }
+	@media (min-width:481px)  {  .sig { overflow-y:scroll;height:380px } /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+	@media (min-width:641px)  {  .sig { overflow-y:scroll;height:380px }/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+	@media (min-width:961px)  { .caro { object-fit: cover;width: 100%;height: 600px; } .sig { overflow-y:scroll;height:380px } /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+	@media (min-width:1025px) { .caro { object-fit: cover;width: 100%;height: 600px; }  .sig { overflow-y:scroll;height:380px }/* big landscape tablets, laptops, and desktops */ }
+	@media (min-width:1281px) { .caro { object-fit: cover;width: 100%;height: 600px; } .sig { overflow-y:scroll;height:380px } /* hi-res laptops and desktops */ }
 	
 </style>
 
