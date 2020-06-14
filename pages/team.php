@@ -76,7 +76,7 @@
 			    "RepCom Member","RepCom Member","RepCom Member","RepCom Member","RepCom Member",
 			   "RepCom Member","RepCom Member","RepCom Member","RepCom Member","RepCom Member",
 			   "RepCom Member","RepCom Member","RepCom Member","RepCom Member","RepCom Member",
-			    "RepCom Member",);
+			    "RepCom Member");
 	
 	
 		$n=count($person);
