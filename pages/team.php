@@ -81,7 +81,7 @@
 		
 	<div class="row">
 		<div class="col"></div>
-		<div class="col-5">
+		<div class="col">
 			<div class="card border-dark m-4 text-center">
   				<div class="card-body p-4">
    					<h5 class="card-title"><?=$person[$c]?></h5>
@@ -94,7 +94,7 @@
 	
 	<div class="row">
 		<div class="col"></div>
-		<div class="col-5">
+		<div class="col">
 			<div class="card border-dark m-4 text-center">
   				<div class="card-body p-4">
    					<h5 class="card-title"><?=$person[$c+1]?></h5>
@@ -109,7 +109,7 @@
 		
 	<div class="row">
 		<div class="col"></div>
-		<div class="col-5">
+		<div class="col">
 			<div class="card border-dark m-4 text-center">
   				<div class="card-body p-4">
    					<h5 class="card-title"><?=$person[$c]?></h5>
@@ -169,7 +169,7 @@
 		
 	<div class="row">
 		<div class="col"></div>
-		<div class="col-5">
+		<div class="col">
 			<div class="card border-dark m-4 text-center">
   				<div class="card-body p-4">
     					<h5 class="card-title"><?=$person[$c]?></h5>
