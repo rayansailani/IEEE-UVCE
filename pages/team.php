@@ -74,21 +74,13 @@
 	<h1 class="mt-4 mb-4 text-center fade">Team IEEE UVCE</h1>
 	<div class="m-5">
 		<div class="row">
-			<div class="col">
-				<div class="list-group">
-  					<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+			<? for($i=0;$i<3;$i++) { ?>
+				<div class="col">
+					<div class="list-group">
+  						<a class="list-group-item list-group-item-action text-center"><?=$person[$c]?> - <?=$post[$c]?></a>
+					</div>
 				</div>
-			</div>
-			<div class="col">
-				<div class="list-group">
-  					<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-				</div>
-			</div>
-			<div class="col">
-				<div class="list-group">
-  					<a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-				</div>
-			</div>
+			<? } ?>
 		</div>
 	</div>
 	
