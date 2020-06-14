@@ -63,7 +63,7 @@
 			      "Dr. Lata B T","Dr. Pushpa C N","Prof. H S Veena","Dr. K P Guruswamy",
 			      "Dr. Thriveni J","Dr. B M Rajaprakash","Dr. Rekha H B",
 			      "Kennith O Koshy",
-			     "Hamsa Shree N A","Sandya Shree N","Vishal M Kanthi"
+			     "Hamsa Shree N A","Sandya Shree N","Vishal M Kanthi",
 			     "Keerthi N C","Shubham N J","Srinidhi S Prasad","Kavya Bhat","Shriya A","Kruthin N",
 			      "Mohith Varma VS","Shrinidhi P","Neha H","Nilkant Bharat Gunjote","Sukhada G Rao"
 			     "Kalyan K R","Kishan S T","Deeksha Kalkatte L","Deepak K S","Kalyan Kumar P","Karthik K S",
