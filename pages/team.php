@@ -58,24 +58,22 @@
 		</div>
 	</nav>
 	
+	<?php
+		$person=array("Dr. Venugopal K R","Dr. P Deepa Shenoy","Dr. Kiran K","Dr. Venkatesh M",
+			      "Dr. Lata B T","Dr. Pushpa C N","Prof. H S Veena","Dr. K P Guruswamy",
+			      "Dr. Thriveni J","Dr. B M Rajaprakash","Dr. Rekha H B");
 	
+		$post=array("Branch Patron","Branch Advisor","Branch Counselor","Branch Mentor", 
+				"Branch Mentor","WIE Advisor","PES Advisor","PELS Advisor", 
+				"SIGHT Faculty Mentor","MDC Advisor", "Civil Advisor);
+	?>
 	<h1 class="mt-4 mb-4 text-center fade">Team IEEE UVCE</h1>
 	<div class="m-2">
-		<?$c=1; for($j=1;$j<=2;$j++){ ?>
-			<div class="m-2">
-				<div class="card-deck">
-					<? for($i=1;$i<=4;$i++){ ?>
-					<div class="fade"></div>
-					<div class="card m-4 fade">
-						<img src="../assets/logo.png" class="img-fluid" style="width:100%" alt="image">
-						<div class="card-body">
-    							<p class="card-text">Member</p>
-  						</div>
-					</div>
-					<? $c++;} ?>
-				</div>
-			</div>
+		<div class="list-group">
+			<? for($i=0;$i<$n;$i++) { ?>
+  				<a href="#" class="list-group-item list-group-item-action"><?=$person[$i]?> - <?=$post[$i]?></a>
 			<? } ?>
+		</div>
 	</div>
 	
 	
