@@ -81,7 +81,7 @@
   						<a class="list-group-item list-group-item-action text-center"><?=$person[$c]?> - <?=$post[$c]?></a>
 					</div>
 				</div>
-			<? } ?>
+			<? } $c++; ?>
 		</div>
 		<? } ?>
 	</div>
