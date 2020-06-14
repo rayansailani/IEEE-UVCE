@@ -161,6 +161,11 @@
 		<? $c++; } ?>
 	</div>
 		
+	
+		
+		
+		
+	<h1 class="mt-4 mb-4 text-center fade">Executive Committee</h1>
 	<div class="row">
 		<div class="col"></div>
 		<div class="col">
@@ -188,6 +193,7 @@
 			</div>
 		<? $c++; } ?>
 	</div>
+		
 		
 		
 		
