@@ -207,7 +207,7 @@
 	
 		
 	<h1 class="mt-5 mb-4 text-center fade">Representative Committee</h1>
-	<? //for($i=0;$i<6;$i++) { ?>
+	<? for($i=0;$i<6;$i++) { ?>
 	<div class="row">
 		<? for($j=0;$j<3;$j++) { ?>
 			<div class="col">
@@ -220,7 +220,7 @@
 			</div>
 		<? $c++; } ?>
 	</div>	
-	<? //} ?>
+	<? } ?>
 		
 		
 		
