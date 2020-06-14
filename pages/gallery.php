@@ -71,10 +71,10 @@
 
   <div class="row text-center text-lg-left">
 	  
-	<? for($i=0;$i<8;$i++) { ?>
+	<? $c=1; for($i=0;$i<8;$i++) { ?>
     <div class="col-lg-3 col-md-4 col-6">
       	<a href="#gallery" class="d-block mb-4 h-100">
-            <img id="myImg<?=$i?>" class="img-fluid img-thumbnail" src="../assets/carousel1.jpg" alt="">
+            <img id="myImg<?=$i?>" class="img-fluid img-thumbnail" src="../assets/gallery_<?=$c?>.jpg" alt="">
           </a>
     </div>
 	  
@@ -83,7 +83,7 @@
   <img class="modal-content" id="img<?=$i?>">
   <div id="caption<?=$i?>"></div>
 </div>
- <? } ?>
+ <? $c++; } ?>
 	  
   </div>
 
