@@ -132,7 +132,7 @@
 					<? for($i=1;$i<=3;$i++){ ?>
 					<div class="card m-4">
 						<div class="sigcontainer">
-							<img src="assets/logo.png" class="img-fluid" style="width:100%" alt="image">
+							<img src="assets/sigs/sig_<?=$c?>.png" class="img-fluid" style="width:100%" alt="image">
 							<div class="overlay">
 								<!--<figcaption class="text text-center">-->
 								<div class="sig">
