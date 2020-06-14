@@ -69,23 +69,18 @@
 	
 		$n=count($person);
 		$lim = intval($n/3)+1;
-	
+		$c=0;
 	?>
 	
 	<h1 class="mt-4 mb-4 text-center fade">Team IEEE UVCE</h1>
-	<div class="m-5">
-		<? $c=0; for($j=0;$j<$lim;$j++) { ?>
-		<div class="row">
-			<? for($i=0;$i<3;$i++) { ?>
-				<div class="col">
-					<div class="list-group">
-  						<a class="list-group-item list-group-item-action text-center m-4"><?=$person[$c]?> - <?=$post[$c]?></a>
-					</div>
-				</div>
-			<?  $c++; } ?>
+	<? for($i=0;$i<11;$i++) { ?>
+		<div class="card text-center">
+  			<div class="card-body">
+    				<h5 class="card-title"><?=$person[$c]?></h5>
+    				<p class="card-text"><?=$post[$c]?></p>
+  			</div>
 		</div>
-		<? } ?>
-	</div>
+	<? } ?>
 	
 	
 	
