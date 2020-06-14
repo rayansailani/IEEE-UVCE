@@ -291,6 +291,7 @@
 	<? } ?>
 	
 	
+	<h1 class="mt-5 mb-4 text-center fade">Student Activities Committee (SAC)</h1>
 	<!--sac vice and chair-->
 	<div class="row">
 		<? for($i=0;$i<2;$i++) { ?>
@@ -306,7 +307,6 @@
 	</div>	
 		
 	<!--SAC co-->
-	<h1 class="mt-5 mb-4 text-center fade">Student Activities Committee (SAC)</h1>
 	<div class="row">
 		<div class="col"></div>
 		<div class="col">
