@@ -74,7 +74,14 @@
 		$c=0;
 	?>
 	
-	
+	<style>
+		.ml-1 {
+  			margin-left: ($spacer * .5) !important;
+		}
+		.mr-1 {
+  			margin-left: ($spacer * .5) !important;
+		}
+	</style>
 	
 	<h1 class="mt-4 mb-4 text-center fade">Team IEEE UVCE</h1>
 	<div class="container">
