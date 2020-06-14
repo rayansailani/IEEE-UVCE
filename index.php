@@ -387,7 +387,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	}
 	
 	.sigcontainer:hover .overlay {
-	  opacity: 1;
+	  opacity: 0.75;
 	}
 	
 	.text {
