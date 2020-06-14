@@ -80,7 +80,6 @@
 	<div class="container">
 		
 	<div class="row">
-		<div class="col"></div>
 		<div class="col">
 			<div class="card border-dark m-4 text-center">
   				<div class="card-body p-5">
@@ -89,11 +88,9 @@
   				</div>
 			</div>
 		</div>
-		<div class="col"></div>
 	</div>
 	
 	<div class="row">
-		<div class="col"></div>
 		<div class="col">
 			<div class="card border-dark m-4 text-center">
   				<div class="card-body p-5">
@@ -102,11 +99,9 @@
   				</div>
 			</div>
 		</div>
-		<div class="col"></div>
 	</div>
 		
 	<div class="row">
-		<div class="col"></div>
 		<div class="col">
 			<div class="card border-dark m-4 text-center">
   				<div class="card-body p-5">
@@ -115,14 +110,13 @@
   				</div>
 			</div>
 		</div>
-		<div class="col"></div>
 	</div>
 		
 	<? $c+=2; ?>		
 		
 	<div class="row">
 		<div class="col">
-			<div class="card border-dark ml-5 mr-5 mt-4 mb-4 text-center">
+			<div class="card border-dark m-4 text-center">
   				<div class="card-body p-4">
    					<h5 class="card-title"><?=$person[$c+1]?></h5>
    					<p class="card-text"><?=$post[$c+1]?></p>
@@ -130,7 +124,7 @@
 			</div>
 		</div>
 		<div class="col">
-			<div class="card border-dark ml-5 mr-5 mt-4 mb-4 text-center">
+			<div class="card border-dark m-4 text-center">
   				<div class="card-body p-4">
    					<h5 class="card-title"><?=$person[$c+2]?></h5>
    					<p class="card-text"><?=$post[$c+2]?></p>
