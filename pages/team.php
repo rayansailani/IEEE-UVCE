@@ -515,11 +515,117 @@
 	</div>
 	
 	
+	<!--ROBOTICS-->
+	<!--robotics chair-->
+	<h1 class="mt-5 mb-4 text-center fade">Robotics</h1>
+	<div class="row">
+		<div class="col"></div>
+		<div class="col">
+			<div class="card border-dark m-4 text-center">
+  				<div class="card-body p-4">
+    					<h5 class="card-title"><?=$person[$c]?></h5>
+    					<p class="card-text"><?=$post[$c]?></p>
+  				</div>
+			</div>
+		</div>
+		<div class="col"></div>
+	</div>
+		
+	<?php $c++; ?>
+
+		
+	<!--robo vice and co-->
+	<div class="row">
+		<? for($i=0;$i<2;$i++) { ?>
+			<div class="col">
+				<div class="card border-dark m-4 text-center">
+  					<div class="card-body p-4">
+    						<h5 class="card-title"><?=$person[$c]?></h5>
+    						<p class="card-text"><?=$post[$c]?></p>
+  					</div>
+				</div>
+			</div>
+		<? $c++; } ?>
+	</div>	
 		
 		
+	<!--graphic design-->
+	<!--gd chair-->
+	<h1 class="mt-5 mb-4 text-center fade">Graphic Design</h1>
+	<div class="row">
+		<div class="col"></div>
+		<div class="col">
+			<div class="card border-dark m-4 text-center">
+  				<div class="card-body p-4">
+    					<h5 class="card-title"><?=$person[$c]?></h5>
+    					<p class="card-text"><?=$post[$c]?></p>
+  				</div>
+			</div>
+		</div>
+		<div class="col"></div>
+	</div>
+		
+	<?php $c++; ?>	
 		
 		
 	
+	<!--art forum-->
+	<!--art forum chair-->
+	<h1 class="mt-5 mb-4 text-center fade">Art Forum</h1>
+	<div class="row">
+		<div class="col"></div>
+		<div class="col">
+			<div class="card border-dark m-4 text-center">
+  				<div class="card-body p-4">
+    					<h5 class="card-title"><?=$person[$c]?></h5>
+    					<p class="card-text"><?=$post[$c]?></p>
+  				</div>
+			</div>
+		</div>
+		<div class="col"></div>
+	</div>
+		
+	<?php $c++; ?>		
+		
+	
+	
+	<!--WEB-->
+	<!--web chair and gen-->
+	<h1 class="mt-5 mb-4 text-center fade">Web Development</h1>
+	<div class="row">
+		<? for($i=0;$i<2;$i++) { ?>
+			<div class="col">
+				<div class="card border-dark m-4 text-center">
+  					<div class="card-body p-4">
+    						<h5 class="card-title"><?=$person[$c]?></h5>
+    						<p class="card-text"><?=$post[$c]?></p>
+  					</div>
+				</div>
+			</div>
+		<? $c++; } ?>
+	</div>	
+		
+	
+	<!--lit-->
+	<!--lit both-->
+	<h1 class="mt-5 mb-4 text-center fade">Literary Club</h1>
+	<div class="row">
+		<? for($i=0;$i<2;$i++) { ?>
+			<div class="col">
+				<div class="card border-dark m-4 text-center">
+  					<div class="card-body p-4">
+    						<h5 class="card-title"><?=$person[$c]?></h5>
+    						<p class="card-text"><?=$post[$c]?></p>
+  					</div>
+				</div>
+			</div>
+		<? $c++; } ?>
+	</div>		
+		
+		
+		
+		
+		
 		
 	<!---------RepCOM-------->	
 	<h1 class="mt-5 mb-4 text-center fade">Representative Committee</h1>
@@ -541,6 +647,7 @@
 		
 		
 	</div>
+	<br><br>
 
 	
 	
