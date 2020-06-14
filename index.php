@@ -132,7 +132,7 @@
 					<? for($i=1;$i<=3;$i++){ ?>
 					<div class="card m-4">
 						<div class="sigcontainer">
-							<img src="assets/sigs/sig_<?=$c?>.png" class="img-fluid" style="object-fit: cover;width: 100%;height: 400px;" alt="image">
+							<img src="assets/sigs/sig_<?=$c?>.png" class="img-fluid siglogo" alt="image">
 							<div class="overlay">
 								<!--<figcaption class="text text-center">-->
 								<div class="sig">
@@ -408,9 +408,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	@media (min-width:320px)  { .sig { overflow-y:scroll;height:210px } /* smartphones, iPhone, portrait 480x320 phones */ }
 	@media (min-width:481px)  {  .sig { overflow-y:scroll;height:380px } /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
 	@media (min-width:641px)  {  .sig { overflow-y:scroll;height:380px }/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-	@media (min-width:961px)  { .caro { object-fit: cover;width: 100%;height: 600px; } .sig { overflow-y:scroll;height:380px } /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-	@media (min-width:1025px) { .caro { object-fit: cover;width: 100%;height: 600px; }  .sig { overflow-y:scroll;height:380px }/* big landscape tablets, laptops, and desktops */ }
-	@media (min-width:1281px) { .caro { object-fit: cover;width: 100%;height: 600px; } .sig { overflow-y:scroll;height:380px } /* hi-res laptops and desktops */ }
+	@media (min-width:961px)  { .caro { object-fit: cover;width: 100%;height: 600px; } .siglogo { object-fit: cover;width: 100%;height: 400px; } .sig { overflow-y:scroll;height:380px } /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+	@media (min-width:1025px) { .caro { object-fit: cover;width: 100%;height: 600px; } .siglogo { object-fit: cover;width: 100%;height: 400px; } .sig { overflow-y:scroll;height:380px }/* big landscape tablets, laptops, and desktops */ }
+	@media (min-width:1281px) { .caro { object-fit: cover;width: 100%;height: 600px; } .siglogo { object-fit: cover;width: 100%;height: 400px; } .sig { overflow-y:scroll;height:380px } /* hi-res laptops and desktops */ }
 	
 </style>
 
