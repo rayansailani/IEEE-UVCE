@@ -135,7 +135,7 @@
 							<img src="assets/logo.png" class="img-fluid" style="width:100%" alt="image">
 							<div class="overlay">
 								<!--<figcaption class="text text-center">-->
-								<div style="overflow-y:scroll;">
+								<div style="overflow-y:scroll;height:200px">
 									<p class="m-4" style="color:#fff"><?=$sig_desc[$c-1]?></p>
 								</div>
 								<!--</figcaption>-->
