@@ -81,7 +81,7 @@
 		
 	<div class="row">
 		<div class="col">
-			<div class="card border-dark mt-4 mb-4 text-center" style="margin-left:20%;margin-right:20%;">
+			<div class="card border-dark mt-4 mb-4 text-center" style="margin-left:14%;margin-right:14%;">
   				<div class="card-body p-5">
    					<h5 class="card-title"><?=$person[$c]?></h5>
    					<p class="card-text"><?=$post[$c]?></p>
@@ -92,7 +92,7 @@
 	
 	<div class="row">
 		<div class="col">
-			<div class="card border-dark mt-4 mb-4 text-center" style="margin-left:20%;margin-right:20%;">
+			<div class="card border-dark mt-4 mb-4 text-center" style="margin-left:14%;margin-right:14%;">
   				<div class="card-body p-5">
    					<h5 class="card-title"><?=$person[$c+1]?></h5>
    					<p class="card-text"><?=$post[$c+1]?></p>
@@ -103,7 +103,7 @@
 		
 	<div class="row">
 		<div class="col">
-			<div class="card border-dark mt-4 mb-4 text-center" style="margin-left:20%;margin-right:20%;">
+			<div class="card border-dark mt-4 mb-4 text-center" style="margin-left:14%;margin-right:14%;">
   				<div class="card-body p-5">
    					<h5 class="card-title"><?=$person[$c+2]?></h5>
    					<p class="card-text"><?=$post[$c+2]?></p>
