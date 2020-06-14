@@ -66,6 +66,9 @@
 		$post=array("Branch Patron","Branch Advisor","Branch Counselor","Branch Mentor", 
 				"Branch Mentor","WIE Advisor","PES Advisor","PELS Advisor", 
 				"SIGHT Faculty Mentor","MDC Advisor", "Civil Advisor");
+	
+		$n=count($person);
+	
 	?>
 	
 	<h1 class="mt-4 mb-4 text-center fade">Team IEEE UVCE</h1>
