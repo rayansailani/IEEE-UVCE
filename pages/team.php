@@ -74,21 +74,14 @@
 		$c=0;
 	?>
 	
-	<style>
-		.ml-1 {
-  			margin-left: ($spacer * .5) !important;
-		}
-		.mr-1 {
-  			margin-left: ($spacer * .5) !important;
-		}
-	</style>
+	
 	
 	<h1 class="mt-4 mb-4 text-center fade">Team IEEE UVCE</h1>
 	<div class="container">
 		
 	<div class="row">
 		<div class="col">
-			<div class="card border-dark mt-4 mb-4 ml-5 mr-5 text-center">
+			<div class="card border-dark mt-4 mb-4 text-center" style="margin-left:20%;margin-right:20%;">
   				<div class="card-body p-5">
    					<h5 class="card-title"><?=$person[$c]?></h5>
    					<p class="card-text"><?=$post[$c]?></p>
@@ -99,7 +92,7 @@
 	
 	<div class="row">
 		<div class="col">
-			<div class="card border-dark mt-4 mb-4 ml-5 mr-5 text-center">
+			<div class="card border-dark mt-4 mb-4 text-center" style="margin-left:20%;margin-right:20%;">
   				<div class="card-body p-5">
    					<h5 class="card-title"><?=$person[$c+1]?></h5>
    					<p class="card-text"><?=$post[$c+1]?></p>
@@ -110,7 +103,7 @@
 		
 	<div class="row">
 		<div class="col">
-			<div class="card border-dark mt-4 mb-4 ml-5 mr-5 text-center">
+			<div class="card border-dark mt-4 mb-4 text-center" style="margin-left:20%;margin-right:20%;">
   				<div class="card-body p-5">
    					<h5 class="card-title"><?=$person[$c+2]?></h5>
    					<p class="card-text"><?=$post[$c+2]?></p>
