@@ -72,10 +72,10 @@
 	?>
 	
 	<h1 class="mt-4 mb-4 text-center fade">Team IEEE UVCE</h1>
-	<div class="m-2">
+	<div class="m-5">
 		<div class="list-group">
 			<? for($i=0;$i<$n;$i++) { ?>
-  				<a href="#" class="list-group-item list-group-item-action"><?=$person[$i]?> - <?=$post[$i]?></a>
+  				<a href="#" class="list-group-item list-group-item-action p-4 text-center"><?=$person[$i]?> - <?=$post[$i]?></a>
 			<? } ?>
 		</div>
 	</div>
