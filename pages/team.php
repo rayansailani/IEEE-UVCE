@@ -80,6 +80,7 @@
 	<div class="container">
 		
 	<div class="row">
+		<div class="col"></div>
 		<div class="col">
 			<div class="card border-dark m-4 text-center">
   				<div class="card-body p-5">
@@ -88,9 +89,11 @@
   				</div>
 			</div>
 		</div>
-	<!--</div>-->
+		<div class="col"></div>
+	</div>
 	
-	<!--<div class="row">-->
+	<div class="row">
+		<div class="col"></div>
 		<div class="col">
 			<div class="card border-dark m-4 text-center">
   				<div class="card-body p-5">
@@ -99,9 +102,11 @@
   				</div>
 			</div>
 		</div>
-	<!--</div>-->
+		<div class="col"></div>
+	</div>
 		
-	<!--<div class="row">-->
+	<div class="row">
+		<div class="col"></div>
 		<div class="col">
 			<div class="card border-dark m-4 text-center">
   				<div class="card-body p-5">
@@ -110,7 +115,7 @@
   				</div>
 			</div>
 		</div>
-	<!--</div>-->
+		<div class="col"></div>
 	</div>
 		
 	<? $c+=2; ?>		
