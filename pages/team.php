@@ -69,12 +69,13 @@
 	
 		$n=count($person);
 		$lim = intval($n/3)+1;
+		echo $lim;
 	
 	?>
 	
 	<h1 class="mt-4 mb-4 text-center fade">Team IEEE UVCE</h1>
 	<div class="m-5">
-		<? $c=0; for($i=0;$i<$lim;$i++) { ?>
+		<? $c=0; for($j=0;$j<$lim;$j++) { ?>
 		<div class="row">
 			<? for($i=0;$i<3;$i++) { ?>
 				<div class="col">
