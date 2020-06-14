@@ -73,6 +73,11 @@
 	?>
 	
 	<h1 class="mt-4 mb-4 text-center fade">Team IEEE UVCE</h1>
+	<div class="row">
+		<div class="col">
+		</div>
+		
+		<div class="col-5">
 	<? for($i=0;$i<11;$i++) { ?>
 		<div class="card m-5 text-center">
   			<div class="card-body p-5">
@@ -81,6 +86,11 @@
   			</div>
 		</div>
 	<? $c++; } ?>
+		</div>
+		
+		<div class="col">	
+		</div>
+	</div>
 	
 	
 	
