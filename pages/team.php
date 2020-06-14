@@ -73,6 +73,14 @@
 			      "Supriya V Kurpad","Varsha Nagesh","D S L Rasagnya",
 			      "Sriram K K","Charan M K","Pooja Hegde","Ajantha Hebbar","Munnoli Sammed Jaykumar",
 			      "Swaminathan S","Anam Ali","Nimitha J",
+			      "Sunkeerth M","Varsha S Bhat","Naveen Kumar N",
+			      "Harshitha B R","Harish Ramesh","Niveditha G","Harshini B R","Anusha L ",
+			      
+			      "Venkateshprasad","Vinay Desai","Ajay J",
+			      "Nivedita Kulkarnni",
+			      "Aditya Shetty",
+			      "Manoj Kumar A","Mohammed Rayan Sailani",
+			      "Anisha K S","Saurabh S Bharadwaj",
 			      
 			     "Keerthi N C","Shubham N J","Srinidhi S Prasad","Kavya Bhat","Shriya A","Kruthin N",
 			      "Mohith Varma VS","Shrinidhi P","Neha H","Nilkant Bharat Gunjote","Sukhada G Rao",
@@ -89,7 +97,15 @@
 			    "Chairperson","Vice-Chairperson","General Secretary","Joint Secretary",
 			    "Chairperson","Vice-Chairperson","Vice-Chairperson","General Secretary","Joint Secretary",
 			    "Joint Secretary","NCode Secretary","NCode Secretary",
-			   
+			    "Chairperson","General Secretary","Joint Secretary",
+			    "Chairperson","Vice-Chairperson","Vice-Chairperson","General Secretary","Coordinator",
+			    
+			    "President","Secretary","Coordinator",
+			    "President",
+			    "President",
+			    "President","Secretary",
+			    "Joint Secretary","Joint Secretary",
+			    
 			    "RepCom Member","RepCom Member","RepCom Member","RepCom Member","RepCom Member",
 			    "RepCom Member","RepCom Member","RepCom Member","RepCom Member","RepCom Member",
 			    "RepCom Member","RepCom Member","RepCom Member","RepCom Member","RepCom Member",
@@ -416,9 +432,92 @@
 	</div>		
 	
 		
+	
+	<!--PES chair-->
+	<h1 class="mt-5 mb-4 text-center fade">Power & Energy Society (PES)</h1>
+	<div class="row">
+		<div class="col"></div>
+		<div class="col">
+			<div class="card border-dark m-4 text-center">
+  				<div class="card-body p-4">
+    					<h5 class="card-title"><?=$person[$c]?></h5>
+    					<p class="card-text"><?=$post[$c]?></p>
+  				</div>
+			</div>
+		</div>
+		<div class="col"></div>
+	</div>
 		
+	<?php $c++; ?>
+
+		
+	<!--pes vice and co-->
+	<div class="row">
+		<? for($i=0;$i<2;$i++) { ?>
+			<div class="col">
+				<div class="card border-dark m-4 text-center">
+  					<div class="card-body p-4">
+    						<h5 class="card-title"><?=$person[$c]?></h5>
+    						<p class="card-text"><?=$post[$c]?></p>
+  					</div>
+				</div>
+			</div>
+		<? $c++; } ?>
+	</div>	
 	
 	
+	
+	<!--SIGHT-->
+		
+	<!--sight chair-->
+	<h1 class="mt-5 mb-4 text-center fade">Special Interest Group on Humanitarian Technology (SIGHT)</h1>
+	<div class="row">
+		<div class="col"></div>
+		<div class="col">
+			<div class="card border-dark m-4 text-center">
+  				<div class="card-body p-4">
+    					<h5 class="card-title"><?=$person[$c]?></h5>
+    					<p class="card-text"><?=$post[$c]?></p>
+  				</div>
+			</div>
+		</div>
+		<div class="col"></div>
+	</div>
+		
+	<?php $c++; ?>	
+	
+	<!--vice chair-->
+	<div class="row">
+		<? for($i=0;$i<2;$i++) { ?>
+			<div class="col">
+				<div class="card border-dark m-4 text-center">
+  					<div class="card-body p-4">
+    						<h5 class="card-title"><?=$person[$c]?></h5>
+    						<p class="card-text"><?=$post[$c]?></p>
+  					</div>
+				</div>
+			</div>
+		<? $c++; } ?>
+	</div>	
+		
+	<!--sight gen and co-->
+	<div class="row">
+		<? for($i=0;$i<2;$i++) { ?>
+			<div class="col">
+				<div class="card border-dark m-4 text-center">
+  					<div class="card-body p-4">
+    						<h5 class="card-title"><?=$person[$c]?></h5>
+    						<p class="card-text"><?=$post[$c]?></p>
+  					</div>
+				</div>
+			</div>
+		<? $c++; } ?>
+	</div>
+	
+	
+		
+		
+		
 		
 	
 		
