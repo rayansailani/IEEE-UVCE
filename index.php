@@ -122,9 +122,9 @@
 	<!--SIG-->
 	<h1 class="mt-4 mb-4 text-center fade">SIG's</h1>
 	<div class="fade" id="sigs"></div>
-	<div class="m-2">
+	<div class="m-4">
 		<?$c=1; for($j=1;$j<=3;$j++){ ?>
-			<div class="m-2">
+			<div class="m-4">
 				<div class="card-deck m-2">
 					<? for($i=1;$i<=3;$i++){ ?>
 					<div class="card m-4">
