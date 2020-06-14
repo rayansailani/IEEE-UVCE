@@ -69,6 +69,7 @@
 	
 		$n=count($person);
 		$lim = $n/3;
+		echo $lim;
 	
 	?>
 	
