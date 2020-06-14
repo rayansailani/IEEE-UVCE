@@ -118,6 +118,9 @@
 	</div>
 	<br>
 	
+	<?php
+		$sig_desc=array("Robotics club was formed in 2005 to further the understanding of the field. Students from various discipline have collaborated to keep this club active for last 14 years. With the wake of recent developments in technology, robotics predominates the important sectors and also demands a new approach. The club has shouldered several workshops, events and peer-to-peer training programs for teaching robotics to everyone who were curious and interested and intends to form a strong community of roboticists in UVCE. It commits to the fundamentals for rethinking the design and to build efficient robots with advanced capabilities.");
+	?>
 	
 	<!--SIG-->
 	<h1 class="mt-4 mb-4 text-center fade">SIG's</h1>
@@ -132,7 +135,7 @@
 							<img src="assets/logo.png" class="img-fluid" style="width:100%" alt="image">
 							<div class="overlay">
 								<!--<figcaption class="text text-center">-->
-									<h5>SIG</h5>
+								<p><?=$sig_desc[$c]?></p>
 								<!--</figcaption>-->
 							</div>
 						</div>
