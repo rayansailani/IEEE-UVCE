@@ -64,7 +64,7 @@
 			      "Dr. Thriveni J","Dr. B M Rajaprakash","Dr. Rekha H B",
 			      "Kennith O Koshy",
 			     "Hamsa Shree N A","Sandya Shree N","Vishal M Kanthi",
-			      "Rajat R Lingadalli","Joint Treasurer ",
+			      "Rajat R Lingadalli","Vikas Gowda L V",
 			      "Pruthvi Raj R ","Devika K N","Sanketh Rajshekhar Patil",
 			      "Gokula Krishnan S ","Jitendra Prasad K K",
 			      
@@ -78,6 +78,7 @@
 				"SIGHT Faculty Mentor","MDC Advisor", "Civil Advisor","Chairperson",
 			   "Vice-Chairperson","Vice-Chairperson","Vice-Chairperson","Treasurer","Joint Treasurer",
 			    "General Secretary","Joint Secretary","Joint Secretary","Membership Development Committee Chair",
+			    "Membership Secretary",
 			   
 			    "RepCom Member","RepCom Member","RepCom Member","RepCom Member","RepCom Member",
 			    "RepCom Member","RepCom Member","RepCom Member","RepCom Member","RepCom Member",
