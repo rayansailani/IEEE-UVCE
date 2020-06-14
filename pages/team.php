@@ -68,8 +68,7 @@
 				"SIGHT Faculty Mentor","MDC Advisor", "Civil Advisor");
 	
 		$n=count($person);
-		$lim = $n/3;
-		echo $lim;
+		$lim = intval($n/3)+1;
 	
 	?>
 	
