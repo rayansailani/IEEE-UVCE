@@ -65,8 +65,14 @@
 			      "Kennith O Koshy",
 			     "Hamsa Shree N A","Sandya Shree N","Vishal M Kanthi",
 			      "Rajat R Lingadalli","Vikas Gowda L V",
-			      "Pruthvi Raj R ","Devika K N","Sanketh Rajshekhar Patil",
+			      "Pruthvi Raj R ",
+			      "Devika K N","Sanketh Rajshekhar Patil",
 			      "Gokula Krishnan S ","Jitendra Prasad K K",
+			      "Sanjana Ramesh","Srinivas K","Maanasa H B",
+			      "Mahima Pradeep",
+			      "Supriya V Kurpad","Varsha Nagesh","D S L Rasagnya",
+			      "Sriram K K","Charan M K","Pooja Hegde","Ajantha Hebbar","Munnoli Sammed Jaykumar",
+			      "Swaminathan S","Anam Ali","Nimitha J",
 			      
 			     "Keerthi N C","Shubham N J","Srinidhi S Prasad","Kavya Bhat","Shriya A","Kruthin N",
 			      "Mohith Varma VS","Shrinidhi P","Neha H","Nilkant Bharat Gunjote","Sukhada G Rao",
@@ -79,6 +85,10 @@
 			   "Vice-Chairperson","Vice-Chairperson","Vice-Chairperson","Treasurer","Joint Treasurer",
 			    "General Secretary","Joint Secretary","Joint Secretary","Membership Development Committee Chair",
 			    "Membership Secretary",
+			    "Chairperson","Vice-Chairperson","Coordinator"
+			    "Chairperson","Vice-Chairperson","General Secretary","Joint Secretary",
+			    "Chairperson","Vice-Chairperson","Vice-Chairperson","General Secretary","Joint Secretary",
+			    "Joint Secretary","NCode Secretary","NCode Secretary",
 			   
 			    "RepCom Member","RepCom Member","RepCom Member","RepCom Member","RepCom Member",
 			    "RepCom Member","RepCom Member","RepCom Member","RepCom Member","RepCom Member",
@@ -182,6 +192,8 @@
 		
 		
 	<!---------EXECOM-------->	
+		
+	<--Chair-->
 	<h1 class="mt-5 mb-4 text-center fade">Executive Committee</h1>
 	<div class="row">
 		<div class="col"></div>
@@ -198,6 +210,8 @@
 		
 	<?php $c++; ?>
 
+		
+	<!--Vice Chair-->
 	<div class="row">
 		<? for($i=0;$i<3;$i++) { ?>
 			<div class="col">
@@ -211,6 +225,8 @@
 		<? $c++; } ?>
 	</div>
 	
+		
+	<!--Treasurer and joint treasurer-->	
 	<div class="row">
 		<? for($j=0;$j<2;$j++) { ?>
 			<div class="col">
@@ -224,6 +240,8 @@
 		<? $c++; } ?>
 	</div>
 	
+	
+	<!--gen sec-->
 	<div class="row">
 		<div class="col"></div>
 		<div class="col">
@@ -238,7 +256,9 @@
 	</div>	
 		
 	<?php $c++; ?>
+	
 		
+	<!--joint sec and membership-->	
 	<? for($i=0;$i<2;$i++) { ?>
 	<div class="row">
 		<? for($j=0;$j<2;$j++) { ?>
@@ -253,6 +273,43 @@
 		<? $c++; } ?>
 	</div>
 	<? } ?>
+	
+	
+	<!--SAC chair-->
+	<h1 class="mt-5 mb-4 text-center fade">Student Activities Committee (SAC)</h1>
+	<div class="row">
+		<div class="col"></div>
+		<div class="col">
+			<div class="card border-dark m-4 text-center">
+  				<div class="card-body p-4">
+    					<h5 class="card-title"><?=$person[$c]?></h5>
+    					<p class="card-text"><?=$post[$c]?></p>
+  				</div>
+			</div>
+		</div>
+		<div class="col"></div>
+	</div>
+		
+	<?php $c++; ?>
+
+		
+	<!--sac vice and co-->
+	<div class="row">
+		<? for($i=0;$i<2;$i++) { ?>
+			<div class="col">
+				<div class="card border-dark m-4 text-center">
+  					<div class="card-body p-4">
+    						<h5 class="card-title"><?=$person[$c]?></h5>
+    						<p class="card-text"><?=$post[$c]?></p>
+  					</div>
+				</div>
+			</div>
+		<? $c++; } ?>
+	</div>
+		
+		
+		
+		
 	
 		
 	<!---------RepCOM-------->	
