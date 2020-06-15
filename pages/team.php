@@ -629,10 +629,35 @@
 		
 	<!---------RepCOM-------->	
 	<h1 class="mt-5 mb-4 text-center fade">Representative Committee</h1>
-	
+	<div class="row">
+		<? for($i=0;$i<3;$i++) { ?>
+			<div class="col">
+				<div class="card border-dark m-4 text-center">
+  					<div class="card-body p-4">
+    						<h5 class="card-title"><?=$person[$c]?></h5>
+    						<p class="card-text"><?=$post[$c]?></p>
+  					</div>
+				</div>
+			</div>
+		<? $c++; } ?>
+	</div>	
 	
 		
+	<div class="row">
+		<? for($i=0;$i<2;$i++) { ?>
+			<div class="col">
+				<div class="card border-dark m-4 text-center">
+  					<div class="card-body p-4">
+    						<h5 class="card-title"><?=$person[$c]?></h5>
+    						<p class="card-text"><?=$post[$c]?></p>
+  					</div>
+				</div>
+			</div>
+		<? $c++; } ?>
+	</div>	
 		
+		
+	
 	
 		
 	
