@@ -123,7 +123,7 @@
 	?>
 	
 	<!--SIG-->
-	<h1 class="mt-4 mb-4 text-center fade">SIG's</h1>
+	<h1 class="mt-4 mb-4 text-center fade">Societies & Special Interest Groups</h1>
 	<div class="fade" id="sigs"></div>
 	<div class="m-4">
 		<?$c=1; for($j=1;$j<=3;$j++){ ?>
@@ -153,7 +153,7 @@
 	
 	
 	
-	<div class="fade" id="awards"></div>
+	<div class="fade" id="awards">Awards</div>
 	<br>
 	<!--Awards-->
 	<div class="m-2">
