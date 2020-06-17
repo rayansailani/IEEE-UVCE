@@ -71,7 +71,7 @@
 
   <div class="row text-center text-lg-left">
 	  
-	<? $c=1; for($i=0;$i<64;$i++) { ?>
+	<? $c=1; for($i=0;$i<40;$i++) { ?>
     <div class="col-lg-3 col-md-4 col-6">
       	<a href="#gallery" class="d-block mb-4 h-100">
             <img id="myImg<?=$i?>" class="img-fluid img-thumbnail" src="../assets/gallery/gallery_<?=$c?>.jpg" alt="">
@@ -171,7 +171,7 @@
 <script>
 	var i;
 
-for(i=0;i<64;i++){
+for(i=0;i<40;i++){
 // Get the modal
 var modal = document.getElementById("myModal"+i);
 
