@@ -153,7 +153,7 @@
 	
 	
 	
-	<div class="fade" id="awards">Awards</div>
+	<h1 class="mt-4 mb-4 text-center fade">Awards</h1>
 	<br>
 	<!--Awards-->
 	<div class="m-2">
