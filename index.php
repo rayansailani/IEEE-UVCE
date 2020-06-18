@@ -119,7 +119,51 @@
 	<br>
 	
 	<?php
-		$sig_desc=array("IEEE Women in Engineering (WIE) is a global network of IEEE members and volunteers dedicated to promoting women engineers and scientists, and inspiring girls around the world to follow their academic interests in a career in engineering and science. IEEE UVCE WIE is an Affinity group under IEEE UVCE. It's goal is to facilitate the recruitment and retention of women in technical disciplines globally. We envision a vibrant community of IEEE women and men collectively using their diverse talents to innovate for the benefit of humanity.","Computer Society is one of the most prominent societies that comes under IEEE UVCE. It acts as a great platform for students of all branches to learn more and contribute to the computing world. Computer Society has been conducting many events since its inception which includes our yearly hackathon CodeFury, our monthly coding competition NCode and several workshops to kindle student's interest to update their knowledge on new upcoming technological advances and improve their programming skills as well.","Power and Energy Society is a new student chapter under IEEE UVCE, started in April 2019. The main aim of the Society is to strengthen the technical skills of interested students from all branches, but mainly concentrated on students of electronics and electrical branches. It conducts many technical events, talks and industrial visits.  A monthly Electronics and Electrical Challenge Voltorb is also conducted, through which students can test their technical strengths.","SIGHT is an ensemble in IEEE that focuses on projects that are beneficial to the society. It gives enthusiastic groups of engineers a platform to reach out to different sectors of people in different walks of life, thereby changing lives one at a time towards their better future by solving their everyday problems by providing a technology based solution.","Robotics club was formed in 2005 to further the understanding of the field. Students from various discipline have collaborated to keep this club active for last 14 years. With the wake of recent developments in technology, robotics predominates the important sectors and also demands a new approach. The club has shouldered several workshops, events and peer-to-peer training programs for teaching robotics to everyone who were curious and interested and intends to form a strong community of roboticists in UVCE. It commits to the fundamentals for rethinking the design and to build efficient robots with advanced capabilities.","The Web Development SIG was started in April 2017. This is the web tweaking pavilion of IEEE UVCE. It specialises in conducting all the web related competitions and workshops for IEEE UVCE. Workshops on HTML and CSS and contests on front end designing have been conducted.","The design team of IEEE UVCE consists of Graphic designers who design and conduct workshops on Adobe Illustrator and Photoshop. This SIG gives opportunities to the students to be a part of the design team for various events conducted by IEEE UVCE. It was started in April 2017.","Literary club functions as a part of IEEE UVCE with a motto of harnessing the linguistic skills. It conducts activities to develop communication and creative writing abilities of students. This club helps in enhancing the communication skills of students and helps them communicate their ideas and innovations in a clear and efficient way.","The IEEE UVCE Art Forum is a club that provides artistic opportunities beyond the walls of the classroom. Art Forum is for all those students who are passionate and interested in art. It promotes creative qualities among students. Its goal is to promote active participation of students in different events conducted by the club and also to promote student involvement in activities which gives them the opportunity to put forward their creative ideas.");
+		$sig_title=array("Women in Engineering (WIE) ","Computer Society (CS) ","Power & Energy Society (PES) ",
+				"Special Interest Group on Humanitarian Technology (SIGHT) ","Yantrik ","Web Development SIG ",
+				"Graphic Design ","Literary Club ","Art Forum SIG ");
+		$sig_desc=array("is a global network of IEEE members and volunteers dedicated to promoting 
+			women engineers and scientists, and inspiring girls around the world to follow their 
+			academic interests in a career in engineering and science. IEEE UVCE WIE is an Affinity group under
+			IEEE UVCE. It's goal is to facilitate the recruitment and retention of women in technical 
+			disciplines globally. We envision a vibrant community of IEEE women and men collectively
+			using their diverse talents to innovate for the benefit of humanity.",
+			"is one of the most prominent societies that comes under IEEE UVCE. It acts as a great 
+			platform for students of all branches to learn more and contribute to the computing world. 
+			Computer Society has been conducting many events since its inception which includes our 
+			yearly hackathon CodeFury, our monthly coding competition NCode and several workshops 
+			to kindle student's interest to update their knowledge on new upcoming technological 
+			advances and improve their programming skills as well."," is a new student chapter under 
+			IEEE UVCE, started in April 2019. The main aim of the Society is to strengthen the technical 
+			skills of interested students from all branches, but mainly concentrated on students of 
+			electronics and electrical branches. It conducts many technical events, talks and industrial visits.
+			A monthly Electronics and Electrical Challenge Voltorb is also conducted, through which students
+			can test their technical strengths.","is an ensemble in IEEE that focuses on projects that 
+			are beneficial to the society. It gives enthusiastic groups of engineers a platform to reach 
+			out to different sectors of people in different walks of life, thereby changing lives one at 
+			a time towards their better future by solving their everyday problems by providing a technology 
+			based solution.","the Robotics club was formed in 2005 to further the understanding of 
+			the field. Students from various discipline have collaborated to keep this club active for last
+			14 years. With the wake of recent developments in technology, robotics predominates the important 
+			sectors and also demands a new approach. The club has shouldered several workshops,
+			events and peer-to-peer training programs for teaching robotics to everyone who were curious 
+			and interested and intends to form a strong community of roboticists in UVCE. It commits to the 
+			fundamentals for rethinking the design and to build efficient robots with advanced capabilities.",
+			"Web Development SIG was started in April 2017. This is the web tweaking pavilion of IEEE UVCE.
+			It specialises in conducting all the web related competitions and workshops for IEEE UVCE. 
+			Workshops on HTML and CSS and contests on front end designing have been conducted.",
+			"team of IEEE UVCE consists of passionate designers who design and conduct workshops on 
+			Adobe Illustrator and Photoshop. This SIG gives opportunities to the students to be a part 
+			of the design team for various events conducted by IEEE UVCE. It was started in April 2017.",
+			"functions as a part of IEEE UVCE with a motto of harnessing the linguistic skills.
+			It conducts activities to develop communication and creative writing abilities of students.
+			This club helps in enhancing the communication skills of students and helps them communicate 
+			their ideas and innovations in a clear and efficient way.",
+			"is a club that provides artistic opportunities beyond the walls of the classroom. 
+			Art Forum is for all those students who are passionate and interested in art. It promotes
+			creative qualities among students. Its goal is to promote active participation of students in 
+			different events conducted by the club and also to promote student involvement in activities
+			which gives them the opportunity to put forward their creative ideas.");
 	?>
 	
 	<!--SIG-->
@@ -136,7 +180,7 @@
 							<div class="overlay">
 								<!--<figcaption class="text text-center">-->
 								<div class="sig">
-									<p class="m-4" style="color:#fff"><?=$sig_desc[$c-1]?></p>
+									<p class="m-4" style="color:#fff"><b><?=$sig_title[$c-1]?></b><?=$sig_desc[$c-1]?></p>
 								</div>
 								<!--</figcaption>-->
 							</div>
@@ -172,53 +216,7 @@
 </body>
 	
 	
-<!-- Footer -->
-<footer class="page-footer font-small" style="background-color:#E3E2DF;">
-
-  <!-- Footer Links -->
-  <div class="container">
-
-    
-  
-
-    <!-- Grid row-->
-    <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
-
-      <!-- Grid column -->
-      <div class="col-md-8 col-12 mt-5">
-        <p style="line-height: 0.8rem"><a class="m-2" href="mailto:mahith.98@gmail.com " target="_blank"><i class="fa fa-envelope"> </i> Mahith Shetty</a><br><br><!--<a>Phone : +91 9845207684</a></p>-->
-	      <a class="p-2" href="https://goo.gl/maps/P43RC7Qphrq" target="_blank">				
-                        <i class="fa fa-map-marker"></i> UVCE, K.R Circle, B.R Ambedkar Veedhi, Bengaluru	                        
-                    </a>
-      </div>
-				                   
-      <!-- Grid column -->
-
-    </div>
-    
-      <!-- Grid column -->
-
-
-  </div>
-	<div class="container">
-		<div class="text-center">
-			<i class="fa fa-facebook m-2"></i>		
-			<i class="fa fa-youtube m-2"></i>		
-			<i class="fa fa-twitter m-2"></i>		
-			<i class="fa fa-linkedin m-2"></i>		
-			<i class="fa fa-instagram m-2"></i>
-		</div>
-	</div>
-  <!-- Footer Links -->
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© Copyright:
-    <a href="#">ieeeuvce</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
+<?php include 'pages/footer.php'; ?>
 	
 	
 	
