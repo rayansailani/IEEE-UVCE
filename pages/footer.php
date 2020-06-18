@@ -14,8 +14,8 @@
       <div class="col-md-8 col-12 mt-5">
         <p style="line-height: 0.8rem"><a class="m-2" href="mailto:kennithkoshy@ieee.org" target="_blank"><i class="fa fa-envelope"></i> Kennith Koshy</a><br><br><!--<a>Phone : +91 9845207684</a></p>-->
 	      <a class="p-2" href="https://goo.gl/maps/P43RC7Qphrq" target="_blank">				
-                        <i class="fa fa-map-marker"></i> UVCE, K.R Circle, B.R Ambedkar Veedhi, Bengaluru	                        
-                    </a>
+                   <i class="fa fa-map-marker"></i> UVCE, K.R Circle, B.R Ambedkar Veedhi, Bengaluru	                        
+              </a>
       </div>
 				                   
       <!-- Grid column -->
@@ -38,8 +38,7 @@
   <!-- Footer Links -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© Copyright:
-    <a href="#">ieeeuvce</a>
+  <div class="footer-copyright text-center py-3">© Copyright: ieeeuvce
   </div>
   <!-- Copyright -->
 
