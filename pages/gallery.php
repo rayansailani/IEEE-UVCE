@@ -74,7 +74,7 @@
 	<? $c=1; for($i=0;$i<40;$i++) { ?>
     <div class="col-lg-3 col-md-4 col-6">
       	<a href="#gallery" class="d-block mb-4 h-100">
-            <img id="myImg<?=$i?>" class="img-fluid img-thumbnail" src="../assets/gallery/gallery_<?=$c?>.jpg" alt="">
+            <img id="myImg<?=$i?>" class="img-fluid thumb-nail" src="../assets/gallery/gallery_<?=$c?>.jpg" alt="">
           </a>
     </div>
 	  
@@ -284,12 +284,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
 	
 	
 	/*Media Queries*/
-	@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
-	@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
-	@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
-	@media (min-width:961px)  { .caro { object-fit: cover;width: 100%;height: 600px; } /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-	@media (min-width:1025px) { .caro { object-fit: cover;width: 100%;height: 600px; } /* big landscape tablets, laptops, and desktops */ }
-	@media (min-width:1281px) { .caro { object-fit: cover;width: 100%;height: 600px; } /* hi-res laptops and desktops */ }
+	@media (min-width:320px)  { .thumb-nail { object-fit: cover;width: 100%;height: 60px; } /* smartphones, iPhone, portrait 480x320 phones */ }
+	@media (min-width:481px)  { .thumb-nail { object-fit: cover;width: 100%;height: 60px; } /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+	@media (min-width:641px)  { .thumb-nail { object-fit: cover;width: 100%;height: 60px; } /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+	@media (min-width:961px)  { .caro { object-fit: cover;width: 100%;height: 600px; } .thumb-nail { object-fit: cover;width: 100%;height: 60px; }  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+	@media (min-width:1025px) { .caro { object-fit: cover;width: 100%;height: 600px; } .thumb-nail { object-fit: cover;width: 100%;height: 60px; }  /* big landscape tablets, laptops, and desktops */ }
+	@media (min-width:1281px) { .caro { object-fit: cover;width: 100%;height: 600px; } .thumb-nail { object-fit: cover;width: 100%;height: 60px; }  /* hi-res laptops and desktops */ }
 	
 </style>
 
