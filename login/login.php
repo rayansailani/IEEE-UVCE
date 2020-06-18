@@ -89,6 +89,6 @@
   
 </body>
   
- <? include 'footer.php'; ?>
+ <? include '../pages/footer.php'; ?>
 	
 </html>
