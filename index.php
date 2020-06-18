@@ -80,7 +80,10 @@
       <img src="assets/carousel2.jpg" alt="First slide" class="d-block img-fluid caro">
     </div>
     <div class="carousel-item">
-      <img src="assets/carousel1.jpg" alt="First slide" class="d-block img-fluid caro">
+      <img src="assets/carousel3.jpg" alt="First slide" class="d-block img-fluid caro">
+    </div> 
+    <div class="carousel-item">
+      <img src="assets/carousel4.jpg" alt="First slide" class="d-block img-fluid caro">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
