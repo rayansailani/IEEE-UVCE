@@ -66,9 +66,11 @@
 	//echo $filename."<br>";
 	$event_id=$_GET['event_id'];
 	//echo $event_id;
+	$event=$_GET['event'];
 	
 	$con = getCon();
 	
+	if($event==1){
 	$events = Array();
 	$res=$con->query("select * from new_event where event_id='$event_id'");
 	while($ele = $res->fetch_assoc())
@@ -81,7 +83,22 @@
 	$dateandtime=array();
 	foreach($events as $eve)
 		$dateandtime[]=$eve['dateandtime'];
+	}
+	else if(event==0)
+	{
+		$events = Array();
+	$res=$con->query("select * from old_event where event_id='$event_id'");
+	while($ele = $res->fetch_assoc())
+		$events[]=$ele;
 	
+	$description=array();
+	foreach($events as $eve)
+		$description[]=$eve['description'];
+	
+	$dateandtime=array();
+	foreach($events as $eve)
+		$dateandtime[]=$eve['dateandtime'];	
+	}
 	
 ?>
 	
