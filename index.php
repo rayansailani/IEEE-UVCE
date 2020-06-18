@@ -71,16 +71,20 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="assets/carousel1.jpg" alt="First slide" class="d-block img-fluid caro">
     </div>
     <div class="carousel-item">
-      <img src="assets/carousel2.jpg" alt="First slide" class="d-block img-fluid caro">
+      <img src="assets/carousel2.jpg" alt="Secondslide" class="d-block img-fluid caro">
     </div>
     <div class="carousel-item">
-      <img src="assets/carousel1.jpg" alt="First slide" class="d-block img-fluid caro">
+      <img src="assets/carousel3.jpg" alt="third slide" class="d-block img-fluid caro">
+    </div> 
+    <div class="carousel-item">
+      <img src="assets/carousel4.jpg" alt="Fourth slide" class="d-block img-fluid caro">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
