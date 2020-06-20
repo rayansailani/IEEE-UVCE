@@ -111,8 +111,36 @@
 		<div class="text-center">
 			<h1 class="animate__animated animate__fadeIn animate__delay-1s mt-4 mb-4">IEEE UVCE</h1>
 			<p class="animate__animated animate__fadeIn animate__delay-2s">IEEE Student Branch of UVCE endeavors to enhance the learning experience of the student community on the UVCE campus. The Student Branch intends on providing different social, cultural and technical events for the students throughout the year. We encourage the students to take full advantage of the benefits of IEEE membership, including scholarships, competitions, and conference grants. The Student Branch also emphasizes the students to work with peers in other institutes, academicians, professionals, engineers, and scientists through the on campus IEEE Student Branch and the Local IEEE Section, thereby encouraging students to be a part of the global IEEE community.</p>
+			<span id="dots"></span>
+			<span id="more" style="display:none;">IEEE UVCE has come to be one of the most recognized student branches across the Region 10 of IEEE. Rekindled in 2001, the student branch has since grown to a strength of over 200 student members every year. The organization has been interminably striving to hoist the student community and the retention of its members. The organization’s commitment to enhancing and upgrading the core knowledge base of its members to the industry standards is reflected in the host of activities organized by it throughout the year.
+
+Two events however stand head and shoulders above the sea of activities. ‘Kagada’ the National level Annual Technical Paper Presentation Competition which has bagged ‘The Darrel Chong Gold Level Activity’ award in the year 2019, aims to inspire undergraduate students to take up research and promote critical thinking. ‘Impetus’ the National Level Technical Extravaganza is conducted with a trending theme, as a part of which, a number of events are organised.
+
+Along with these, ample amount of workshops, symposiums, guest lectures and industrial visits are organised. IEEE UVCE offers support and encouragement to its members by conducting seminars for free and also reduction in the paid hands-on workshop fee. The industrial visits organised provides students a sneak peek into the inner workings of the industries and the thrill of exploration. IEEE UVCE hunts for new talents in college by these events, also helping the members develop their organising, leadership and volunteering skills.</span></p>
+		<button onclick="readMore()" id="myBtn">Read more</button>	
 		</div>
 	</div>
+	
+	
+	<script>
+		function readMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+	</script>
+	
+	
 	
 	<!--student branch-->
 	<div id="#" class="m-5">
