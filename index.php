@@ -132,10 +132,12 @@ Along with these, ample amount of workshops, symposiums, guest lectures and indu
     dots.style.display = "inline";
     btnText.innerHTML = "Read more";
     moreText.style.display = "none";
+    moreText.fadeOut(1000);
   } else {
     dots.style.display = "none";
     btnText.innerHTML = "Read less";
     moreText.style.display = "inline";
+    moreText.fadeIn(1000);
   }
 }
 	</script>
