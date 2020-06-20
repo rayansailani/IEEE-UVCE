@@ -117,7 +117,7 @@
 Two events however stand head and shoulders above the sea of activities. ‘Kagada’ the National level Annual Technical Paper Presentation Competition which has bagged ‘The Darrel Chong Gold Level Activity’ award in the year 2019, aims to inspire undergraduate students to take up research and promote critical thinking. ‘Impetus’ the National Level Technical Extravaganza is conducted with a trending theme, as a part of which, a number of events are organised.
 
 Along with these, ample amount of workshops, symposiums, guest lectures and industrial visits are organised. IEEE UVCE offers support and encouragement to its members by conducting seminars for free and also reduction in the paid hands-on workshop fee. The industrial visits organised provides students a sneak peek into the inner workings of the industries and the thrill of exploration. IEEE UVCE hunts for new talents in college by these events, also helping the members develop their organising, leadership and volunteering skills.</span></p>
-		<button onclick="readMore()" id="myBtn">Read more</button>	
+		<button onclick="readMore()" id="myBtn" class="btn btn-outline-dark">Read more</button>	
 		</div>
 	</div>
 	
