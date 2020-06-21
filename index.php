@@ -232,7 +232,23 @@ Along with these, ample amount of workshops, symposiums, guest lectures and indu
 	
 	
 	<h1 class="mt-4 mb-4 text-center fade" id="awards">Awards</h1>
-	<br>
+	<br><br>
+	
+	<? for($i=0;$i<2;$i++) { ?>
+		<? for($j=0;$j<4;$j++) { ?>
+			<div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+  				<div class="card-header">Header</div>
+  					<div class="card-body">
+    						<h5 class="card-title">text</h5>
+    						<p class="card-text">Text</p>
+  					</div>
+				</div>
+			</div>
+		<? } ?>
+	<? } ?>
+	
+	
+	<br><br>
 	<!--Awards-->
 	<div class="m-2">
 		<div class="row m-2">
