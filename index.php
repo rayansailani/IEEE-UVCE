@@ -233,28 +233,11 @@ Along with these, ample amount of workshops, symposiums, guest lectures and indu
 	
 	<h1 class="mt-4 mb-4 text-center fade" id="awards">Awards</h1>
 	<br><br>
-	
 	<div class="row m-4">
 		<? for($i=0;$i<4;$i++) { ?>
 		<div class="col">
-			<div class="text-center"><i class='fas fa-award' style='font-size:36px'></i></div>
 			<div class="card text-white bg-dark" style="max-width: 18rem;">
-  				<div class="card-header text-white bg-warning">Header</div>
-  					<div class="card-body">
-    					<h5 class="card-title">Title</h5>
-   	 				<p class="card-text">Text Goes here</p>
-  					</div>
-			</div>
-		</div>
-		<? } ?>
-	</div>
-	<br>
-	<div class="row m-4">
-		<? for($i=0;$i<4;$i++) { ?>
-		<div class="col">
-			<div class="text-center"><i class='fa fa-trophy' style='font-size:36px'></i></div>
-			<div class="card text-white bg-dark" style="max-width: 18rem;">
-  				<div class="card-header text-white bg-warning">Header</div>
+  				<div class="card-header text-white bg-warning">Header    <i class='fa fa-trophy' style='font-size:36px'></i></div>
   					<div class="card-body">
     					<h5 class="card-title">Title</h5>
    	 				<p class="card-text">Text Goes here</p>
