@@ -234,7 +234,8 @@ Along with these, ample amount of workshops, symposiums, guest lectures and indu
 	<h1 class="mt-4 mb-4 text-center fade" id="awards">Awards</h1>
 	<br><br>
 	<div class="row m-4">
-		<? for($i=0;$i<4;$i++) { ?>
+		<?$c=1; for($i=0;$i<4;$i++) { ?>
+		<img id="myImg<?=$i?>" class="img-fluid thumb-nail" src="../assets/certificates/cert<?=$c?>.jpg" alt="">
 		<div class="col m-4">
 			<div class="card text-white bg-dark">
   				<div class="card-header text-white bg-warning"><i class='fa fa-trophy' style='font-size:18px'></i>&nbsp;&nbsp;&nbsp;&nbsp;Header</div>
@@ -244,9 +245,14 @@ Along with these, ample amount of workshops, symposiums, guest lectures and indu
   					</div>
 			</div>
 		</div>
+		</img>
 		
-		
-		<? } ?>
+		<div id="myModal<?=$i?>" class="modal">
+  			<span class="close">&times;</span>
+  			<img class="modal-content" id="img<?=$i?>">
+  			<div id="caption<?=$i?>"></div>
+		</div>
+		<? $c++; } ?>
 	</div>
 	
 	<br><br>
@@ -293,7 +299,31 @@ Along with these, ample amount of workshops, symposiums, guest lectures and indu
 	  }).scroll(); //invoke scroll-handler on page-load
 	});
 </script>
+<script>
+	var i;
 
+for(i=0;i<64;i++){
+// Get the modal
+var modal = document.getElementById("myModal"+i);
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg"+i);
+var modalImg = document.getElementById("img"+i);
+var captionText = document.getElementById("caption"+i);
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[i];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+}
+</script>
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 
