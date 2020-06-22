@@ -235,17 +235,17 @@ Along with these, ample amount of workshops, symposiums, guest lectures and indu
 	<br><br>
 	<div class="row m-4">
 		<?$c=1; for($i=0;$i<4;$i++) { ?>
-		<img id="myImg<?=$i?>" class="img-fluid thumb-nail" src="../assets/certificates/cert<?=$c?>.jpg" alt="" style="display:none;">
 		<div class="col m-4">
 			<div class="card text-white bg-dark">
   				<div class="card-header text-white bg-warning"><i class='fa fa-trophy' style='font-size:18px'></i>&nbsp;&nbsp;&nbsp;&nbsp;Header</div>
   					<div class="card-body">
     					<h5 class="card-title">Title</h5>
    	 				<p class="card-text">Text Goes here</p>
+					<img id="myImg<?=$i?>" class="img-fluid thumb-nail" src="../assets/certificates/cert<?=$c?>.jpg" alt="" style="display:none;">
   					</div>
 			</div>
 		</div>
-		</img>
+		<button id="myBtn<?=$i?>" class="btn btn-outline-dark btn-sm">view details</button>
 		
 		<div id="myModal<?=$i?>" class="modal">
   			<span class="close">&times;</span>
@@ -307,10 +307,11 @@ for(i=0;i<64;i++){
 var modal = document.getElementById("myModal"+i);
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
+var btn=document.getElementById("myBtn");
 var img = document.getElementById("myImg"+i);
 var modalImg = document.getElementById("img"+i);
 var captionText = document.getElementById("caption"+i);
-img.onclick = function(){
+btn.onclick = function(){
   modal.style.display = "block";
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
