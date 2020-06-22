@@ -235,7 +235,7 @@ Along with these, ample amount of workshops, symposiums, guest lectures and indu
 	<br><br>
 	<div class="row m-4">
 		<? for($i=0;$i<4;$i++) { ?>
-		<div class="col m-4">
+		<div class="col m-2">
 			<div class="card text-white bg-dark">
   				<div class="card-header text-white bg-warning"><i class='fa fa-trophy' style='font-size:18px'></i>&nbsp;&nbsp;&nbsp;&nbsp;Header</div>
   					<div class="card-body">
