@@ -241,8 +241,15 @@ Along with these, ample amount of workshops, symposiums, guest lectures and indu
   					<div class="card-body">
     					<h5 class="card-title">Title</h5>
    	 				<p class="card-text">Text Goes here</p>
+						<img id="myImg<?=$i?>" class="img-fluid thumb-nail" src="../assets/certificates/cert<?=$i+1?>.jpg" alt="" style="display:none;">
   					</div>
 			</div>
+		</div>
+		
+		<div id="myModal<?=$i?>" class="modal">
+  			<span class="close">&times;</span>
+  			<img class="modal-content" id="img<?=$i?>">
+  			<div id="caption<?=$i?>"></div>
 		</div>
 		<? } ?>
 	</div>
