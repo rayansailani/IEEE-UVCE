@@ -241,7 +241,7 @@ Along with these, ample amount of workshops, symposiums, guest lectures and indu
   					<div class="card-body">
     					<h5 class="card-title">Title</h5>
    	 				<p class="card-text">Text Goes here</p>
-					<img id="myImg<?=$i?>" class="img-fluid thumb-nail" src="../assets/certificates/cert<?=$c?>.jpg" alt="" style="display:none;">
+					<img id="myImg<?=$i?>" class="img-fluid thumb-nail" src="assets/certificates/cert<?=$c?>.jpg" alt="" style="display:none;">
   					<button id="myBtnm<?=$i?>" class="btn btn-outline-light btn-sm">view details</button>	
 				</div>
 			</div>
