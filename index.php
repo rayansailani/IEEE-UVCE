@@ -235,7 +235,7 @@ Along with these, ample amount of workshops, symposiums, guest lectures and indu
 	<br><br>
 	<div class="row m-4">
 		<?$c=1; for($i=0;$i<4;$i++) { ?>
-		<img id="myImg<?=$i?>" class="img-fluid thumb-nail" src="../assets/certificates/cert<?=$c?>.jpg" alt="">
+		<img id="myImg<?=$i?>" class="img-fluid thumb-nail" src="../assets/certificates/cert<?=$c?>.jpg" alt="" style="display:none;">
 		<div class="col m-4">
 			<div class="card text-white bg-dark">
   				<div class="card-header text-white bg-warning"><i class='fa fa-trophy' style='font-size:18px'></i>&nbsp;&nbsp;&nbsp;&nbsp;Header</div>
