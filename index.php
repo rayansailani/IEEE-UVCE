@@ -241,16 +241,11 @@ Along with these, ample amount of workshops, symposiums, guest lectures and indu
   					<div class="card-body">
     					<h5 class="card-title">Title</h5>
    	 				<p class="card-text">Text Goes here</p>
-						<img id="myImg<?=$i?>" class="img-fluid thumb-nail" src="../assets/certificates/cert<?=$i+1?>.jpg" alt="" style="display:none;">
   					</div>
 			</div>
 		</div>
 		
-		<div id="myModal<?=$i?>" class="modal">
-  			<span class="close">&times;</span>
-  			<img class="modal-content" id="img<?=$i?>">
-  			<div id="caption<?=$i?>"></div>
-		</div>
+		
 		<? } ?>
 	</div>
 	
@@ -298,31 +293,7 @@ Along with these, ample amount of workshops, symposiums, guest lectures and indu
 	  }).scroll(); //invoke scroll-handler on page-load
 	});
 </script>
-<script>
-	var i;
 
-for(i=0;i<8;i++){
-// Get the modal
-var modal = document.getElementById("myModal"+i);
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg"+i);
-var modalImg = document.getElementById("img"+i);
-var captionText = document.getElementById("caption"+i);
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[i];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
-  modal.style.display = "none";
-}
-}
-</script>
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
 
