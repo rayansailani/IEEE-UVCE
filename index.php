@@ -315,7 +315,7 @@ var modalImg = document.getElementById("img"+i);
 var captionText = document.getElementById("caption"+i);
 btn.onclick = function(){
   modal.style.display = "block";
-  modalImg.src = this.src;
+  modalImg.src = img.src;
   captionText.innerHTML = this.alt;
 }
 // Get the <span> element that closes the modal
