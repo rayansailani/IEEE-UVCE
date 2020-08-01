@@ -1,2 +1,1 @@
-IEEE-UVCE
-IEEE-UVCE website
+IEEE-UVCE Website
